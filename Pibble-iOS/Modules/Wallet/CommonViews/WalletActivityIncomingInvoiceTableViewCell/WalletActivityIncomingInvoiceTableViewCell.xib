@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletActivityIncomingInvoiceTableViewCell" rowHeight="171" id="ajZ-ms-PNk" customClass="WalletActivityIncomingInvoiceTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ajZ-ms-PNk" id="btG-eM-bEU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tJR-qG-Cir">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="p9L-9n-Cc7"/>
+                            <constraint firstAttribute="width" constant="40" id="y40-C2-P3N"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ana Rodriguez" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFX-cg-ZoS">
+                        <rect key="frame" x="65" y="15" width="300" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8G-1V-4nA">
+                        <rect key="frame" x="65" y="44.5" width="300" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I need to buy something :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7S-IN-xoM">
+                                <rect key="frame" x="15" y="15" width="270" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIB 30,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zww-Mg-oKp">
+                                <rect key="frame" x="15" y="38" width="270" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9kV-8T-MP6">
+                                <rect key="frame" x="15" y="71" width="270" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0On-GA-PIm">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="ajZ-ms-PNk" eventType="touchUpInside" id="2qC-RI-8qx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-v4-lTL">
+                                        <rect key="frame" x="140" y="0.0" width="130" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294117647061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="confirmAction:" destination="ajZ-ms-PNk" eventType="touchUpInside" id="rmq-5H-8qM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="iZ3-HV-rGV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9kV-8T-MP6" secondAttribute="bottom" constant="15" id="4yn-iJ-xa9"/>
+                            <constraint firstItem="I7S-IN-xoM" firstAttribute="top" secondItem="D8G-1V-4nA" secondAttribute="top" constant="15" id="8LK-Of-KiN"/>
+                            <constraint firstItem="zww-Mg-oKp" firstAttribute="top" secondItem="I7S-IN-xoM" secondAttribute="bottom" constant="3.5" id="9fo-kN-hkC"/>
+                            <constraint firstAttribute="trailing" secondItem="9kV-8T-MP6" secondAttribute="trailing" constant="15" id="J50-oc-kFt"/>
+                            <constraint firstAttribute="trailing" secondItem="I7S-IN-xoM" secondAttribute="trailing" constant="15" id="OUZ-mF-sSi"/>
+                            <constraint firstItem="9kV-8T-MP6" firstAttribute="top" secondItem="zww-Mg-oKp" secondAttribute="bottom" priority="750" constant="15" id="TjZ-gc-WMt"/>
+                            <constraint firstAttribute="trailing" secondItem="zww-Mg-oKp" secondAttribute="trailing" constant="15" id="e2R-Dj-qaz"/>
+                            <constraint firstItem="zww-Mg-oKp" firstAttribute="leading" secondItem="I7S-IN-xoM" secondAttribute="leading" id="ina-ay-mfC"/>
+                            <constraint firstItem="I7S-IN-xoM" firstAttribute="leading" secondItem="D8G-1V-4nA" secondAttribute="leading" constant="15" id="mpb-a0-4VW"/>
+                            <constraint firstItem="9kV-8T-MP6" firstAttribute="leading" secondItem="D8G-1V-4nA" secondAttribute="leading" constant="15" id="rJU-bd-YbF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9s-NY-tMl">
+                        <rect key="frame" x="15" y="167.5" width="345" height="1"/>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Cb8-xB-PfB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="D8G-1V-4nA" secondAttribute="trailing" constant="10" id="1rW-r1-V13"/>
+                    <constraint firstItem="D8G-1V-4nA" firstAttribute="top" secondItem="oFX-cg-ZoS" secondAttribute="bottom" constant="10" id="3zs-lw-h4N"/>
+                    <constraint firstAttribute="trailing" secondItem="oFX-cg-ZoS" secondAttribute="trailing" constant="10" id="4Of-uV-1cD"/>
+                    <constraint firstItem="D8G-1V-4nA" firstAttribute="leading" secondItem="oFX-cg-ZoS" secondAttribute="leading" id="Ar0-yx-XCX"/>
+                    <constraint firstItem="W9s-NY-tMl" firstAttribute="leading" secondItem="btG-eM-bEU" secondAttribute="leading" constant="15" id="KIE-Sh-0My"/>
+                    <constraint firstItem="tJR-qG-Cir" firstAttribute="leading" secondItem="btG-eM-bEU" secondAttribute="leading" constant="15" id="Lt3-Kd-ktW"/>
+                    <constraint firstAttribute="trailing" secondItem="W9s-NY-tMl" secondAttribute="trailing" constant="15" id="OT5-9f-tdh"/>
+                    <constraint firstItem="oFX-cg-ZoS" firstAttribute="leading" secondItem="tJR-qG-Cir" secondAttribute="trailing" constant="10" id="VZE-mR-3Jf"/>
+                    <constraint firstItem="tJR-qG-Cir" firstAttribute="top" secondItem="btG-eM-bEU" secondAttribute="top" constant="15" id="fcY-Rc-lYm"/>
+                    <constraint firstAttribute="bottom" secondItem="D8G-1V-4nA" secondAttribute="bottom" constant="10" id="g8g-B6-1cW"/>
+                    <constraint firstItem="oFX-cg-ZoS" firstAttribute="top" secondItem="tJR-qG-Cir" secondAttribute="top" id="iMz-Zo-X7X"/>
+                    <constraint firstAttribute="bottom" secondItem="W9s-NY-tMl" secondAttribute="bottom" id="rXl-2b-TqU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="TwH-AZ-dLD"/>
+            <connections>
+                <outlet property="buttonsBackgroundViewHeightConstraint" destination="iZ3-HV-rGV" id="0Hz-tE-cqQ"/>
+                <outlet property="buttonsBackgroundViewTopContraint" destination="TjZ-gc-WMt" id="9Jo-8y-R3d"/>
+                <outlet property="invoiceCancelButton" destination="0On-GA-PIm" id="5wb-rc-Thx"/>
+                <outlet property="invoiceConfirmButton" destination="IRc-v4-lTL" id="JUl-Id-ath"/>
+                <outlet property="invoiceContentBackgroundView" destination="D8G-1V-4nA" id="BD3-pH-QwY"/>
+                <outlet property="invoiceNoteLabel" destination="I7S-IN-xoM" id="p3D-Fk-oK1"/>
+                <outlet property="invoiceTitleLabel" destination="oFX-cg-ZoS" id="SzM-C9-BTz"/>
+                <outlet property="invoiceValueLabel" destination="zww-Mg-oKp" id="4Jf-52-rKf"/>
+                <outlet property="userpicImageView" destination="tJR-qG-Cir" id="AxM-Jl-sXA"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="58.5"/>
+        </tableViewCell>
+    </objects>
+</document>

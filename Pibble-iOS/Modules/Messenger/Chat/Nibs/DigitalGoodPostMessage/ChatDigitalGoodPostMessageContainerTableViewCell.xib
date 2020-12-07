@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatDigitalGoodPostMessageContainerTableViewCell" rowHeight="243" id="KGk-i7-Jjw" customClass="ChatDigitalGoodPostMessageContainerTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="242.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0n-2S-pfc">
+                        <rect key="frame" x="40" y="10" width="295" height="222.5"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Naz-2F-4f3">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="222.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="222.5" id="nDP-Mg-arJ"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Naz-2F-4f3" secondAttribute="bottom" id="N3u-7a-U2N"/>
+                            <constraint firstAttribute="trailing" secondItem="Naz-2F-4f3" secondAttribute="trailing" id="Rpp-Qh-KRz"/>
+                            <constraint firstItem="Naz-2F-4f3" firstAttribute="top" secondItem="m0n-2S-pfc" secondAttribute="top" id="hxH-4T-18g"/>
+                            <constraint firstItem="Naz-2F-4f3" firstAttribute="leading" secondItem="m0n-2S-pfc" secondAttribute="leading" id="mq0-qA-cGu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="m0n-2S-pfc" secondAttribute="trailing" constant="40" id="UxW-jQ-Kci"/>
+                    <constraint firstAttribute="bottom" secondItem="m0n-2S-pfc" secondAttribute="bottom" constant="10" id="iiP-n1-oe1"/>
+                    <constraint firstItem="m0n-2S-pfc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="uAv-zz-rwt"/>
+                    <constraint firstItem="m0n-2S-pfc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vtb-Nj-d1U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageBackgroundView" destination="m0n-2S-pfc" id="0o9-v4-DmZ"/>
+                <outlet property="tableView" destination="Naz-2F-4f3" id="b1W-kE-nfP"/>
+                <outlet property="tableViewHeight" destination="nDP-Mg-arJ" id="Zzd-Gm-7ga"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="138.0809595202399"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,2026 @@
+/*
+ Localizable.strings
+ Pibble-iOS
+ 
+ Created by Sergey Kazakov on 04/05/2019.
+ Copyright © 2019 com.kazai. All rights reserved.
+ */
+
+"Pibble.ChatRoomGroupsContent.Strings.postAttachmentMessage" = "Attached post";
+
+"Pibble.ChatRoomGroupsContent.Strings.muteButton" = "Mute";
+
+"Pibble.ChatRoomGroupsContent.Strings.leaveButton" = "Leave";
+
+"Pibble.Chat.Strings.ChatNavigationBar.price" = "Price";
+
+"Pibble.Chat.Strings.ChatNavigationBar.reward" = "Reward";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.download" = "Download your order";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.buy" = "Buy Item";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.show" = "View Your Order";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.invoiceRequesting" = "Invoice requesting";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.booked" = "Booked";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.soldOut" = "Sold Out";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.pendingBuyerApproval" = "Waiting for buyer's approval";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.confirmed" = "Confirmed";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.pendingSellerApproval" = "Waiting for seller's approval";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.approveReturn" = "Approve Return";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.returnApproved" = "Return Approved";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.requested" = "Waiting for buyer's confirmation";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.accepted" = "Good can be delivered";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.rejected" = "";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.empty" = "Waiting for confirmation";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.requested" = "Invoice is requested";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.accepted" = "Invoice is accepted";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.rejected" = "Invoice is rejected";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.empty" = "";
+
+"Pibble.Chat.Strings.Messages.unsupportedMessageType" = "Message type is not supported in this version";
+
+"Pibble.Chat.Strings.Alerts.alertTitleForInvoiceWithValueSymbolUsername" = "Checkout % % % to buy this item";
+
+"Pibble.Chat.Strings.Alerts.alertTitleForGoodsOrderWithValueSymbolUsername" = "Checkout % % to buy this item. Your payment will be escrowed by system until you confirm.";
+
+"Pibble.Chat.Strings.Alerts.deleteCommentMessage" = "Delete Comment?";
+
+"Pibble.Chat.Strings.Alerts.deleteCommentAction" = "Delete";
+
+"Pibble.Chat.Strings.Alerts.buyAction" = "Buy Item";
+
+"Pibble.Chat.Strings.Alerts.cancelAction" = "Cancel";
+
+"Pibble.Chat.Strings.Alerts.okAction" = "Ok";
+
+"Pibble.Chat.Strings.Alerts.invoicePaymentSuccessAlertTitle" = "Thank you";
+
+"Pibble.Chat.Strings.Alerts.invoicePaymentSuccessAlertMessage" = "Your payment was successful";
+
+"Pibble.Chat.Strings.Alerts.downloading" = "Downloading...";
+
+"Pibble.Chat.Strings.Alerts.confirmGoodsItemAction" = "Confirm Item";
+
+"Pibble.Chat.Strings.Alerts.returnGoodsItemAction" = "Return Item";
+
+"Pibble.Chat.Strings.Alerts.approveReturnGoodsItemAction" = "Approve Return";
+
+"Pibble.Chat.Strings.Alerts.confirmGoodsItemMessage" = "Would you like to confirm your purchase? Once confirmed, you can not cancel your purchase.";
+
+"Pibble.Chat.Strings.Alerts.returnRequestGoodsItemMessage" = "Before requesting return Item, be sure to check with the seller in advance. Refunds will be made after the seller confirms your request.";
+
+"Pibble.Chat.Strings.Alerts.returnGoodsItemMessage" = "Are you sure you want to approve the buyer's return request? If you accept the return, the escrowed amount will be refunded to the buyer.";
+
+"Pibble.Chat.Strings.Errors.invoiceRequestError" = "Invoice Request Error";
+
+"Pibble.Chat.Strings.Errors.digitalGoodDownloadError" = "Download Error";
+
+"Pibble.Chat.Strings.Errors.roomForPostIsNotFound" = "Chat room is not found";
+
+"Pibble.Chat.Strings.Errors.digitalGoodShowError" = "Show order Error";
+
+"Pibble.ChatRooms.Strings.Post.postAttachmentMessage" = "Attached post";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.muteAction" = "Mute";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.umMuteAction" = "Unmute";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.leaveAction" = "Leave";
+
+"Pibble.ChatRooms.Strings.ChatNavigationBar.price" = "Price";
+
+"Pibble.ChatRooms.Strings.ChatNavigationBar.reward" = "Reward";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertTitle" = "";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertMessage" = "Are you sure want to leave this chatroom?";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertConfirm" = "Yes";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertCancel" = "No";
+
+"Pibble.SearchResultTagDetailContent.Strings.posted" = "posts";
+
+"Pibble.SearchResultTagDetailContent.Strings.follow" = "Follow";
+
+"Pibble.SearchResultTagDetailContent.Strings.following" = "Following";
+
+"Pibble.DiscoverSearchContent.Strings.posted" = "Posted";
+
+"Pibble.CommercialPostDetail.Strings.eulaTitle" = "End-User License Agreement (EULA)";
+
+"Pibble.CommercialPostDetail.Strings.downloadAvailable" = "YES";
+
+"Pibble.CommercialPostDetail.Strings.downloadNotAvailable" = "NO";
+
+"Pibble.CommercialPostDetail.Strings.Errors.invoiceRequestError" = "Invoice Request Error";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.buyItem" = "BUY ITEM";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.requestingInvoice" = "REQUESTING INVOICE";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.booked" = "BOOKED";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.soldOut" = "SOLD OUT";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.wrongURL" = "Incorrect website URL";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.lengthLimit" = "% is out of % characters limit";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.empty" = "% is empty";
+
+"Pibble.MediaEdit.Strings.Errors.couldNotLoadMedia" = "Could not load media";
+
+"Pibble.Comments.Strings.deleteCommentMessage" = "Delete Comment?";
+
+"Pibble.Comments.Strings.deleteCommentAction" = "Delete";
+
+"Pibble.Comments.Strings.cancelDeleteComment" = "Cancel";
+
+"Pibble.Comments.Strings.brushed" = "Brushed";
+
+"Pibble.PostsFeed.Strings.budgetTitleWithBudgets" = "Promoted (%/%)";
+
+"Pibble.PostsFeed.Strings.locationDescription" = "Add Location...";
+
+"Pibble.PostsFeed.Strings.brushedCount" = "% Brushed";
+
+"Pibble.PostsFeed.Strings.showAllCommentsTitle" = "View all % comments";
+
+"Pibble.PostsFeed.Strings.deletePostConfirmation" = "Delete Post?";
+
+"Pibble.PostsFeed.Strings.notEnoughFundsForPostDeleteWithSymbol" = "Insufficient % for Deleting";
+
+"Pibble.PostsFeed.Strings.alertTitleForInvoiceWithValueSymbolUsername" = "Checkout % % %to buy this item";
+
+"Pibble.PostsFeed.Strings.alertMessageForPostDeleteWithValueSymbol" = "Consume: % %";
+
+"Pibble.PostsFeed.Strings.alertTitleForGoodsOrderValueSymbol" = "Checkout % % to buy this item. Your payment will be escrowed by system until you confirm.";
+
+"Pibble.PostsFeed.Strings.alertTitleForPostHelpCreation" = "Would you like to checkout % to start your asking help now?";
+
+"Pibble.PostsFeed.Strings.brushed" = "Brushed";
+
+"Pibble.PostsFeed.Strings.following" = "FOLLOWING";
+
+"Pibble.PostsFeed.Strings.notFollowing" = "FOLLOW";
+
+"Pibble.PostsFeed.Strings.mute" = "Mute";
+
+"Pibble.PostsFeed.Strings.followAction" = "Follow";
+
+"Pibble.PostsFeed.Strings.unfollowAction" = "Unfollow";
+
+"Pibble.PostsFeed.Strings.friendAction" = "Add friends";
+
+"Pibble.PostsFeed.Strings.unfriendAction" = "Remove friends";
+
+"Pibble.PostsFeed.Strings.teamMembers" = "Members: ";
+
+"Pibble.PostsFeed.Strings.Video.soundHelpInfo" = "Tap to turn on sound";
+
+"Pibble.PostsFeed.Strings.Video.soundless" = "No sound video";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.preparing" = "Preparing...";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.uploading" = "Publishing...";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.failed" = "Error occurred when creating post";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.completed" = "Published";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.cancelled" = "Cancelled";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.waiting" = "Waiting";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.inProgress" = "In-Progress";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.failed" = "Failed";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.success" = "Success";
+
+"Pibble.PostsFeed.Strings.EditAlerts.removeLocationAction" = "Remove Location";
+
+"Pibble.PostsFeed.Strings.EditAlerts.changeLocationAction" = "Change Location";
+
+"Pibble.PostsFeed.Strings.EditAlerts.cancelAction" = "Cancel";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.currentUserCommercePosts" = "My Goods";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.currentUserPurchasedPosts" = "My Purchases";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.postPromotionPreview" = "Preview";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.currentUserCommercePosts" = "Become an Author";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.currentUserPurchasedPosts" = "No purchased item";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.userPromotedPosts" = "No % promotion";
+
+"Pibble.PostsFeed.Strings.PlaceholderSubtitle.currentUserCommercePosts" = "Post your photos for quality and originality.";
+
+"Pibble.PostsFeed.Strings.PlaceholderSubtitle.currentUserPurchasedPosts" = "";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserActiveFundings" = "There is no funding campaign in progress.";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserEndedFundings" = "There is no ended funding campaign.";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserBackedFundings" = "There is no campaign contributed.";
+
+"Pibble.PostsFeed.Strings.TopGroupsHeader.timerLeftTitle" = "Left";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.daysLeft" = "% days left";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.ended" = "Ended";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.donate" = "DONATE";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.contribute" = "CONTRIBUTE";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.pledge" = "PLEDGE";
+
+"Pibble.PostsFeed.Strings.Alerts.turnOnNotificationAction" = "Turn On Post Notification";
+
+"Pibble.PostsFeed.Strings.Alerts.copyLink" = "Copy Link";
+
+"Pibble.PostsFeed.Strings.Alerts.editCaptionAction" = "Edit";
+
+"Pibble.PostsFeed.Strings.Alerts.editTagsAction" = "Edit Tags";
+
+"Pibble.PostsFeed.Strings.Alerts.shareAction" = "Share";
+
+"Pibble.PostsFeed.Strings.Alerts.addPromotionAction" = "Add Promotion";
+
+"Pibble.PostsFeed.Strings.Alerts.cancelAction" = "Cancel";
+
+"Pibble.PostsFeed.Strings.Alerts.reportAction" = "Report";
+
+"Pibble.PostsFeed.Strings.Alerts.deleteAction" = "Delete";
+
+"Pibble.PostsFeed.Strings.Alerts.viewEngagement" = "View Engage";
+
+"Pibble.PostsFeed.Strings.Alerts.okAction" = "OK";
+
+"Pibble.PostsFeed.Strings.Alerts.deletePostAlertMessage" = "Delete Post?";
+
+"Pibble.PostsFeed.Strings.Alerts.invoicePaymentSuccessAlertTitle" = "Thank you";
+
+"Pibble.PostsFeed.Strings.Alerts.invoicePaymentSuccessAlertMessage" = "Your payment was successful";
+
+"Pibble.PostsFeed.Strings.Alerts.inappropriateReportAlertTitle" = "Report as inappropriate";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportAlertTitle" = "Report as spam";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertTitle" = "Thanks for reporting";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertMessage" = "If you do not want to see this post right now, make it as Block. If you think this post violates our Community Guidelines and should be removed for others. Report as inappropriate.";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertBlockAction" = "Block";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.pause" = "Pause";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.resume" = "Resume";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.close" = "Close";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.insight" = "Insight";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingActions.donators" = "View Contributors";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingActions.details" = "View Funding Progress";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingMessages.stopFundingConfirmMessage" = "Do you really want to end funding campaign now? When the campaign ends, The amount of funding, excluding the fee, will be delivered to you.";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingMessages.stopFundingSuccessMessage" = "Your funding campaign has just ended. After the verification process, the funds will be transferred to your account soon.";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.pause" = "This promotion will be paused.  You can resume anytime.";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.resume" = "Are you sure to reactivate this promotion?";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.close" = "Your promotion will be closed right now. You budget left will be return to your wallet.";
+
+"Pibble.Donate.Strings.action" = "Donate";
+
+"Pibble.Donate.Strings.postingBegin" = "I love it! I will ";
+
+"Pibble.Donate.Strings.postingEnd" = " for your campaign.";
+
+"Pibble.Donate.Strings.zeroValue" = "0";
+
+"Pibble.UpVote.Strings.action" = "upvote";
+
+"Pibble.UpVote.Strings.titleBegin" = "I love it! I will ";
+
+"Pibble.UpVote.Strings.postingEnd" = " for your posting.";
+
+"Pibble.UpVote.Strings.commentEnd" = " for your comment.";
+
+"Pibble.UpVote.Strings.userBegin" = "Thanks for your help. I will ";
+
+"Pibble.UpVote.Strings.userEnd" = " for your upvoting.";
+
+"Pibble.TagsListing.Strings.followAction" = "Follow";
+
+"Pibble.TagsListing.Strings.unfollowAction" = "Unfollow";
+
+"Pibble.TagsListing.Strings.friendAction" = "Add friends";
+
+"Pibble.TagsListing.Strings.unfriendAction" = "Remove friends";
+
+"Pibble.TagsListing.Strings.postsCount" = "posts";
+
+"Pibble.UsersListing.Strings.followAction" = "Follow";
+
+"Pibble.UsersListing.Strings.unfollowAction" = "Unfollow";
+
+"Pibble.UsersListing.Strings.friendAction" = "Add friends";
+
+"Pibble.UsersListing.Strings.unfriendAction" = "Remove";
+
+"Pibble.UsersListing.Strings.unmuteAction" = "Unmute";
+
+"Pibble.UsersListing.Strings.hashTagsTitle" = "Hashtags";
+
+"Pibble.UsersListing.Strings.NavigationBar.followers" = "Followers";
+
+"Pibble.UsersListing.Strings.NavigationBar.following" = "Following";
+
+"Pibble.UsersListing.Strings.NavigationBar.friends" = "Friends";
+
+"Pibble.UsersListing.Strings.NavigationBar.editFriends" = "Edit Friends";
+
+"Pibble.UsersListing.Strings.NavigationBar.mutedUsers" = "Muted Accounts";
+
+"Pibble.UserProfileContent.Strings.Titles.points" = "% Points";
+
+"Pibble.UserProfileContent.Strings.Titles.level" = "Level (Lv.%)";
+
+"Pibble.UserProfileContent.Strings.Titles.rewards" = "Rewards (24h)";
+
+"Pibble.UserProfileContent.Strings.Titles.friendsCount" = "Friends (%)";
+
+"Pibble.UserProfileContent.Strings.Titles.friendsRequestCount" = "% Friends request arrived";
+
+"Pibble.UserProfileContent.Strings.Titles.rich" = "Rich";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.followAction" = "Follow";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.unfollowAction" = "Unfollow";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.friendAction" = "Add friends";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.friendshipRequestedAction" = "Friendship requested";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.acceptFriendshipAction" = "Accept friendship";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.unfriendAction" = "Your friend";
+
+"Pibble.UserProfileContent.Strings.TimePeriod.thisYearPeriod" = "This Year";
+
+"Pibble.UserProfileContent.Strings.TimePeriod.thisWeekPeriod" = "This Week";
+
+"Pibble.UserProfileContent.Strings.Placeholder.userDescriptionCaptionPlaceholder" = "Add description";
+
+"Pibble.UserProfileContent.Strings.UserStats.followers" = "Followers";
+
+"Pibble.UserProfileContent.Strings.UserStats.following" = "Following";
+
+"Pibble.UserProfileContent.Strings.UserStats.friends" = "Friends";
+
+"Pibble.UserProfileContent.Strings.UserStats.post" = "Posts";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.accepted" = "Accepted";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.denied" = "Denied";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.none" = "";
+
+"Pibble.UserProfileContainer.Strings.cancelAction" = "Cancel";
+
+"Pibble.UserProfileContainer.Strings.chat" = "Message";
+
+"Pibble.UserProfileContainer.Strings.mute" = "Mute";
+
+"Pibble.UserProfileContainer.Strings.report" = "Report";
+
+"Pibble.UserProfileContainer.Strings.messageRooms" = "Open message rooms";
+
+"Pibble.UserProfileContainer.Strings.settings" = "Settings";
+
+"Pibble.UserProfileContainer.Strings.logout" = "Log Out";
+
+"Pibble.BannedUserProfileContent.Strings.accountBlockStatus" = "Account Blocked";
+
+"Pibble.AboutHome.Strings.commerce" = "commerce";
+
+"Pibble.AboutHome.Strings.croudFunding" = "croud funding";
+
+"Pibble.AboutHome.Strings.album" = "album";
+
+"Pibble.AboutHome.Strings.event" = "event";
+
+"Pibble.AboutHome.Strings.settings" = "logout";
+
+"Pibble.AboutHome.Strings.notifications" = "notifications";
+
+"Pibble.CampaignPick.Strings.members" = "Members";
+
+"Pibble.CampaignPick.Strings.createdAt" = "Created at";
+
+"Pibble.CampaignPick.Strings.raise" = "Raise";
+
+"Pibble.CampaignPick.Strings.goal" = "Goal";
+
+"Pibble.CampaignPick.Strings.currency" = "PIB";
+
+"Pibble.CampaignEdit.Strings.NavBarButtons.next" = "Next";
+
+"Pibble.CampaignEdit.Strings.NavBarButtons.post" = "Post";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.media" = "Post Media";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.charity" = "Post Charity";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.crowdfunding" = "Post Funding";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.commercial" = "Post Commerce";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.goods" =  "Post Goods";
+
+"Pibble.CampaignEdit.Strings.draftEmptyTitle" = "Add Campaign Title";
+
+"Pibble.CampaignEdit.Strings.draftEmptyRaisingFor" = "Who are you rasing funds for?";
+
+"Pibble.CampaignEdit.Strings.draftEmptyCategoryFor" = "Choose a category";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamTitle" = "An Individual";
+
+"Pibble.CampaignEdit.Strings.teamCampaignTeamTitle" = "A Team";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamDescription" = "I am the sole organizer.";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamAdditionalDescription" = "You can turn on as a Team fundraising later.";
+
+"Pibble.CampaignEdit.Strings.teamCampaignTeamDescription" = "I will invite others to fundraise with me.";
+
+"Pibble.CampaignEdit.Strings.draftEmptyTeamName" = "Enter your team name";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.charity" = "Charity or non-profit";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.myself" = "Myself";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.someoneElse" = "Someone else";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardType.hasReward" = "Has Reward";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardType.noReward" = "No Reward";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardTypeInfo.hasReward" = "We have a reward for the funding amount.";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardTypeInfo.noReward" = "This funding is not obligated to reward.";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.rewardType" = "Reward Type:";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.fundraiseAsType" = "Fundraise as:";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.rewardsPick" = "Rewards";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.regularPrice" = "Regular Price";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.superEarlyBirdPrice" = "Super Early Bird Single (Best Price)";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.earlyBirdPrice" = "Early Bird Single (Discount)";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputPlaceholder.price" = "Price";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputPlaceholder.amount" = "Limited Amount";
+
+"Pibble.CampaignEdit.Strings.Errors.teamNameAlreadyTaken" = "A Team with that name already exists.";
+
+"Pibble.CampaignEdit.Strings.Errors.emptyTeamName" = "Team name can not be empty.";
+
+"Pibble.PromotionPick.Strings.currentBalance" = "Your current % Token Balance is ";
+
+"Pibble.PromotionPick.Strings.promotionalBudget" = "Your promotional budget has been set at ";
+
+"Pibble.PromotionPick.Strings.reach" = ". Your media will reach about ";
+
+"Pibble.PromotionPick.Strings.people" = " people.";
+
+"Pibble.PromotionPick.Strings.zeroValue" = "0";
+
+"Pibble.MediaPosting.Strings.Titles.description" = "Description";
+
+"Pibble.MediaPosting.Strings.Titles.pickLocation" = "Pick location";
+
+"Pibble.MediaPosting.Strings.Titles.pickTags" = "Pick tags";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.media" = "Post Media";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.charity" = "Post Charity";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.crowdfunding" = "Post Funding";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.commercial" = "Post Commerce";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.goods" =  "Post Goods";
+
+"Pibble.MediaPosting.Strings.PickCampaign.find" = "Contribute to Team Project";
+
+"Pibble.MediaPosting.Strings.PickCampaign.create" = "Create New Project";
+
+"Pibble.MediaPosting.Strings.NavBarButtons.next" = "Next";
+
+"Pibble.MediaPosting.Strings.NavBarButtons.post" = "Post";
+
+
+"Pibble.CameraCapture.Strings.videoTimelimitReachedAlertMessage" = "You've reached the time limit for video";
+
+"Pibble.CameraCapture.Strings.videoTimelimitReachedAlertActionTitle" = "Next";
+
+"Pibble.MediaPick.Strings.allPhotos" = "all photos";
+
+"Pibble.MediaPick.Strings.videoLengthWarning" = "Video length exceeds % seconds. Will be automatically trimmed for posting.";
+
+"Pibble.MediaPick.Strings.nextButtonTitle" = "Next";
+
+"Pibble.MediaPick.Strings.doneButtonTitle" = "Done";
+
+"Pibble.MediaPick.Strings.cancel" = "Cancel";
+
+"Pibble.MediaPick.Strings.confirm" = "OK";
+
+"Pibble.MediaPick.Strings.Errors.access" = "Please, give the app access to your media library in your Settings";
+
+"Pibble.MediaPick.Strings.Errors.videoLength" = "Video is too long";
+
+"Pibble.MediaPick.Strings.Errors.unsupportedMediaType" = "Unsupported media format";
+
+"Pibble.MediaPick.Strings.Errors.videoWillBeTrimmed" = "Video length exceeds % seconds will be automatically trimmed for posting.";
+
+"Pibble.ResetPassword.Strings.Fields.password" = "password";
+
+"Pibble.ResetPassword.Strings.Fields.passwordConfirm" = "passwordConfirm";
+
+"Pibble.ResetPassword.Strings.Errors.empty" = "Field is empty";
+
+"Pibble.ResetPassword.Strings.Errors.notMatching" = "Field does not match";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.empty" = "Phone field is empty";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.wrongFormat" = "Phone has wrong format";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.signUpUserIsNotSet" = "User is not set";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.signUpCountryIsNotSet" = "Country is not set";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertOkActionTitle" = "Ok";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertTitle" = "Thanks for your patience";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertMessage" = "This menu item is under construction. Will be available in the next version or beta release in June.";
+
+"Pibble.TabBar.Strings.MenuItems.camera" = "Media";
+
+"Pibble.TabBar.Strings.MenuItems.commerce" = "Commerce";
+
+"Pibble.TabBar.Strings.MenuItems.charity" = "Charity";
+
+"Pibble.TabBar.Strings.MenuItems.album" = "Album";
+
+"Pibble.TabBar.Strings.MenuItems.goods" = "Goods";
+
+"Pibble.TabBar.Strings.MenuItems.funding" = "Funding";
+
+"Pibble.TabBar.Strings.SideMenuItems.gift" = "Gift";
+
+"Pibble.TabBar.Strings.SideMenuItems.wallet" = "Wallet";
+
+"Pibble.TabBar.Strings.SideMenuItems.notifications" = "Notifications";
+
+"Pibble.TabBar.Strings.SideMenuItems.settings" = "Settings";
+
+"Pibble.ResetPasswordVerifyCode.Strings.Password.navBarTitle" = "Forgot Password";
+
+"Pibble.ResetPasswordVerifyCode.Strings.PinCode.navBarTitle" = "Forgot PIN";
+
+"Pibble.ResetPasswordVerifyCode.Strings.ResendButtonTitles.resend" = "Resend code";
+
+"Pibble.ResetPasswordVerifyCode.Strings.ResendButtonTitles.resendAfter" = "Resend code after %s";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.title" = "Oh Snap!";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.message" = "Verification failed.";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.okAction" = "Ok";
+
+"Pibble.RestorePasswordMethod.Strings.Password.information" = "Select the contact details we should use to reset your password.";
+
+"Pibble.RestorePasswordMethod.Strings.Password.navBarTitle" = "Forgot Password";
+
+"Pibble.RestorePasswordMethod.Strings.PinCode.information" = "Select the contact details we should use to reset your PIN.";
+
+"Pibble.RestorePasswordMethod.Strings.PinCode.navBarTitle" = "Forgot PIN";
+
+"Pibble.RestorePasswordMethod.Strings.Errors.noVerifiedPhoneNumber" = "User has no verified phone number";
+
+"Pibble.SignIn.Strings.Errors.empty" = "Field is empty";
+
+"Pibble.SignIn.Strings.InputFields.login" = "login";
+
+"Pibble.SignIn.Strings.InputFields.password" = "password";
+
+"Pibble.Registration.Strings.Errors.empty" = "Field is empty";
+
+"Pibble.Registration.Strings.InputFields.email" = "email";
+
+"Pibble.Registration.Strings.InputFields.username" = "username";
+
+"Pibble.Registration.Strings.InputFields.password" = "password";
+
+"Pibble.Registration.Strings.Links.terms" = "Terms of Use";
+
+"Pibble.Registration.Strings.Links.privacyPolicy" = "Privacy Policy";
+
+"Pibble.PhonePick.Strings.Errors.empty" = "Phone field is empty";
+
+"Pibble.PhonePick.Strings.Errors.wrongFormat" = "Phone has wrong format";
+
+"Pibble.PhonePick.Strings.Errors.signUpUserIsNotSet" = "User is not set";
+
+"Pibble.PhonePick.Strings.Errors.signUpCountryIsNotSet" = "Country is not set";
+
+"Pibble.VerifyCode.Strings.NavigationBarTitleForPurpose.enterVerifyCode" = "Enter Verify Code";
+
+"Pibble.VerifyCode.Strings.NavigationBarTitleForPurpose.verifyEmail" = "Verify Email";
+
+"Pibble.VerifyCode.Strings.InformationTitleForPurpose.phoneVerification" = "Please check your SMS. We just sent a verification code to: ";
+
+"Pibble.VerifyCode.Strings.InformationSubtitleForPurpose.initialEmailVerification" = "Please enter the verification code we e-mailed";
+
+"Pibble.VerifyCode.Strings.InformationSubtitleForPurpose.forcedEmailVerification" = "Your e-mail is not verified yet. Please enter the verification code we e-mailed";
+
+"Pibble.VerifyCode.Strings.ResendButtonTitles.resend" = "Resend code";
+
+"Pibble.VerifyCode.Strings.ResendButtonTitles.resendAfter" = "Resend code after %s";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.title" = "Oh Snap!";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.message" = "Verification failed.";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.okAction" = "Ok";
+
+"Pibble.WalletTransactionAmountPick.Strings.confirmExchangeAction" = "Continue to exchange";
+
+"Pibble.WalletTransactionAmountPick.Strings.cancelExchangeAction" = "Cancel";
+
+"Pibble.WalletTransactionAmountPick.Strings.invoiceTitle" = "Request Amount";
+
+"Pibble.WalletTransactionAmountPick.Strings.outcomingTitle" = "Send Amount";
+
+"Pibble.WalletTransactionAmountPick.Strings.invoiceNavBarTitle" = "PIB Request";
+
+"Pibble.WalletTransactionAmountPick.Strings.outcomingNavBarTitle" = "Send PIB";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeNavBarTitle" = "Exchange PIB";
+
+"Pibble.WalletTransactionAmountPick.Strings.nextButtonTitle" = "Next";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeButtonTitle" = "Request";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeBackWarningTitle" = "Confirm";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeTitle" = "Request Exchange % to %";
+
+"Pibble.WalletTransactionAmountPick.Strings.ExchangeBackWarningMessage.piblePGBExchangeWarning" = "% is used to upvote users' posts.";
+
+"Pibble.WalletTransactionAmountPick.Strings.ExchangeBackWarningMessage.exchangeWarning" = "% can not be exchanged back to %";
+
+"Pibble.WalletPinCode.Strings.registerNewPinCode" = "Register PIN to access wallet";
+
+"Pibble.WalletPinCode.Strings.confirmNewPinCode" = "Confirm new PIN";
+
+"Pibble.WalletPinCode.Strings.unlock" = "Unlock with your PIN";
+
+"Pibble.WalletPinCode.Strings.restorePinCode" = "Register new PIN to access wallet";
+
+"Pibble.WalletPinCode.Strings.leftDigitButton" = "Cancel";
+
+"Pibble.WalletPinCode.Strings.rightDigitButton" = "BACK";
+
+"Pibble.WalletHome.Strings.payBill" = "pay bill";
+
+"Pibble.WalletHome.Strings.send" = "send";
+
+"Pibble.WalletHome.Strings.recieve" = "recieve";
+
+"Pibble.WalletHome.Strings.exchange" = "exchange";
+
+"Pibble.WalletHome.Strings.activity" = "activity";
+
+"Pibble.WalletHome.Strings.market" = "market";
+
+"Pibble.Wallet.Strings.incomingInvoice" = " sent you request";
+
+"Pibble.Wallet.Strings.rejectedInvoice" = "You rejected request from ";
+
+"Pibble.Wallet.Strings.acceptedInvoice" = "You confirmed request from ";
+
+"Pibble.Wallet.Strings.outcomingInvoice" = "You sent request to ";
+
+"Pibble.WalletPreview.Strings.upvotes" = "Upvote";
+
+"Pibble.WalletActivityContent.Strings.brushSegmentTitle" = "Brush";
+
+"Pibble.WalletActivityContent.Strings.pibbleUsername" = "Pibble";
+
+"Pibble.WalletActivityContent.Strings.incomingInvoice" = " sent you request";
+
+"Pibble.WalletActivityContent.Strings.outcomingInvoice" = "you sent request to ";
+
+"Pibble.WalletActivityContent.Strings.rewardForPosting" = "Got Media Post Reward";
+
+"Pibble.WalletActivityContent.Strings.challengeReward" = "Challenge Reward";
+
+"Pibble.WalletActivityContent.Strings.unsupportedReward" = "Reward";
+
+"Pibble.WalletActivityContent.Strings.feeForDeletePosting" = "Fee for Post Delete";
+
+"Pibble.WalletActivityContent.Strings.freeReward" = "You got free Upvote reward";
+
+"Pibble.WalletActivityContent.Strings.airdrop" = "Airdrop";
+
+"Pibble.WalletActivityContent.Strings.incomingForVoting" = "Got Upvote from ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForVotingBegin" = "Upvote to Feed ";
+
+"Pibble.WalletActivityContent.Strings.incomingForComment" = "Got Comment Upvote from ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForComment" = "Upvote to comment ";
+
+"Pibble.WalletActivityContent.Strings.incomingForPostHelpAnswer" = "Got answer upvote ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForPostHelpAnswer" = "Upvote answer ";
+
+"Pibble.WalletActivityContent.Strings.referralReward" = "Referral reward";
+
+"Pibble.WalletActivityContent.Strings.incomingForProfile" = "Got Profile Upvote from ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForProfile" = "Upvote to Profile ";
+
+"Pibble.WalletActivityContent.Strings.exchanged" = "Exchanged ";
+
+"Pibble.WalletActivityContent.Strings.exchangedTo" = " to ";
+
+"Pibble.WalletActivityContent.Strings.exchangedExternalWithApp" = " with ";
+
+"Pibble.WalletActivityContent.Strings.digitalGoodTitlePlaceholder" = "digital good";
+
+"Pibble.WalletActivityContent.Strings.goodsTitlePlaceholder" = "goods";
+
+"Pibble.WalletActivityContent.Strings.promotedPostRewardIncoming" = "Got Promoted Post Reward";
+
+"Pibble.WalletActivityContent.Strings.promotedPostRewardOutcoming" = "Sent Promoted Post Reward";
+
+"Pibble.WalletActivityContent.Strings.promotionDebitWith" = "Promote %";
+
+"Pibble.WalletActivityContent.Strings.receivedFrom" = "Received % from ";
+
+"Pibble.WalletActivityContent.Strings.sentTo" = "Sent % to ";
+
+"Pibble.WalletActivityContent.Strings.sellTo" = "Sell % to ";
+
+"Pibble.WalletActivityContent.Strings.buyFrom" = "Buy % from ";
+
+"Pibble.WalletActivityContent.Strings.sellEscrowTo" = "Sell escrow % ";
+
+"Pibble.WalletActivityContent.Strings.buyEscrowFrom" = "Buy escrow % ";
+
+"Pibble.WalletActivityContent.Strings.rewardedWith" = "You were rewarded with %";
+
+"Pibble.WalletActivityContent.Strings.withdrawalOf" = "Withdrawal of %";
+
+"Pibble.WalletActivityContent.Strings.returnGoods" = "Return % ";
+
+"Pibble.WalletActivityContent.Strings.charityFundingTo" = "Charity funding % to ";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noActivity" = "No % Activity";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noBrushActivityMessage" = "You don't have any reward or upvote activitis using red or green brushes.";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noActivityMessage" = "You do not have any activities related to % transfer.";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotedPostRewardIncoming" = "Got Promoted Post Reward";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotedPostRewardOutcoming" = "Sent Promoted Post Reward";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotionDebit" = "Promotion Budget";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.impression" = "Promotion Reward - impression ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.upvote" = "Promotion Reward - upvote ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.comment" = "Promotion Reward - comment ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.collect" = "Promotion Reward - collect ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.follow" = "Promotion Reward - follow ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.action" = "Promotion Reward - engage action button ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.followTag" = "Promotion Reward - tag follow ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.profileView" = "Promotion Reward - visit profile ";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingDonate" = "Charity funding to ";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingDonate" = "Crowd funding to ";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardDonate" = "Reward crowd funding to ";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingRefund" = "Get a donation back";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingRefund" = "Get a crowd funding back";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardRefund" = "Get a reward crowdfunding back";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingCollected" = "Collected from Charity funding";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingCollected" = "Collected from Crowd funding";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardCollected" = "Collected from Reward crowd funding";
+
+"Pibble.WalletActivityContent.Strings.PostHelpAnswers.postHelpPayment" = "Prepayment for answer";
+
+"Pibble.WalletActivityContent.Strings.PostHelpAnswers.postHelpReward" = "Reward for answer ";
+
+"Pibble.MediaDetail.Strings.Alerts.downloading" = "Downloading...";
+
+"Pibble.MediaDetail.Strings.Alerts.cancelAction" = "Cancel";
+
+"Pibble.ReportPostReason.Strings.doNotLike" = "I just don't like it";
+
+"Pibble.ReportPostReason.Strings.nudity" = "Nudity or pornography";
+
+"Pibble.ReportPostReason.Strings.hateSymbols" = "Hate speech or symbols";
+
+"Pibble.ReportPostReason.Strings.violence" = "Voilrnvr or threat of violence";
+
+"Pibble.ReportPostReason.Strings.fireArms" = "Sale or promotion of firearms";
+
+"Pibble.ReportPostReason.Strings.drugs" = "Sale of promotion of drugs";
+
+"Pibble.ReportPostReason.Strings.harassment" = "Harassment or bullying";
+
+"Pibble.ReportPostReason.Strings.propertyViolation" = "Intellectual property violation";
+
+"Pibble.ReportPostReason.Strings.selfInjury" = "Self injury";
+
+"Pibble.ReportPostReason.Strings.spam" = "Report as spam";
+
+"Pibble.ReportPostReason.Strings.blockForSpam" = "Block spam";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.pibble" = "Pibble";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.etherium" = "Ethereum";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.greenBrush" = "Green Brush";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.redBrush" = "Red Brush";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.unknown" = "unknown";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.won" = "Korean Won";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.bitcoin" = "Bitcoin";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.australianDollar" = "Australian Dollar";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.greatBritainPound" = "British Pound";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.canadianDollar" = "Canadian Dollar";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.chineseYuan" = "Chinese Renminbi Yuan";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.euro" = "Euro";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.japaneseYen" = "Japanese Yen";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.usDollar" = "US Dollar";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.unsupportedCurrency" = "Unsupported Currency";
+
+"Pibble.AppLanguage.Strings.english" = "English";
+
+"Pibble.AppLanguage.Strings.korean" = "Korean";
+
+"Pibble.WalletReceivePresenter.Strings.shareTextForCurrency" = "My % wallet address: %";
+
+"Pibble.WalletReceivePresenter.Strings.Title.recieveAddressBegin" = "Your receiving ";
+
+"Pibble.WalletReceivePresenter.Strings.Title.recieveAddressEnd" = " address";
+
+"Pibble.SettingsHome.Strings.MenuItems.inviteFriends" = "Invite Friends";
+
+"Pibble.SettingsHome.Strings.MenuItems.closeFriends" = "Edit Friends";
+
+"Pibble.SettingsHome.Strings.MenuItems.notifications" = "Notifications";
+
+"Pibble.SettingsHome.Strings.MenuItems.commerce" = "Commerce";
+
+"Pibble.SettingsHome.Strings.MenuItems.promotions" = "Promotions";
+
+"Pibble.SettingsHome.Strings.MenuItems.funding" = "Funding";
+
+"Pibble.SettingsHome.Strings.MenuItems.wallet" = "Wallet";
+
+"Pibble.SettingsHome.Strings.MenuItems.account" = "Account";
+
+"Pibble.SettingsHome.Strings.MenuItems.help" = "Help";
+
+"Pibble.SettingsHome.Strings.MenuItems.about" = "About";
+
+"Pibble.SettingsHome.Strings.MenuItems.logout" = "Log Out";
+
+"Pibble.ReferUser.Strings.headerTitle" = "Invite Friends and get %";
+
+"Pibble.ReferUser.Strings.headerSubtitle" = "For each friend that joins Pibble, we'll give you %. Earn up to a total of % in rewards.";
+
+"Pibble.ReferUser.Strings.shareTitle" = "This app is amazing. \nGet it at https://www.pibbleapp.io \nInvite ID : %";
+
+"Pibble.ReferUser.Strings.referralRegistrationSuccess" = "Thank you for your registration. You earned % and your friend earned %";
+
+"Pibble.ReferUser.Strings.okAlertAction" = "Ok";
+
+"Pibble.AccountSettings.Strings.MenuItems.language" = "Language";
+
+"Pibble.AccountSettings.Strings.MenuItems.username" = "Username";
+
+"Pibble.AccountSettings.Strings.MenuItems.mutedUsers" = "Muted Accounts";
+
+"Pibble.WalletSettings.Strings.MenuItems.nativeCurrency" = "Native Currency";
+
+"Pibble.About.Strings.MenuItems.appVersion" = "Version";
+
+"Pibble.About.Strings.MenuItems.terms" = "Terms of Use";
+
+"Pibble.About.Strings.MenuItems.privacyPolicy" = "Private Policy";
+
+"Pibble.About.Strings.MenuItems.communityGuide" = "Community Guide";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationTitle" = "Confirm";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationMessage" = "Change Language? \nLanguage change will be applied on next app launch.";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationAction" = "Change";
+
+"Pibble.LanguagePicker.Strings.Alert.cancelAction" = "Cancel";
+
+"Pibble.CommerceTypePick.Strings.MenuItems.myGoods" = "My Goods";
+
+"Pibble.CommerceTypePick.Strings.MenuItems.purchasedGoods" = "My Purchases";
+
+"Pibble.PromotionBudgetPick.Strings.days" = "Days";
+
+"Pibble.PromotionBudgetPick.Strings.dailyBudget" = "%/Daily";
+
+"Pibble.PromotionBudgetPick.Strings.availableBalance" = "Your % balance: %";
+
+"Pibble.PromotionBudgetPick.Strings.budgetLimits" = "Min.% ~ Max.% Daily";
+
+"Pibble.PromotionBudgetPick.Strings.durationLimits" = "% Day ~ % Days";
+
+"Pibble.CreatePromotionConfirm.Strings.days" = "Days";
+
+"Pibble.CreatePromotionConfirm.Strings.headerSubtitle" = "Your post will reach estimated % - % people. Once your promotion starts, you can pause spending anytime.";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.destinationMissing" = "Destination is not set";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.budgetMissing" = "Budget is not set";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.durationMissing" = "Duration is not set";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.ok" = "Ok";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.cancel" = "Cancel";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionConfirm.title" = "Would you like to  checkout % to start your promotion now?";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionConfirm.message" = "% of your budget is allocated to the system right now so you can increase your impression immediately. % of your budget will be rewarded for users who have engaged in your post during the promotion period.";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionCreationSuccess.title" = "Thank you";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionCreationSuccess.message" = "Your payment was successful.";
+
+"Pibble.VisitProfilePromotionActionType.Strings.visitProfile" = "Visit User Profile";
+
+"Pibble.PromotionInsights.Strings.Budget.used" = "Used %";
+
+"Pibble.PromotionInsights.Strings.Budget.left" = "Left %";
+
+"Pibble.PromotionInsights.Strings.Sections.engage" = "Engage";
+
+"Pibble.PromotionInsights.Strings.Sections.impressions" = "Impression";
+
+"Pibble.EngagementType.Strings.upvotes" = "upvote";
+
+"Pibble.EngagementType.Strings.comments" = "comment";
+
+"Pibble.EngagementType.Strings.collected" = "collect";
+
+"Pibble.EngagementType.Strings.tags" = "tag";
+
+"Pibble.EngagementType.Strings.followings" = "follow";
+
+"Pibble.PromotionStatus.Strings.active" = "Active";
+
+"Pibble.PromotionStatus.Strings.paused" = "Paused";
+
+"Pibble.PromotionStatus.Strings.closed" = "Closed";
+
+"Pibble.NotificationsFeed.Strings.followAction" = "Follow"; //translate
+
+"Pibble.NotificationsFeed.Strings.unfollowAction" = "Following";
+
+"Pibble.NotificationsFeed.Strings.SectionsHeaders.today" = "TODAY";
+
+"Pibble.NotificationsFeed.Strings.SectionsHeaders.yesterday" = "YESTERDAY";
+
+"Pibble.NotificationsFeed.Strings.SectionsHeaders.thisMonth" = "THIS MONTH";
+
+"Pibble.NotificationsFeed.Strings.SectionsHeaders.earlier" = "EARLIER";
+
+"Pibble.Onboarding.Strings.One.title" = "Share";
+
+"Pibble.Onboarding.Strings.One.subtitle" = "Easy and Fast. Share your life";
+
+"Pibble.Onboarding.Strings.Two.title" = "Get Paid";
+
+"Pibble.Onboarding.Strings.Two.subtitle" = "All social actions earn for you";
+
+"Pibble.Onboarding.Strings.Three.title" = "Play Social";
+
+"Pibble.Onboarding.Strings.Three.subtitle" = "More than social. It is fun!";
+
+"Pibble.Onboarding.Strings.Four.title" = "Blockchain Social";
+
+"Pibble.Onboarding.Strings.Four.subtitle" = "The next social with blockchain";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.title" = "Select % Chain";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.Warning.warningTitle" = "Warning:";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.Warning.warningSubtitle" = "If you incorrectly set the chain of the PIB address to be sent, the PIB token may be locked for a long time or even lost.";
+
+"Pibble.WalletTransactionCreate.Strings.inputTitle" = "Request Amount";
+
+"Pibble.WalletTransactionCreate.Strings.nextButtonTitle" = "Next";
+
+"Pibble.WalletTransactionCreate.Strings.NavBarButtons.send" = "Send";
+
+"Pibble.WalletTransactionCreate.Strings.NavBarButtons.next" = "Next";
+
+
+"Pibble.PostStatistics.Strings.Budget.used" = "Used %";
+
+"Pibble.PostStatistics.Strings.Budget.left" = "Left %";
+
+"Pibble.PostStatistics.Strings.Sections.engage" = "Engage";
+
+"Pibble.PostStatistics.Strings.Sections.impressions" = "Impression";
+
+"Pibble.TopGroupPostsType.Strings.news" = "News";
+
+"Pibble.TopGroupPostsType.Strings.coin" = "Blockchain";
+
+"Pibble.TopGroupPostsType.Strings.webtoon" = "Webtoon";
+
+"Pibble.TopGroupPostsType.Strings.newbie" = "Newbie";
+
+"Pibble.TopGroupPostsType.Strings.funding" = "Funding";
+
+"Pibble.TopGroupPostsType.Strings.promoted" = "Promote";
+
+"Pibble.TopGroupPostsType.Strings.shop" = "Shopping";
+
+"Pibble.TopGroupPostsType.Strings.hot" = "Top";
+
+"Pibble.UpvotedUsers.Strings.followAction" = "Follow";
+
+"Pibble.UpvotedUsers.Strings.unfollowAction" = "Following";
+
+"Pibble.GoodsAvailabilityStatus.Strings.soldOut" = "Sold Out";
+
+"Pibble.GoodsAvailabilityStatus.Strings.booked" = "Booked";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.startDate" = "Started %";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.finished" = "Ended";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.finishesInDays" = "End Date (d-%)";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.charity" = "% donator";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.crowdfunding" = "% contributor";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.crowdfundingWithReward" = "% backer";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.charity" = "% donators";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.crowdfunding" = "% contributors";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.crowdfundingWithReward" = "% backers";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.regular" = "Regular Price";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.earlyBird" = "Super Early Bird";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.discount" = "Early Bird";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Active.unlimited" = "Unlimited (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Active.limited" = "Limited % (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Passed.unlimited" = "Unlimited (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Passed.limited" = "Limited % (Sold out)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Upcoming.unlimited" = "Unlimited";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Upcoming.limited" = "Limited %";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.charity" = "% Donated";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.crowdfunding" = "% Contributed";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.crowdfundingWithReward" = "% Pladged";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountLeftTitle.left" = "% left";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.goal" = "Initial fundraising goal: %";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.raised" = "Funds raised: % %";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.endDate" = "Ended: %";
+
+"Pibble.FundingPostDetail.Strings.CampaignFinishMessage.failed" = "Sorry! \nThis funding campaign failed because the campaign did not reach 30% of the funding goal. All funds raised will be returned to the participants.";
+
+"Pibble.FundingPostDetail.Strings.FundingActions.donate" = "Funding this campaign";
+
+"Pibble.FundingPostDetail.Strings.FundingActions.closeCampaign" = "Close Campaign";
+
+"Pibble.FundingPostDetail.Strings.CampaignFinishMessage.reachedGoal" = "Congratulations! \nYour campaign has already reached the goal, so you can close your campaign now. Or continue funding until the remaining date.";
+
+"Pibble.GiftsFeed.Strings.NavigationBarTitles.giftHome" = "Gift";
+
+"Pibble.GiftsFeed.Strings.NavigationBarTitles.search" = "Search";
+
+"Pibble.GiftsFeed.Strings.Alerts.exitMessage" = "Do you want to exit \"Pibble's Gift\" ?";
+
+"Pibble.GiftsFeed.Strings.Alerts.okAction" = "Ok";
+
+"Pibble.GiftsFeed.Strings.Alerts.cancelAction" = "Cancel";
+
+"Pibble.PlayRoom.Strings.NavigationBarTitles.playroom" = "Playroom";
+
+"Pibble.PlayRoom.Strings.NavigationBarTitles.playroomFor" = "%\'s Playroom";
+
+"Pibble.PlayRoom.Strings.Alerts.exitMessage" = "Do you want to exit Playroom?";
+
+"Pibble.PlayRoom.Strings.Alerts.okAction" = "Ok";
+
+"Pibble.PlayRoom.Strings.Alerts.cancelAction" = "Cancel";
+
+"Pibble.CreatePostHelp.Strings.HelpTypes.translateToEnglish" = "Translate into English";
+
+"Pibble.CreatePostHelp.Strings.HelpTypes.translateToKorean" = "Translate into Korean";
+
+"Pibble.CreatePostHelp.Strings.RewardTitles.set" = "Set";
+
+"Pibble.PostHelpAnswers.Strings.deleteCommentMessage" = "Delete Answer?";
+
+"Pibble.PostHelpAnswers.Strings.deleteCommentAction" = "Delete";
+
+"Pibble.PostHelpAnswers.Strings.cancelDeleteComment" = "Cancel";
+
+"Pibble.PostHelpAnswers.Strings.brushed" = "Brushed";
+
+"Pibble.PostHelpAnswers.Strings.pickAnswerAction" = "Pick";
+
+"Pibble.PostHelpRewardPick.Strings.limits" = "Min.% ~ Max.%";
+
+"Pibble.PostHelpRewardPick.Strings.balance" = "Your % balance: %";
+
+"Pibble.TopBannerInfo.Strings.navBarTitle" = "Top";
+
+//MARK:- Errors
+
+"Pibble.ErrorStrings.PibbleError.methodNotImplemented" = "Method not implemented";
+
+"Pibble.ErrorStrings.PibbleError.parsingError" = "Unexpected server response format";
+
+"Pibble.ErrorStrings.PibbleError.objectDeallocated" = "Object deallocated";
+
+"Pibble.ErrorStrings.PibbleError.notAllowedError" = "Not Allowed Error";
+
+"Pibble.ErrorStrings.PibbleError.wrondVericationCode" = "Wrond verication code";
+
+"Pibble.ErrorStrings.PibbleError.resendCodeTimeInterval" = "Time interval has not passed";
+
+"Pibble.ErrorStrings.PibbleError.mapKitSearchError" = "Could not find location: %";
+
+"Pibble.ErrorStrings.PibbleError.googlePlaceSearchError" = "Could not find location for: %";
+
+"Pibble.ErrorStrings.PibbleError.notAuthorizedError" = "Not Authorized Error";
+
+"Pibble.ErrorStrings.PibbleError.internalServerError" = "Internal Server Error";
+
+"Pibble.ErrorStrings.PibbleError.missingAttribute" = "Missing attribute: '%'";
+
+"Pibble.ErrorStrings.PibbleError.socketEventParsingError" = "Unexpected socket message format: %";
+
+"Pibble.ErrorStrings.PibbleError.chatRoomsGroupForPostNotFound" = "Chat rooms group not found";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.operationInputNotFound" = "Operation input not found";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.mediaLibraryExportError" = "Media library export error: %";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoExportError" = "Image export error: %";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoResizeError" = "Image resize error";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.videoExportSessionError" = "Video export session error";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.assetTypeError" = "Wrong asset type";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.noAssetResourceError" = "No asset resource found";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.unSupportedAssetTypeError" = "Asset type is not supported";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.videoResizeError" = "Video resize error";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.couldNotObtainMediaToken" = "Could not obtain uuid";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoSaveError" = "Could not save image";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.accessDenied" = "Please, give the app access to your Camera and Microphone in your Settings";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionAlreadyRunning" = "Capture session already running";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionIsMissing" = "Capture session is missing";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.inputsAreInvalid" = "Inputs are invalid";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.invalidOperation" = "Invalid operation";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.noCamerasAvailable" = "No cameras available";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.unknown" = "CameraCaptureService unknown error";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionIsNotRunning" = "Capture session is not running";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureServiceIsAlreadyPreparing" = "Capture service is already preparing";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoRecordingItemsManagerIsMissing" = "Video recording items manager is missing";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoRecordingItemCreationFailure" = "Video recording item creation failure";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoIsTooShort" = "Video is too short";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoNotRecorded" = "Video is not recorded";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoLengthLimitationReached" = "Video length limitation reached";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.mergingVideoFailed" = "Merging video failed with =  %";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.exportVideoSessionFailed" = "Export video session failed";
+
+"Pibble.ErrorStrings.CommerceProcessingError.notOriginalContentError" = "Original content verification failure";
+
+"Pibble.ErrorStrings.CommerceProcessingError.bitDNAServiceError" = "Original content verification service failure";
+
+"Pibble.ErrorStrings.CommerceProcessingError.bitDNAServiceAddHashError" = "Original content verification add hash failure";
+
+"Pibble.ErrorStrings.CommerceProcessingError.notEnoughBalanceError" = "Not enough balance to complete content verification";
+
+"Pibble.ErrorStrings.CommerceProcessingError.paymentProcessError" = "Payment error during content verification";
+
+"Pibble.ErrorStrings.CommerceProcessingError.unknownError" = "Unknown error during commerce post processing";
+
+"Pibble.ErrorStrings.errorAlertTitle" = "Oh Snap!";
+
+"Pibble.GiftsInvite.Strings.navBarTitle" = "Gift";
+
+//Storyboards Strings
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.navBarTitle" = "Message Rooms";
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.Buttons.goods" = "Goods Room";
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.Buttons.personal" = "Personal Message";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.price" = "Price:";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.reward" = "Reward:";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.resolution" = "Resolution";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.dpi" = "DPI";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.filesFormat" = "Files format";
+
+"Pibble.Chat.Strings.Storyboards.messagePlaceholder" = "Message";
+
+"Pibble.ChatRooms.Strings.Storyboards.navBarTitle" = "Message Rooms";
+
+"Pibble.SearchResultTagDetailContent.Strings.Storyboards.relatedTags" = "Related:";
+
+"Pibble.SearchResultTagDetailContent.Strings.Storyboards.posts" = "posts";
+
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.search" = "Search";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.top" = "TOP";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.people" = "PEOPLE";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.tags" = "TAGS";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.place" = "PLACE";
+
+"Pibble.ReportPost.Strings.Storyboards.navBarTitle" = "Report";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.downloadable" = "Downloadable";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.photoLicensing" = "Photo Licensing";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.commercial" = "Commercial";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.editorial" = "Editorial Use";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.royalty" = "Royalty-Free";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.exclusive" = "Exclusive";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.eula" = "End-User License Agreement (EULA)";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.chat" = "CHAT WITH SELLER";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.buy" = "BUY ITEM";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.buyInfo" = "You can download Instance after checkout. You can not refund after checkout.";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.price" = "Price:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.reward" = "Reward:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.resolution" = "Resolution:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.dpi" = "DPI:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.fileFormat" = "Files format:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.size" = "Size:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.price" = "Price:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.isNewCondition" = "New";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.description" = "Description";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.escrowInfo" = "The seller will receive the value after the buyer has received the goods and confirmed it.";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.escrowInfoTitle" = "Escrow Service";
+
+"Pibble.Comments.Strings.Storyboards.navBarTitle" = "Comments";
+
+"Pibble.Comments.Strings.Storyboards.commentPlaceholder" = "Add a comment";
+
+"Pibble.Comments.Strings.Storyboards.replyButton" = "Reply";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarTitle.edit" = "Edit Caption";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarButtons.cancel" = "Cancel";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarButtons.done" = "Done";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.viewAllComments" = "View All";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.raised" = "Raised";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.goal" = "Goal";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.contribute" = "Contribute";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.team" = "Team:";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.members" = "Members:";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.joinTeam" = "JOIN";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.commentPlaceholder" = "Add a comment";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Edit.editCaption" = "Write a caption...";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.DigitalGood.reward" = "PIB Reward";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.viewEngagementButton" = "View engage";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.promoteButton" = "Promote";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Good.isNew" = "New";
+
+"Pibble.PostsFeed.Strings.Storyboards.Placeholder.createButton" = "Create";
+
+"Pibble.PostsFeed.Strings.Storyboards.TopGroupHeader.leaderBoardButton" = "Leaderboard";
+
+"Pibble.Donate.Strings.Storyboards.donateButton" = "Donate";
+
+"Pibble.Donate.Strings.Storyboards.cancelButton" = "Cancel";
+
+"Pibble.Donate.Strings.Storyboards.donateTitle" = "I love it! I will Donate for your campaign.";
+
+"Pibble.Donate.Strings.Storyboards.minButton" = "MIN";
+
+"Pibble.Donate.Strings.Storyboards.maxButton" = "MAX";
+
+"Pibble.Upvote.Strings.Storyboards.upvoteButton" = "Upvote";
+
+"Pibble.Upvote.Strings.Storyboards.cancelButton" = "Cancel";
+
+"Pibble.Upvote.Strings.Storyboards.upvoteTitle" = "I love it! I will Upvote for your posting.";
+
+"Pibble.Upvote.Strings.Storyboards.minButton" = "MIN";
+
+"Pibble.Upvote.Strings.Storyboards.maxButton" = "MAX";
+
+"Pibble.Upvote.Strings.Storyboards.brush" = "BRUSH";
+
+"Pibble.TagsListing.Strings.Storyboards.navBarTitle" = "Hashtags";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.navBarTitle" = "About";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.firstName" = "First Name";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.lastName" = "Last Name";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.website" = "Web site";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Description.aboutMeTitle" = "About me";
+
+"Pibble.UserProfileContent.Strings.Storyboards.RequestsButtons.deny" = "Deny";
+
+"Pibble.UserProfileContent.Strings.Storyboards.RequestsButtons.accepted" = "Accepted";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.rewardsTitle" = "Brush Rewards";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.pgb" = "PGB";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.prb" = "PRB";
+
+"Pibble.CampaignPick.Strings.Storyboards.navBarTitle" = "Join Campaign";
+
+"Pibble.CampaignPick.Strings.Storyboards.navBarTitle.done" = "Post";
+
+"Pibble.CampaignEdit.Strings.Storyboards.navBarTitle.done" = "Next";
+
+"Pibble.CampaignEdit.Strings.Storyboards.goalInput" = "Enter your raising goal here";
+
+"Pibble.CampaignEdit.Strings.Storyboards.currency" = "PIB";
+
+"Pibble.CampaignEdit.Strings.Storyboards.goalInfo" = "You can always change your goal amount later. If you're not sure where to start, most campaigns have a goal of 30,000 PIB";
+
+"Pibble.CampaignEdit.Strings.Storyboards.campaignTitlePlaceholder" = "Add Campaign title";
+
+"Pibble.CampaignEdit.Strings.Storyboards.fundraiseAs" = "Fundraise as:";
+
+"Pibble.CampaignEdit.Strings.Storyboards.addTeamNameTitle" = "Team name:";
+
+"Pibble.CampaignEdit.Strings.Storyboards.addTeamLogoTitle" = "Team logo:";
+
+"Pibble.PromotionPick.Strings.Storyboards.navBarTitle" = "Set Promotion";
+
+"Pibble.PromotionPick.Strings.Storyboards.budgetTitle" = "How much budget do you set for the promotion?";
+
+"Pibble.PromotionPick.Strings.Storyboards.increaseBalanceInfo" = "You can increase your balance at Wallet";
+
+"Pibble.PromotionPick.Strings.Storyboards.activityInfo" = "Select user's activity to be red-brush rewarded.";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.upvote" = "Upvote";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.share" = "Share";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.collect" = "Collect";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.tag" = "Tag";
+
+"Pibble.DescriptionPick.Strings.Storyboards.navBarTitle" = "Description";
+
+"Pibble.LocationPick.Strings.Storyboards.navBarTitle" = "Location";
+
+"Pibble.LocationPick.Strings.Storyboards.searchPlaceholder" = "Search for a location";
+
+"Pibble.TagPick.Strings.Storyboards.navBarTitle" = "Set Tag";
+
+"Pibble.MediaPosting.Strings.Storyboards.navBarTitle" = "Post Media";
+
+"Pibble.MediaPosting.Strings.Storyboards.navBarPostButton" = "Post";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.description" = "Description";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.location" = "Location";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.tag" = "Tag";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.promotion" = "Promote";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.promotionBudget" = "Promote";
+
+"Pibble.MediaPosting.Strings.Storyboards.Sections.fundingCampaign" = "Select your project type";
+
+"Pibble.MediaPosting.Strings.Storyboards.Sections.commerce" = "POST AS COMMERCE";
+
+"Pibble.MediaPosting.Strings.Storyboards.Funding.findButton" = "Find";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.digitalGoodToggle" = "Digital Goods";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.downloadableToggle" = "Downloadable";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.licensingTitle" = "Photo Licensing";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.commercial" = "Commercial";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.royalty" = "Royalty-Free";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.editorial" = "Editorial Use";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.exclusive" = "Exclusive";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.terms" = "I understand and agree that I am solely responsible for my own Content and the consequences of posting or publishing it.";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.titlePlaceholder" = "Title";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.pricePlaceholder" = "Price";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.priceCurrency" = "PIB";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.rewardRateTitle" = "Reward Rate";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.Escrow.title" = "Escrow Service";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.Escrow.terms" = "I understand and agree with safe and secure Pibble Escrow Service for buying and selling online.";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.GoodUsage.isNew" = "New";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.GoodUsage.isUsed" = "Used";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.urlPlaceholder" = "Goods web site";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.library" = "Library";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.photo" = "Photo";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.video" = "Video";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarBackButton" = "Back";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarNextButton" = "Next";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarTitleQRScanner" = "QR Scanner";
+
+"Pibble.MediaPick.Strings.Storyboards.navBarNextButton" = "Next";
+
+"Pibble.MediaPick.Strings.Storyboards.navBarCancelButton" = "Cancel";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.welcomeTitle" = "Welcome Back";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.welcomeSubtitle" = "We've got content for you";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.continueButton" = "Continue";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.switchAccountButton" = "Switch account";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetTitle" = "Password reset";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetSubtitle" = "Successful";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetInfo" = "You have successfully reset your password. Please use your new password when logging in.";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.loginButton" = "Log In";
+
+"Pibble.ResetPassword.Strings.Storyboards.navBarTitle" = "Password Reset";
+
+"Pibble.ResetPassword.Strings.Storyboards.title" = "Enter your new password";
+
+"Pibble.ResetPassword.Strings.Storyboards.Placeholders.password" = "Password";
+
+"Pibble.ResetPassword.Strings.Storyboards.Placeholders.confirmPassword" = "Confirm Password";
+
+"Pibble.ResetPassword.Strings.Storyboards.resetPasswordButton" = "Reset Password";
+
+
+"Pibble.ResetPasswordVerifyCode.Strings.Storyboards.navBarTitle" = "Forgot Password";
+
+"Pibble.ResetPasswordVerifyCode.Strings.Storyboards.resetInfo" = "We've just sent a recovery code to";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.navBarTitle" = "Forgot Password";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.phoneNumber" = "Phone Number";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.codeButton" = "Code";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.nextButton" = "Next";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.title" = "We've just sent an email to";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.subtitle" = "Use the recovery code we've sent you to reset your password.";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.nextButton" = "Next";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.navBarTitle" = "Forgot Password";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.infoTitle" = "Enter your email address below and we'll send you a verification code to reset your password";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.emailPlaceholder" = "Email";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.resetPasswordButton" = "Reset Password";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards..navBarTitle" = "Forgot Password";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards..infoTitle" = "Select the contact details we should use to reset your password.";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards.smsButton" = "Via SMS";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards.emailButton" = "Via Email";
+
+"Pibble.SignIn.Strings.Storyboards.navBarTitle" = "Sign In";
+
+"Pibble.SignIn.Strings.Storyboards.Placeholders.email" = "Email";
+
+"Pibble.SignIn.Strings.Storyboards.Placeholders.password" = "Password";
+
+"Pibble.SignIn.Strings.Storyboards.forgotPasswordButton" = "Forgot Password?";
+
+"Pibble.SignIn.Strings.Storyboards.signInButton" = "Sign In";
+
+"Pibble.SignIn.Strings.Storyboards.signUpTitle" = "Don't have an account?";
+
+"Pibble.SignIn.Strings.Storyboards.signUpButton" = "Sign Up";
+
+"Pibble.VerifyCode.Strings.Storyboards.navBarTitle" = "Verify Code";
+
+"Pibble.VerifyCode.Strings.Storyboards.infoTitle" = "Please check your SMS. We've just sent a verify code to your phone:";
+
+"Pibble.Registration.Strings.Storyboards.navBarTitle" = "Sign Up";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.username" = "Your nickname";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.email" = "Email";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.password" = "Password";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.special" = "One special character";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.uppercase" = "One uppercase character";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.number" = "One number";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.length" = "8 characters minimum";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.username.chars" = "Letters (a-z, A-z) or Numbers";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.username.length" = "6 characters minimum";
+
+"Pibble.Registration.Strings.Storyboards.signUpButton" = "Sign Up";
+
+"Pibble.Registration.Strings.Storyboards.termsTitle" = "By signing up you agree to our";
+
+"Pibble.Registration.Strings.Storyboards.termsSubtitle" = "Terms & Privacy Policy";
+
+"Pibble.Registration.Strings.Storyboards.signInTitle" = "Already have an account?";
+
+"Pibble.Registration.Strings.Storyboards.signInButton" = "Sign In";
+
+"Pibble.PhonePick.Strings.Storyboards.navBarTitle" = "Forgot Password";
+
+"Pibble.PhonePick.Strings.Storyboards.phoneNumber" = "Phone Number";
+
+"Pibble.PhonePick.Strings.Storyboards.codeButton" = "Code";
+
+"Pibble.PhonePick.Strings.Storyboards.nextButton" = "Next";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.sendButton" = "Send";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.navBarTitle" = "PIB Request";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.requestTitle" = "Request Amount";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.noteTitle" = "Note";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.Segments.friends" = "Friends";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.Segments.recent" = "Recent";
+
+"Pibble.WalletTransactionAmountPick.Strings.Storyboards.navBarTitle" = "PIB Request";
+
+"Pibble.WalletPinCode.Strings.Storyboards.title" = "PIB WALLET";
+
+"Pibble.WalletPinCode.Strings.Storyboards.subtitle" = "Register PIN to access wallet";
+
+"Pibble.WalletPinCode.Strings.Storyboards.forgotPinCodeButton" = "Forgot your PIN?";
+
+"Pibble.WalletHome.Strings.Storyboards.navBarTitle" = "Wallet";
+
+"Pibble.WalletHome.Strings.Storyboards.Dashboard.availableBalance" = "Available Balance";
+
+"Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel" = "Cancel";
+
+"Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm" = "Confirm";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.title" = "Request Amount";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.nextButton" = "Next";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.availableTitle" = "Available:";
+
+"Pibble.Wallet.Strings.Storyboards.WalletInvoiceNoteInputView.title" = "Request Amount";
+
+"Pibble.WalletActivity.Strings.Storyboards.navBarTitle" = "Activity";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.brush" = "BRUSH";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.pib" = "PIB";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.eth" = "ETH";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.btc" = "BTC";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.ExternalTransaction.txId" = "TxID";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.ExternalTransaction.copied" = "Copied";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.NavBar.fundingDonations" = "Contributors";
+
+"Pibble.WalletPayBill.Strings.Storyboards.navBarTitle" = "Pay Bill";
+
+"Pibble.WalletPayBill.Strings.Storyboards.emptyTitle" = "No Purchases!";
+
+"Pibble.WalletPayBill.Strings.Storyboards.emptySubtitle" = "You have no payment requests";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.title" = "Payment request has arrived.";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel" = "Cancel";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm" = "Confirm";
+
+"Pibble.WalletPreview.Strings.Storyboards.walletButton" = "Wallet";
+
+"Pibble.WalletReceive.Strings.Storyboards.navBarTitle" = "PIB Request";
+
+"Pibble.WalletReceive.Strings.Storyboards.copyAddressButton" = "Copy address";
+
+"Pibble.WalletReceive.Strings.Storyboards.shareButton" = "Share";
+
+"Pibble.WalletReceive.Strings.Storyboards.requestFromFriends" = "Request from friends";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.navBarTitle" = "Send to";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.navBarSendButton" = "Send";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.sendTitle" = "Send Amount";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.sendToTitle" = "Send to";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.friends" = "Friends";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.address" = "Wallet Address";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.scan" = "QR Code";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.addressPlaceholder" = "Enter Transfer Wallet Address";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.UserSegments.friends" = "Friends";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.UserSegments.recent" = "Recent";
+
+
+"Pibble.SettingsHome.Strings.Storyboards.navBarTitle" = "Settings";
+
+"Pibble.ReferUser.Strings.Storyboards.navBarTitle" = "Invite Friends";
+
+"Pibble.ReferUser.Strings.Storyboards.Header.timeTitle" = "FOR A LIMITED TIME";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.title" = "Your Invite Code";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.ActionButtons.copy" = "Copy";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.ActionButtons.invite" = "Invite";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisteredUsers.title" = "Your Invite Bonus";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.title" = "Register Friend's Invite ID";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.registerButton" = "Register";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.registeredUserPlaceholder" = "Register ID whom invites you";
+
+"Pibble.CommerceTypePick.Strings.Storyboards.navBarTitle" = "Commerce";
+
+"Pibble.AccountSettings.Strings.Storyboards.navBarTitle" = "Account";
+
+"Pibble.WalletSettings.Strings.Storyboards.navBarTitle" = "Wallet";
+
+"Pibble.AccountCurrencyPicker.Strings.Storyboards.navBarTitle" = "Currencies";
+
+"Pibble.About.Strings.Storyboards.navBarTitle" = "About";
+
+"Pibble.LanguagePicker.Strings.Storyboards.navBarTitle" = "Language";
+
+"Pibble.UsernamePicker.Strings.Storyboards.navBarTitle" = "Username";
+
+"Pibble.UsernamePicker.Strings.Storyboards.input" = "Username";
+
+"Pibble.UsernamePicker.Strings.Storyboards.navBarDoneButton" = "Done";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.nextButton" = "Next";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.cancelButton" = "Cancel";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.title" = "Destination";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.headerTitle" = "Where do you want people to go?";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.headerTitle" = "Where do you want people to go?";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.Destinations.userProfile" = "Your Profile";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.Destinations.url" = "Your Website";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.navBar.title" = "Set Website";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.navBar.done" = "Done";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.headerTitle" = "Add URL & Action Button";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.urlInputTitle" = "Your Website URL";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.urlInputPlaceholder" = "Enter your website URL";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.actionSelectTitle" = "Set Action Button Label";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.navBar.title" = "Budget & Duration";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.navBar.nextButton" = "Next";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.header.budgetTitle" = "Your budget";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.header.reachTitle" = "Est. Reach";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.budgetTitle" = "Budget";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.durationTitle" = "Duration";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.daysTitle" = "Days";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.navBar.title" = "Review";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.destination" = "Destination";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.action" = "Action Button";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.budget" = "Budget & Duration";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionPreviewButton" = "Preview Promotion";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.header.title" = "You Are Ready";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.createButton" = "Create Promotion";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.termsTitle" = "By creating a promotion you agree to Pibble's";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.termsButton" = "Terms";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.guidlinesButton" = "Advertising Guidelines";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.conjunctionTitle" = "and";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.NavBar.title" = "Promotions";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.active" = "Active";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.paused" = "Paused";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.closed" = "Closed";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.closed" = "Closed";
+
+"Pibble.PromotionInsights.Strings.Storyboards.NavBar.title" = "Insights";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.title" = "Budget";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.total" = "Total";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.used" = "Used";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.left" = "Left";
+
+"Pibble.PostStatistics.Strings.Storyboards.impression" = "Impression";
+
+"Pibble.PostStatistics.Strings.Storyboards.profile" = "Profile";
+
+"Pibble.NotificationsFeed.Strings.Storyboards.NavBar.title" = "My Feeds";
+
+"Pibble.Onboarding.Strings.Storyboards.startButton" = "Get started";
+
+"Pibble.TransactionCurrencyPick.Strings.Storyboards.navBarTitle" = "Send to";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.navBarTitle" = "Daily Million Leaderboard";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.navBar.helpButton" = "Help";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.day" = "Previous";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.week" = "Last 7 Days";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.all" = "All";
+
+"Pibble.UpvotedUsers.Strings.Storyboards.navBar.title" = "Upvote";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.raised" = "Raised";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.goal" = "Goal";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.started" = "Started";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.about" = "About funding";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.team" = "Team:";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.members" = "Members:";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.joinTeam" = "Post for this team";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price" = "Price";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.NavBar.title" = "Funding";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.active" = "Active";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.ended" = "Ended";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.backer" = "Backer";
+
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.needHelp" = "Need Help?";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.helpPick" = "What kind of help do you need?";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.rewardPick" = "Reward for help";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Descriptions.help" = "Ask for help from Pibble friends who will be happy to help you";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Descriptions.reward" = "The above rewards will be forwarded to the friend of your choice.";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Inputs.helpTextPlaceholder" = "Write your help what you need...";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Inputs.rewardPick" = "Set";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Buttons.createHelp" = "Ask Help";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.navBarTitle" = "Asking Help";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.answerPlaceholder" = "Please enter your help";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.replyButton" = "Reply";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.inputTitle" = "Your Help";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.inputMinLimitation" = "Please write at least 20 characters";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.minButton" = "MIN";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.maxButton" = "MAX";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.rewardTitle" = "Set Reward";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.okButton" = "Confirm";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.cancelButton" = "Cancel";
+

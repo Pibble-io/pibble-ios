@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Detail View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="MediaDetailViewController" automaticallyAdjustsScrollViewInsets="NO" id="xqD-av-Raz" customClass="MediaDetailViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-S8-1Vr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM8-Sj-otq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKe-e4-90Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="HTQ-1v-HJO"/>
+                                            <constraint firstAttribute="height" constant="667" id="geQ-fu-L1z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YM8-Sj-otq" firstAttribute="top" secondItem="p4c-S8-1Vr" secondAttribute="top" id="Elp-QO-5DI"/>
+                                    <constraint firstAttribute="bottom" secondItem="YM8-Sj-otq" secondAttribute="bottom" id="OQv-yZ-9Gw"/>
+                                    <constraint firstItem="YM8-Sj-otq" firstAttribute="leading" secondItem="p4c-S8-1Vr" secondAttribute="leading" id="Or6-2x-Zb9"/>
+                                    <constraint firstAttribute="trailing" secondItem="YM8-Sj-otq" secondAttribute="trailing" id="qM3-XF-7Hd"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-nv-zye">
+                                <rect key="frame" x="321" y="30" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DWZ-9c-5Hm"/>
+                                    <constraint firstAttribute="width" constant="44" id="SRT-7Z-fMv"/>
+                                </constraints>
+                                <state key="normal" image="MediaDetail-CloseButton"/>
+                                <connections>
+                                    <action selector="hideAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="G9d-FQ-S0q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="p4c-S8-1Vr" secondAttribute="trailing" id="0PV-eW-EdG"/>
+                            <constraint firstItem="fPc-nv-zye" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" constant="10" id="GJg-xW-GDA"/>
+                            <constraint firstItem="p4c-S8-1Vr" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="H5C-fg-BTr"/>
+                            <constraint firstAttribute="trailing" secondItem="fPc-nv-zye" secondAttribute="trailing" constant="10" id="RaI-Df-oOl"/>
+                            <constraint firstAttribute="bottom" secondItem="p4c-S8-1Vr" secondAttribute="bottom" id="a0N-Af-0KF"/>
+                            <constraint firstItem="p4c-S8-1Vr" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" id="b57-3g-Z80"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="hideButton" destination="fPc-nv-zye" id="6AK-NH-7Wz"/>
+                        <outlet property="imageContainerBottomConstraint" destination="OQv-yZ-9Gw" id="qgm-Bh-OK5"/>
+                        <outlet property="imageContainerHeightConstraint" destination="geQ-fu-L1z" id="0A9-Xv-xcl"/>
+                        <outlet property="imageContainerLeftConstraint" destination="Or6-2x-Zb9" id="9GT-Cf-dvQ"/>
+                        <outlet property="imageContainerRightConstraint" destination="qM3-XF-7Hd" id="b58-Lh-91I"/>
+                        <outlet property="imageContainerTopConstraint" destination="Elp-QO-5DI" id="S8Z-EL-dWT"/>
+                        <outlet property="imageContainerView" destination="YM8-Sj-otq" id="zab-CF-HVC"/>
+                        <outlet property="imageContainerWidthConstraint" destination="HTQ-1v-HJO" id="U4M-kk-scz"/>
+                        <outlet property="imageView" destination="rKe-e4-90Z" id="maQ-us-KYB"/>
+                        <outlet property="scrollView" destination="p4c-S8-1Vr" id="aLY-qU-FaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MediaDetail-CloseButton" width="29.5" height="29.5"/>
+    </resources>
+</document>

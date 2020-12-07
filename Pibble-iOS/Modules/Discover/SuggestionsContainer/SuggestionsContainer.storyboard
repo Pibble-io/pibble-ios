@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Suggestions Container View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="SuggestionsContainerViewController" id="xqD-av-Raz" customClass=" SuggestionsContainerViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSX-eY-Y2f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="psy-vY-8i1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsu-2q-XJu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuU-0F-g6B">
+                                                <rect key="frame" x="0.0" y="150" width="375" height="150"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UE7-Sn-WbN">
+                                                <rect key="frame" x="0.0" y="300" width="375" height="150"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ff-bL-0rb">
+                                                <rect key="frame" x="0.0" y="450" width="375" height="150"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="2w8-v8-Vsb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="psy-vY-8i1" firstAttribute="top" secondItem="iSX-eY-Y2f" secondAttribute="top" id="Dwa-RQ-RAe"/>
+                                    <constraint firstAttribute="bottom" secondItem="psy-vY-8i1" secondAttribute="bottom" id="SpF-Sq-U5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="psy-vY-8i1" secondAttribute="trailing" id="Wr6-81-Qmu"/>
+                                    <constraint firstItem="psy-vY-8i1" firstAttribute="leading" secondItem="iSX-eY-Y2f" secondAttribute="leading" id="a2N-G1-LIW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="psy-vY-8i1" firstAttribute="width" secondItem="kgt-o0-aP8" secondAttribute="width" id="1Zt-do-hFH"/>
+                            <constraint firstAttribute="trailing" secondItem="iSX-eY-Y2f" secondAttribute="trailing" id="I8i-oF-65A"/>
+                            <constraint firstItem="iSX-eY-Y2f" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" id="MDl-yL-Vz0"/>
+                            <constraint firstItem="iSX-eY-Y2f" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="jCU-Ik-LoD"/>
+                            <constraint firstAttribute="bottom" secondItem="iSX-eY-Y2f" secondAttribute="bottom" id="zhl-DH-0QR"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <connections>
+                        <outletCollection property="suggestionSections" destination="Vsu-2q-XJu" collectionClass="NSMutableArray" id="XPQ-o9-4Tr"/>
+                        <outletCollection property="suggestionSections" destination="HuU-0F-g6B" collectionClass="NSMutableArray" id="or3-be-uKL"/>
+                        <outletCollection property="suggestionSections" destination="UE7-Sn-WbN" collectionClass="NSMutableArray" id="qmH-Xw-cVm"/>
+                        <outletCollection property="suggestionSections" destination="9Ff-bL-0rb" collectionClass="NSMutableArray" id="jFT-Bn-yRD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+</document>

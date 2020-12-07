@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Settings View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="WalletSettingsViewController" id="xqD-av-Raz" customClass="WalletSettingsViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWQ-5H-brD">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyE-5E-XDl">
+                                        <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="9Si-2U-M6x"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commerce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-BP-Sgz">
+                                        <rect key="frame" x="254.5" y="9.5" width="91.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletSettings.Strings.Storyboards.navBarTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGc-cQ-qY1">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="2WB-7Z-Du8"/>
+                                            <constraint firstAttribute="height" constant="44" id="th8-oI-4uK"/>
+                                        </constraints>
+                                        <state key="normal" image="BackButton-grey">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="K9R-lo-iOL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4fi-NN-YU8"/>
+                                    <constraint firstAttribute="bottom" secondItem="lyE-5E-XDl" secondAttribute="bottom" id="55F-Wz-1qP"/>
+                                    <constraint firstItem="zk6-BP-Sgz" firstAttribute="centerY" secondItem="DWQ-5H-brD" secondAttribute="centerY" id="9hM-Ot-Fdo"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyE-5E-XDl" secondAttribute="trailing" id="ZUb-W7-eX3"/>
+                                    <constraint firstItem="zk6-BP-Sgz" firstAttribute="centerX" secondItem="DWQ-5H-brD" secondAttribute="centerX" id="cCT-gF-aKb"/>
+                                    <constraint firstItem="HGc-cQ-qY1" firstAttribute="centerY" secondItem="DWQ-5H-brD" secondAttribute="centerY" id="iIq-cA-Agu"/>
+                                    <constraint firstItem="lyE-5E-XDl" firstAttribute="leading" secondItem="DWQ-5H-brD" secondAttribute="leading" id="mfY-FY-VOf"/>
+                                    <constraint firstItem="HGc-cQ-qY1" firstAttribute="leading" secondItem="DWQ-5H-brD" secondAttribute="leading" id="qWq-zs-eGK"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-oW-Q6S">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ybm-oW-Q6S" secondAttribute="bottom" id="F6o-YY-1LO"/>
+                            <constraint firstItem="ybm-oW-Q6S" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="I9i-V7-Al0"/>
+                            <constraint firstItem="DWQ-5H-brD" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="aKO-bU-Kcl"/>
+                            <constraint firstAttribute="trailing" secondItem="DWQ-5H-brD" secondAttribute="trailing" id="d2T-At-ZlX"/>
+                            <constraint firstAttribute="trailing" secondItem="ybm-oW-Q6S" secondAttribute="trailing" id="e3v-1v-W4p"/>
+                            <constraint firstItem="DWQ-5H-brD" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="qCG-ve-wtb"/>
+                            <constraint firstItem="ybm-oW-Q6S" firstAttribute="top" secondItem="DWQ-5H-brD" secondAttribute="bottom" id="tPz-P0-Xba"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ybm-oW-Q6S" id="ugh-mK-q1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton-grey" width="10.5" height="19.5"/>
+    </resources>
+</document>

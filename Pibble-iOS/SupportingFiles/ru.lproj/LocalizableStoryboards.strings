@@ -1,0 +1,13 @@
+/* 
+  LocalizableStoryboards.strings
+  Pibble-iOS
+
+  Created by Sergey Kazakov on 04/05/2019.
+  Copyright © 2019 com.kazai. All rights reserved.
+*/
+
+
+//Strings.Storyboards.
+
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.navBarTitle" = "Message Rooms";

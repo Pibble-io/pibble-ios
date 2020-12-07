@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostsFeedDescriptionTableViewCell" rowHeight="147" id="1Ur-cr-HX7" customClass="PostsFeedDescriptionTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Ur-cr-HX7" id="6ot-6w-Dmc">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXy-Ig-dli">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="146.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="qQT-J3-boG">
+                                <rect key="frame" x="10" y="5" width="355" height="131.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Check it out guys! I went to beach this morning for sun rise 
+and I ended getting a really great shot! So happy that I live
+in California! Wooo!</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qQT-J3-boG" secondAttribute="bottom" constant="10" id="4iD-co-vZP"/>
+                            <constraint firstItem="qQT-J3-boG" firstAttribute="top" secondItem="rXy-Ig-dli" secondAttribute="top" constant="5" id="EnI-rX-ls1"/>
+                            <constraint firstAttribute="trailing" secondItem="qQT-J3-boG" secondAttribute="trailing" constant="10" id="Mxo-J4-Cjb"/>
+                            <constraint firstItem="qQT-J3-boG" firstAttribute="leading" secondItem="rXy-Ig-dli" secondAttribute="leading" constant="10" id="f5Q-mG-dsU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rXy-Ig-dli" firstAttribute="leading" secondItem="6ot-6w-Dmc" secondAttribute="leading" id="Uh2-lO-CPK"/>
+                    <constraint firstItem="rXy-Ig-dli" firstAttribute="top" secondItem="6ot-6w-Dmc" secondAttribute="top" id="VZq-uc-2QO"/>
+                    <constraint firstAttribute="trailing" secondItem="rXy-Ig-dli" secondAttribute="trailing" id="fqv-1w-ACQ"/>
+                    <constraint firstAttribute="bottom" secondItem="rXy-Ig-dli" secondAttribute="bottom" id="ngq-Hi-3Xg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="captionLabel" destination="qQT-J3-boG" id="TRQ-b0-mtq"/>
+            </connections>
+            <point key="canvasLocation" x="119.2" y="406.14692653673166"/>
+        </tableViewCell>
+    </objects>
+</document>

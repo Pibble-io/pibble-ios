@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CreatePostHelpRewardCollectionViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWk-hV-PW8">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PostFeed-WinPostIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-0o-hvh">
+                                <rect key="frame" x="6" y="6.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="UH7-RD-dBG"/>
+                                    <constraint firstAttribute="width" constant="15" id="eEV-4M-HCa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-Hb-b1a">
+                                <rect key="frame" x="27" y="0.0" width="166" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="pgW-5L-FkJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q5a-0o-hvh" firstAttribute="leading" secondItem="NWk-hV-PW8" secondAttribute="leading" constant="6" id="06m-Lw-daJ"/>
+                            <constraint firstItem="5ty-Hb-b1a" firstAttribute="leading" secondItem="Q5a-0o-hvh" secondAttribute="trailing" constant="6" id="AUF-TW-rb4"/>
+                            <constraint firstItem="5ty-Hb-b1a" firstAttribute="top" secondItem="NWk-hV-PW8" secondAttribute="top" id="Mih-Qc-K4p"/>
+                            <constraint firstItem="Q5a-0o-hvh" firstAttribute="centerY" secondItem="NWk-hV-PW8" secondAttribute="centerY" id="QwH-ou-1ru"/>
+                            <constraint firstAttribute="trailing" secondItem="5ty-Hb-b1a" secondAttribute="trailing" constant="10" id="Ss4-6W-j0p"/>
+                            <constraint firstAttribute="bottom" secondItem="5ty-Hb-b1a" secondAttribute="bottom" id="V2B-lA-Ou3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NWk-hV-PW8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0ga-h2-r4J"/>
+                <constraint firstItem="NWk-hV-PW8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7nA-4m-x9b"/>
+                <constraint firstAttribute="trailing" secondItem="NWk-hV-PW8" secondAttribute="trailing" id="Br1-OP-lJl"/>
+                <constraint firstAttribute="bottom" secondItem="NWk-hV-PW8" secondAttribute="bottom" id="ZIQ-ot-hPt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="203" height="28"/>
+            <connections>
+                <outlet property="amountLabel" destination="5ty-Hb-b1a" id="iPM-aF-HMz"/>
+                <outlet property="containerView" destination="NWk-hV-PW8" id="wJv-CL-QNE"/>
+            </connections>
+            <point key="canvasLocation" x="248.55072463768118" y="145.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PostFeed-WinPostIcon" width="11.5" height="15.5"/>
+    </resources>
+</document>

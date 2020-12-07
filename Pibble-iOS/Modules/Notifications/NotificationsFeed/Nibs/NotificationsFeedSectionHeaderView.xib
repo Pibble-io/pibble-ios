@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cCy-nk-NfD" customClass="NotificationsFeedSectionHeaderView" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXj-tH-4Di">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-vJ-hkf">
+                            <rect key="frame" x="10" y="0.0" width="355" height="53"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Rhq-vJ-hkf" firstAttribute="leading" secondItem="jUf-fC-FsM" secondAttribute="leading" constant="10" id="D5T-93-Y3m"/>
+                        <constraint firstItem="jUf-fC-FsM" firstAttribute="trailing" secondItem="Rhq-vJ-hkf" secondAttribute="trailing" constant="10" id="bsq-1O-tOr"/>
+                        <constraint firstItem="jUf-fC-FsM" firstAttribute="bottom" secondItem="Rhq-vJ-hkf" secondAttribute="bottom" id="hgI-Jv-cbS"/>
+                        <constraint firstItem="Rhq-vJ-hkf" firstAttribute="top" secondItem="jUf-fC-FsM" secondAttribute="top" id="ywF-5J-nDL"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="jUf-fC-FsM"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DXj-tH-4Di" firstAttribute="leading" secondItem="QLn-1L-wyG" secondAttribute="leading" id="9JP-EW-nhA"/>
+                <constraint firstItem="DXj-tH-4Di" firstAttribute="bottom" secondItem="QLn-1L-wyG" secondAttribute="bottom" id="aL1-pi-0xq"/>
+                <constraint firstItem="DXj-tH-4Di" firstAttribute="trailing" secondItem="QLn-1L-wyG" secondAttribute="trailing" id="div-2B-g10"/>
+                <constraint firstItem="DXj-tH-4Di" firstAttribute="top" secondItem="QLn-1L-wyG" secondAttribute="top" id="pCA-Fy-PMm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QLn-1L-wyG"/>
+            <connections>
+                <outlet property="headerTitleLabel" destination="Rhq-vJ-hkf" id="n2q-6j-qS5"/>
+            </connections>
+            <point key="canvasLocation" x="-135.19999999999999" y="-259.52023988005999"/>
+        </view>
+    </objects>
+</document>

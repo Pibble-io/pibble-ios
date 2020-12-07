@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="337" id="KGk-i7-Jjw" customClass="CommercialPostDetailGoodsDescriptionTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="337"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="336.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-1F-KiH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="336.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-7J-CnO">
+                                <rect key="frame" x="15" y="0.0" width="290" height="59.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.CommercialPostDetail.Strings.Storyboards.description"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nad-mF-zWT">
+                                <rect key="frame" x="15" y="69.5" width="290" height="262"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cM-a2-MjO">
+                                        <rect key="frame" x="10" y="0.0" width="270" height="262"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="262" id="BiE-9P-uVu"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3cM-a2-MjO" firstAttribute="top" secondItem="Nad-mF-zWT" secondAttribute="top" id="5dp-nJ-4LT"/>
+                                    <constraint firstAttribute="bottom" secondItem="3cM-a2-MjO" secondAttribute="bottom" id="HXw-37-0NW"/>
+                                    <constraint firstAttribute="trailing" secondItem="3cM-a2-MjO" secondAttribute="trailing" constant="10" id="Pt5-41-rda"/>
+                                    <constraint firstItem="3cM-a2-MjO" firstAttribute="leading" secondItem="Nad-mF-zWT" secondAttribute="leading" constant="10" id="n8J-6m-15O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nad-mF-zWT" firstAttribute="leading" secondItem="z2g-1F-KiH" secondAttribute="leading" constant="15" id="6Lp-9b-cSK"/>
+                            <constraint firstItem="Nad-mF-zWT" firstAttribute="top" secondItem="tvm-7J-CnO" secondAttribute="bottom" constant="10" id="AI0-EH-yS7"/>
+                            <constraint firstItem="Wfd-RP-zKu" firstAttribute="trailing" secondItem="Nad-mF-zWT" secondAttribute="trailing" constant="15" id="ExB-hX-5F0"/>
+                            <constraint firstAttribute="bottom" secondItem="Nad-mF-zWT" secondAttribute="bottom" constant="5" id="VA0-GC-Gbn"/>
+                            <constraint firstItem="tvm-7J-CnO" firstAttribute="top" secondItem="Wfd-RP-zKu" secondAttribute="top" id="eHa-6y-NGc"/>
+                            <constraint firstItem="tvm-7J-CnO" firstAttribute="leading" secondItem="z2g-1F-KiH" secondAttribute="leading" constant="15" id="fG6-FB-XaC"/>
+                            <constraint firstAttribute="trailing" secondItem="tvm-7J-CnO" secondAttribute="trailing" constant="15" id="p3i-Um-YFp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wfd-RP-zKu"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="z2g-1F-KiH" secondAttribute="trailing" id="2oC-v5-e8X"/>
+                    <constraint firstItem="z2g-1F-KiH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="99j-6G-ja0"/>
+                    <constraint firstItem="z2g-1F-KiH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="V8f-TI-4w5"/>
+                    <constraint firstAttribute="bottom" secondItem="z2g-1F-KiH" secondAttribute="bottom" id="W1w-kv-MpB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textBackgroundView" destination="Nad-mF-zWT" id="mTN-ks-IIK"/>
+                <outlet property="textView" destination="3cM-a2-MjO" id="eIh-ZK-6Ys"/>
+                <outlet property="textViewHeightConstraint" destination="BiE-9P-uVu" id="CMM-oc-tJT"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="208.24587706146929"/>
+        </tableViewCell>
+    </objects>
+</document>

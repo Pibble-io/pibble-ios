@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="CampaignEditTeamItemTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-OY-Lq5">
+                        <rect key="frame" x="10" y="0.0" width="300" height="64.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74j-Pk-Wzb">
+                                <rect key="frame" x="0.0" y="5.5" width="300" height="54"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m0l-BH-Qmx">
+                                        <rect key="frame" x="15" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MFM-hv-T4p"/>
+                                            <constraint firstAttribute="width" constant="40" id="UrW-me-ala"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz2-sY-Hxx">
+                                        <rect key="frame" x="70" y="0.0" width="215" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-By-gyR">
+                                        <rect key="frame" x="70" y="20" width="215" height="18"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                        <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO0-K2-Jw3">
+                                        <rect key="frame" x="70" y="38" width="215" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                        <color key="textColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tUp-By-gyR" firstAttribute="trailing" secondItem="Xz2-sY-Hxx" secondAttribute="trailing" id="1JP-90-9gr"/>
+                                    <constraint firstItem="nO0-K2-Jw3" firstAttribute="trailing" secondItem="Xz2-sY-Hxx" secondAttribute="trailing" id="CYA-vm-icY"/>
+                                    <constraint firstAttribute="bottom" secondItem="nO0-K2-Jw3" secondAttribute="bottom" priority="750" id="FBV-SU-60d"/>
+                                    <constraint firstItem="m0l-BH-Qmx" firstAttribute="leading" secondItem="74j-Pk-Wzb" secondAttribute="leading" constant="15" id="KP3-qM-NHr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xz2-sY-Hxx" secondAttribute="trailing" constant="15" id="OGJ-hE-R1C"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="m0l-BH-Qmx" secondAttribute="bottom" id="Td5-2R-F5d"/>
+                                    <constraint firstItem="Xz2-sY-Hxx" firstAttribute="leading" secondItem="m0l-BH-Qmx" secondAttribute="trailing" constant="15" id="Wei-CY-pDR"/>
+                                    <constraint firstItem="nO0-K2-Jw3" firstAttribute="top" secondItem="tUp-By-gyR" secondAttribute="bottom" id="X3O-1U-kCD"/>
+                                    <constraint firstItem="tUp-By-gyR" firstAttribute="top" secondItem="Xz2-sY-Hxx" secondAttribute="bottom" id="YNp-rD-CYn"/>
+                                    <constraint firstItem="nO0-K2-Jw3" firstAttribute="leading" secondItem="Xz2-sY-Hxx" secondAttribute="leading" id="e4f-tX-7j2"/>
+                                    <constraint firstItem="tUp-By-gyR" firstAttribute="leading" secondItem="Xz2-sY-Hxx" secondAttribute="leading" id="epo-Zp-cWT"/>
+                                    <constraint firstItem="Xz2-sY-Hxx" firstAttribute="top" secondItem="74j-Pk-Wzb" secondAttribute="top" id="lYj-sq-oBh"/>
+                                    <constraint firstItem="m0l-BH-Qmx" firstAttribute="top" secondItem="74j-Pk-Wzb" secondAttribute="top" id="uzX-Ow-frt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="74j-Pk-Wzb" secondAttribute="bottom" constant="5" id="0XX-TK-j3b"/>
+                            <constraint firstItem="74j-Pk-Wzb" firstAttribute="leading" secondItem="aaL-OY-Lq5" secondAttribute="leading" id="Jjg-kF-Lkq"/>
+                            <constraint firstAttribute="trailing" secondItem="74j-Pk-Wzb" secondAttribute="trailing" id="PBK-J1-97k"/>
+                            <constraint firstItem="74j-Pk-Wzb" firstAttribute="top" secondItem="aaL-OY-Lq5" secondAttribute="top" constant="5" id="UKc-EP-l67"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aaL-OY-Lq5" secondAttribute="trailing" constant="10" id="7vo-Ub-rTi"/>
+                    <constraint firstItem="aaL-OY-Lq5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FJE-kA-lwd"/>
+                    <constraint firstAttribute="bottom" secondItem="aaL-OY-Lq5" secondAttribute="bottom" id="RKM-Tb-2Ff"/>
+                    <constraint firstItem="aaL-OY-Lq5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hnX-bT-IGG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="teamAdditionalDescriptionLabel" destination="nO0-K2-Jw3" id="M4d-x5-xKE"/>
+                <outlet property="teamDescriptionLabel" destination="tUp-By-gyR" id="4Sf-5c-FNU"/>
+                <outlet property="teamImageView" destination="m0l-BH-Qmx" id="CMh-J0-Tpt"/>
+                <outlet property="teamTypeLabel" destination="Xz2-sY-Hxx" id="kAD-ak-AFK"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="96.5"/>
+        </tableViewCell>
+    </objects>
+</document>

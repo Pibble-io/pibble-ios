@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="PostsFeedCommerceProcessingErrorTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PostFeed-CommerceErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Wcx-cf-LDY">
+                        <rect key="frame" x="10" y="10" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="fAG-CA-WPj"/>
+                            <constraint firstAttribute="height" constant="22" id="fYO-2f-45P"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-TH-GRT">
+                        <rect key="frame" x="42" y="5" width="268" height="41.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.12941176470588234" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dhH-TH-GRT" firstAttribute="leading" secondItem="Wcx-cf-LDY" secondAttribute="trailing" constant="10" id="5R4-fk-bTP"/>
+                    <constraint firstItem="dhH-TH-GRT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Atv-LA-wSL"/>
+                    <constraint firstItem="Wcx-cf-LDY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hwc-Ld-Qlt"/>
+                    <constraint firstItem="Wcx-cf-LDY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KGu-xb-mBr"/>
+                    <constraint firstAttribute="trailing" secondItem="dhH-TH-GRT" secondAttribute="trailing" constant="10" id="XTE-1N-tdn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wcx-cf-LDY" secondAttribute="bottom" constant="10" id="cm3-yF-c5v"/>
+                    <constraint firstAttribute="bottom" secondItem="dhH-TH-GRT" secondAttribute="bottom" constant="5" id="oZ3-tq-QFS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="errorIcon" destination="Wcx-cf-LDY" id="h95-qj-gP6"/>
+                <outlet property="errorMessageLabel" destination="dhH-TH-GRT" id="upt-pR-a1p"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="135.832083958021"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PostFeed-CommerceErrorIcon" width="22" height="22"/>
+    </resources>
+</document>

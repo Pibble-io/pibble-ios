@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Funding Post Detail View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="FundingPostDetailViewController" id="xqD-av-Raz" customClass="FundingPostDetailViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eDz-ZW-Bft">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qs-6i-VRs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzm-Tv-mup">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbz-Dg-fL1">
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3pG-hl-4vV">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2qs-6i-VRs" firstAttribute="bottom" secondItem="eDz-ZW-Bft" secondAttribute="bottom" id="2na-3w-dK3"/>
+                            <constraint firstAttribute="trailing" secondItem="eDz-ZW-Bft" secondAttribute="trailing" id="76Y-1k-KbV"/>
+                            <constraint firstAttribute="trailing" secondItem="mbz-Dg-fL1" secondAttribute="trailing" id="DGV-1X-enq"/>
+                            <constraint firstItem="eDz-ZW-Bft" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" id="Djc-sf-1Ox"/>
+                            <constraint firstItem="mbz-Dg-fL1" firstAttribute="top" secondItem="mzm-Tv-mup" secondAttribute="bottom" id="GNu-Tv-bNi"/>
+                            <constraint firstItem="mbz-Dg-fL1" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="IQN-E4-Y1Y"/>
+                            <constraint firstItem="3pG-hl-4vV" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="IgM-73-1Kl"/>
+                            <constraint firstAttribute="bottom" secondItem="3pG-hl-4vV" secondAttribute="bottom" id="UHb-zq-rMx"/>
+                            <constraint firstItem="2qs-6i-VRs" firstAttribute="trailing" secondItem="eDz-ZW-Bft" secondAttribute="trailing" id="UWa-kB-RUi"/>
+                            <constraint firstItem="eDz-ZW-Bft" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="UY1-yL-Rgm"/>
+                            <constraint firstItem="3pG-hl-4vV" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="VhX-je-sAJ"/>
+                            <constraint firstItem="mzm-Tv-mup" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="WV1-uf-fgK"/>
+                            <constraint firstItem="mzm-Tv-mup" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="cme-GR-LKC"/>
+                            <constraint firstAttribute="trailing" secondItem="3pG-hl-4vV" secondAttribute="trailing" id="iDO-Ue-lgi"/>
+                            <constraint firstAttribute="trailing" secondItem="mzm-Tv-mup" secondAttribute="trailing" id="kU5-f9-QjP"/>
+                            <constraint firstItem="2qs-6i-VRs" firstAttribute="top" secondItem="eDz-ZW-Bft" secondAttribute="top" id="mEj-2n-eC5"/>
+                            <constraint firstItem="2qs-6i-VRs" firstAttribute="leading" secondItem="eDz-ZW-Bft" secondAttribute="leading" id="p7r-9I-FFd"/>
+                            <constraint firstAttribute="bottom" secondItem="mbz-Dg-fL1" secondAttribute="bottom" id="sHE-0m-Y68"/>
+                            <constraint firstAttribute="bottom" secondItem="eDz-ZW-Bft" secondAttribute="bottom" id="w3q-Fr-3GX"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="mzm-Tv-mup" secondAttribute="bottom" id="wyU-UZ-crG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="eDz-ZW-Bft" id="JeP-Ol-NmY"/>
+                        <outlet property="bottomInsetsView" destination="mbz-Dg-fL1" id="RJc-Mw-Z9f"/>
+                        <outlet property="dimView" destination="2qs-6i-VRs" id="4uZ-OY-ua7"/>
+                        <outlet property="tableView" destination="3pG-hl-4vV" id="uT4-Us-v8B"/>
+                        <outlet property="tableViewTopConstraint" destination="VhX-je-sAJ" id="EVk-R9-1JD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostsFeedAddPromotionTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XyQ-Hr-u4b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGS-dH-6Dm">
+                                <rect key="frame" x="0.0" y="39.5" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Foa-rg-Wgu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyK-YZ-3fO">
+                                <rect key="frame" x="10" y="0.0" width="79" height="40.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <state key="normal" title="View engage">
+                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.viewEngagementButton"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="viewEngageAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YqE-iE-rxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-rt-XRs">
+                                <rect key="frame" x="224" y="5.5" width="86" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56862745098039214" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="Otz-48-fk1"/>
+                                    <constraint firstAttribute="height" constant="30" id="gm6-8j-GxS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <state key="normal" title="Promote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.promoteButton"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPromotionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9o9-hH-57R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qyK-YZ-3fO" firstAttribute="top" secondItem="XyQ-Hr-u4b" secondAttribute="top" id="29J-EO-Wzz"/>
+                            <constraint firstAttribute="trailing" secondItem="KGS-dH-6Dm" secondAttribute="trailing" id="FVf-WM-WlE"/>
+                            <constraint firstAttribute="bottom" secondItem="qyK-YZ-3fO" secondAttribute="bottom" id="Kgc-N4-muH"/>
+                            <constraint firstItem="qyK-YZ-3fO" firstAttribute="leading" secondItem="XyQ-Hr-u4b" secondAttribute="leading" constant="10" id="OLf-n0-l7q"/>
+                            <constraint firstAttribute="bottom" secondItem="KGS-dH-6Dm" secondAttribute="bottom" id="fOh-af-gho"/>
+                            <constraint firstAttribute="height" constant="40" id="fyF-UX-ydF"/>
+                            <constraint firstAttribute="trailing" secondItem="pfV-rt-XRs" secondAttribute="trailing" constant="10" id="gPJ-b8-Bo3"/>
+                            <constraint firstItem="KGS-dH-6Dm" firstAttribute="leading" secondItem="XyQ-Hr-u4b" secondAttribute="leading" id="gvB-wP-MSR"/>
+                            <constraint firstItem="pfV-rt-XRs" firstAttribute="centerY" secondItem="XyQ-Hr-u4b" secondAttribute="centerY" id="yr5-Jj-baS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XyQ-Hr-u4b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ECR-RK-07d"/>
+                    <constraint firstAttribute="bottom" secondItem="XyQ-Hr-u4b" secondAttribute="bottom" id="LkR-sc-ucL"/>
+                    <constraint firstItem="XyQ-Hr-u4b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bFc-Gn-1x3"/>
+                    <constraint firstAttribute="trailing" secondItem="XyQ-Hr-u4b" secondAttribute="trailing" id="jbb-D4-pRk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addPromotionButton" destination="pfV-rt-XRs" id="6yb-2n-Lzb"/>
+                <outlet property="viewEngageButton" destination="qyK-YZ-3fO" id="nod-sm-U2C"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

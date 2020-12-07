@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Source View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="MediaSourceViewController" id="xqD-av-Raz" customClass="MediaSourceViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Epp-ro-E3T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJ3-nT-jWd">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y95-Km-1gF">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-ws-Udu">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="49"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Library">
+                                                    <color key="titleColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.MediaSource.Strings.Storyboards.Segments.library"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sourceSelectionAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="jUS-IX-jnJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="250" id="1vL-Zj-brp"/>
+                                            <constraint firstAttribute="bottom" secondItem="I8w-ws-Udu" secondAttribute="bottom" id="7bx-WM-ZwK"/>
+                                            <constraint firstItem="I8w-ws-Udu" firstAttribute="leading" secondItem="y95-Km-1gF" secondAttribute="leading" id="X0g-1o-Zpa"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" id="bhg-oM-o5e"/>
+                                            <constraint firstAttribute="trailing" secondItem="I8w-ws-Udu" secondAttribute="trailing" id="loa-pK-Ye3"/>
+                                            <constraint firstItem="I8w-ws-Udu" firstAttribute="top" secondItem="y95-Km-1gF" secondAttribute="top" id="x2G-vh-H4T"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0l-bc-K7c">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM4-pO-LSP">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="49"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Photo">
+                                                    <color key="titleColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.MediaSource.Strings.Storyboards.Segments.photo"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sourceSelectionAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="x0K-1E-Dgv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fM4-pO-LSP" firstAttribute="top" secondItem="R0l-bc-K7c" secondAttribute="top" id="2cN-WS-4bw"/>
+                                            <constraint firstAttribute="bottom" secondItem="fM4-pO-LSP" secondAttribute="bottom" id="J1y-FI-div"/>
+                                            <constraint firstItem="fM4-pO-LSP" firstAttribute="leading" secondItem="R0l-bc-K7c" secondAttribute="leading" id="Z0G-MS-G6h"/>
+                                            <constraint firstAttribute="width" priority="250" id="bpp-9g-0QR"/>
+                                            <constraint firstAttribute="trailing" secondItem="fM4-pO-LSP" secondAttribute="trailing" id="k2J-QC-PZH"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4F2-MR-eaW">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-ay-agm">
+                                                <rect key="frame" x="40.5" y="0.0" width="44" height="49"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="k8h-fl-pci"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Video">
+                                                    <color key="titleColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.MediaSource.Strings.Storyboards.Segments.video"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sourceSelectionAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="lcu-lo-gI2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="cfy-ay-agm" secondAttribute="bottom" id="Ij4-iu-vFQ"/>
+                                            <constraint firstAttribute="width" priority="250" id="UOm-Az-9Zf"/>
+                                            <constraint firstItem="cfy-ay-agm" firstAttribute="centerX" secondItem="4F2-MR-eaW" secondAttribute="centerX" id="bUM-DF-R7s"/>
+                                            <constraint firstItem="cfy-ay-agm" firstAttribute="top" secondItem="4F2-MR-eaW" secondAttribute="top" id="pXh-aF-dT8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="y95-Km-1gF" firstAttribute="top" secondItem="BJ3-nT-jWd" secondAttribute="top" id="0Va-pT-x3h"/>
+                                    <constraint firstAttribute="height" constant="49" id="84H-Mg-B7q"/>
+                                    <constraint firstItem="y95-Km-1gF" firstAttribute="leading" secondItem="BJ3-nT-jWd" secondAttribute="leading" id="JR4-Xl-aHa"/>
+                                    <constraint firstItem="4F2-MR-eaW" firstAttribute="top" secondItem="BJ3-nT-jWd" secondAttribute="top" id="Ktq-QL-lA6"/>
+                                    <constraint firstAttribute="bottom" secondItem="y95-Km-1gF" secondAttribute="bottom" id="Pgv-FU-Tuc"/>
+                                    <constraint firstAttribute="bottom" secondItem="R0l-bc-K7c" secondAttribute="bottom" id="TgQ-b8-3AA"/>
+                                    <constraint firstAttribute="trailing" secondItem="4F2-MR-eaW" secondAttribute="trailing" id="WQa-jM-Ety"/>
+                                    <constraint firstItem="4F2-MR-eaW" firstAttribute="width" secondItem="y95-Km-1gF" secondAttribute="width" priority="750" id="gZo-hh-Ah0"/>
+                                    <constraint firstAttribute="bottom" secondItem="4F2-MR-eaW" secondAttribute="bottom" id="lgN-Im-vZz"/>
+                                    <constraint firstItem="R0l-bc-K7c" firstAttribute="leading" secondItem="y95-Km-1gF" secondAttribute="trailing" id="mmc-ps-ufV"/>
+                                    <constraint firstItem="R0l-bc-K7c" firstAttribute="width" secondItem="y95-Km-1gF" secondAttribute="width" priority="750" id="sEb-e0-xMP"/>
+                                    <constraint firstItem="R0l-bc-K7c" firstAttribute="top" secondItem="BJ3-nT-jWd" secondAttribute="top" id="srl-i0-XsT"/>
+                                    <constraint firstItem="4F2-MR-eaW" firstAttribute="leading" secondItem="R0l-bc-K7c" secondAttribute="trailing" id="wHt-u2-u4y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BJ3-nT-jWd" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="0hU-PW-0F9"/>
+                            <constraint firstAttribute="trailing" secondItem="Epp-ro-E3T" secondAttribute="trailing" id="5kh-Mb-0Bh"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="BJ3-nT-jWd" secondAttribute="bottom" id="Dyg-ej-T8S"/>
+                            <constraint firstAttribute="trailing" secondItem="BJ3-nT-jWd" secondAttribute="trailing" id="O67-Jt-rj3"/>
+                            <constraint firstItem="Epp-ro-E3T" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="Tr5-a9-ndU"/>
+                            <constraint firstItem="BJ3-nT-jWd" firstAttribute="top" secondItem="Epp-ro-E3T" secondAttribute="bottom" id="fqT-9c-0Il"/>
+                            <constraint firstItem="Epp-ro-E3T" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" id="xzb-N5-yYm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="Epp-ro-E3T" id="iWj-eQ-ltY"/>
+                        <outletCollection property="sourceButtons" destination="I8w-ws-Udu" collectionClass="NSMutableArray" id="qTu-9Y-AjH"/>
+                        <outletCollection property="sourceButtons" destination="fM4-pO-LSP" collectionClass="NSMutableArray" id="MRB-2I-xxd"/>
+                        <outletCollection property="sourceButtons" destination="cfy-ay-agm" collectionClass="NSMutableArray" id="p0X-ur-e6z"/>
+                        <outletCollection property="segmentSelectorViewFullWidthConstraints" destination="bhg-oM-o5e" collectionClass="NSMutableArray" id="ZoD-Oj-LF9"/>
+                        <outletCollection property="segmentSelectorViewFullWidthConstraints" destination="sEb-e0-xMP" collectionClass="NSMutableArray" id="hGO-iB-EmT"/>
+                        <outletCollection property="segmentSelectorViewFullWidthConstraints" destination="gZo-hh-Ah0" collectionClass="NSMutableArray" id="qg5-pa-gvg"/>
+                        <outletCollection property="segmentSelectorViewZeroWidthConstraints" destination="1vL-Zj-brp" collectionClass="NSMutableArray" id="jO5-mb-8Lt"/>
+                        <outletCollection property="segmentSelectorViewZeroWidthConstraints" destination="bpp-9g-0QR" collectionClass="NSMutableArray" id="6xj-Xy-eps"/>
+                        <outletCollection property="segmentSelectorViewZeroWidthConstraints" destination="UOm-Az-9Zf" collectionClass="NSMutableArray" id="VcN-bP-yoi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+        </scene>
+    </scenes>
+</document>

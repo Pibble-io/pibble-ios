@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Funding Posts Container View Controller-->
+        <scene sceneID="Mvp-jo-iww">
+            <objects>
+                <viewController storyboardIdentifier="FundingPostsContainerViewController" id="r2s-Zx-TNL" customClass="FundingPostsContainerViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QWU-WT-LmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZF-0x-2GO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ezV-YY-mrr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5i-kS-ZQk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieO-jN-5sF">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Sqx-b0-gqd"/>
+                                            <constraint firstAttribute="height" constant="44" id="bOK-q6-w8i"/>
+                                        </constraints>
+                                        <state key="normal" image="BackButton-grey">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideAction:" destination="r2s-Zx-TNL" eventType="touchUpInside" id="480-gH-bcL"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYu-nM-vhN">
+                                        <rect key="frame" x="153.5" y="9.5" width="68.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostsContainer.Strings.Storyboards.NavBar.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuE-kA-CGD">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="h2Z-KT-jGs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kuE-kA-CGD" secondAttribute="trailing" id="3DQ-AS-Mzs"/>
+                                    <constraint firstAttribute="bottom" secondItem="kuE-kA-CGD" secondAttribute="bottom" id="Ip8-DL-Cz1"/>
+                                    <constraint firstItem="iYu-nM-vhN" firstAttribute="centerY" secondItem="L5i-kS-ZQk" secondAttribute="centerY" id="LAn-bd-tLH"/>
+                                    <constraint firstItem="iYu-nM-vhN" firstAttribute="centerX" secondItem="L5i-kS-ZQk" secondAttribute="centerX" id="XCQ-ZF-KxJ"/>
+                                    <constraint firstItem="kuE-kA-CGD" firstAttribute="leading" secondItem="L5i-kS-ZQk" secondAttribute="leading" id="Yco-Hg-1o3"/>
+                                    <constraint firstItem="ieO-jN-5sF" firstAttribute="leading" secondItem="L5i-kS-ZQk" secondAttribute="leading" id="dDc-za-F1k"/>
+                                    <constraint firstItem="ieO-jN-5sF" firstAttribute="centerY" secondItem="L5i-kS-ZQk" secondAttribute="centerY" id="oql-Xn-cYg"/>
+                                    <constraint firstAttribute="height" constant="44" id="zX3-lq-euL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2x-lT-Dmj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S6X-fq-lz9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-W4-SeJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Active">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.active"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="activeSectionSwitchAction:" destination="r2s-Zx-TNL" eventType="touchUpInside" id="YfS-NU-3ec"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lY-t9-SQq">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Ended">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.ended"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pausedSectionSwitchAction:" destination="r2s-Zx-TNL" eventType="touchUpInside" id="kSF-eW-DBj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hso-os-byl">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Backer">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.backer"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="closedSectionSwitchAction:" destination="r2s-Zx-TNL" eventType="touchUpInside" id="F7v-q5-8H2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="zfh-Rz-NKB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXr-oM-Kym">
+                                        <rect key="frame" x="0.0" y="48" width="375" height="555"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBr-bL-HMn">
+                                        <rect key="frame" x="0.0" y="47" width="375" height="3"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ar-ji-dzU">
+                                                <rect key="frame" x="0.0" y="1" width="375" height="1"/>
+                                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="OWi-Mv-dW6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D17-1P-9et">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="3"/>
+                                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3" id="zfi-Sy-4c2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="4Ar-ji-dzU" firstAttribute="width" secondItem="D17-1P-9et" secondAttribute="width" multiplier="3" id="Cnl-K9-VE2"/>
+                                            <constraint firstItem="D17-1P-9et" firstAttribute="trailing" secondItem="4Ar-ji-dzU" secondAttribute="trailing" priority="750" id="H8p-bT-YgI"/>
+                                            <constraint firstItem="4Ar-ji-dzU" firstAttribute="centerY" secondItem="GBr-bL-HMn" secondAttribute="centerY" id="Kg4-Ie-X2U"/>
+                                            <constraint firstItem="D17-1P-9et" firstAttribute="centerX" secondItem="GBr-bL-HMn" secondAttribute="centerX" priority="250" id="UjX-A4-nQ7"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Ar-ji-dzU" secondAttribute="trailing" id="VnO-XB-ocB"/>
+                                            <constraint firstItem="4Ar-ji-dzU" firstAttribute="leading" secondItem="GBr-bL-HMn" secondAttribute="leading" id="Yux-ci-mID"/>
+                                            <constraint firstItem="D17-1P-9et" firstAttribute="centerY" secondItem="GBr-bL-HMn" secondAttribute="centerY" id="cWv-zu-YFw"/>
+                                            <constraint firstAttribute="height" constant="3" id="he8-ZL-BmE"/>
+                                            <constraint firstItem="D17-1P-9et" firstAttribute="leading" secondItem="4Ar-ji-dzU" secondAttribute="leading" priority="250" id="zWk-FE-WwD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WXr-oM-Kym" firstAttribute="leading" secondItem="k2x-lT-Dmj" secondAttribute="leading" id="4jd-Qg-vIS"/>
+                                    <constraint firstItem="GBr-bL-HMn" firstAttribute="leading" secondItem="S6X-fq-lz9" secondAttribute="leading" id="EWw-ck-EvP"/>
+                                    <constraint firstItem="WXr-oM-Kym" firstAttribute="top" secondItem="GBr-bL-HMn" secondAttribute="bottom" constant="-2" id="JjM-eM-E5Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="WXr-oM-Kym" secondAttribute="bottom" id="Kmq-1d-g2v"/>
+                                    <constraint firstAttribute="trailing" secondItem="WXr-oM-Kym" secondAttribute="trailing" id="RCQ-EM-8v1"/>
+                                    <constraint firstAttribute="bottom" secondItem="WXr-oM-Kym" secondAttribute="bottom" id="Sxr-Q2-S9x"/>
+                                    <constraint firstItem="S6X-fq-lz9" firstAttribute="leading" secondItem="k2x-lT-Dmj" secondAttribute="leading" id="Xzq-Nx-Wl6"/>
+                                    <constraint firstAttribute="trailing" secondItem="S6X-fq-lz9" secondAttribute="trailing" id="ZF2-ld-Ysv"/>
+                                    <constraint firstItem="S6X-fq-lz9" firstAttribute="top" secondItem="k2x-lT-Dmj" secondAttribute="top" id="aZz-xd-rlr"/>
+                                    <constraint firstItem="GBr-bL-HMn" firstAttribute="trailing" secondItem="S6X-fq-lz9" secondAttribute="trailing" id="hYX-OR-Svx"/>
+                                    <constraint firstItem="GBr-bL-HMn" firstAttribute="top" secondItem="k2x-lT-Dmj" secondAttribute="top" constant="47" id="lbt-Da-bho"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L5i-kS-ZQk" firstAttribute="leading" secondItem="ezV-YY-mrr" secondAttribute="leading" id="9m3-jv-qHx"/>
+                            <constraint firstAttribute="trailing" secondItem="k2x-lT-Dmj" secondAttribute="trailing" id="QaU-w0-UBX"/>
+                            <constraint firstAttribute="bottom" secondItem="k2x-lT-Dmj" secondAttribute="bottom" id="dGu-Aw-yF4"/>
+                            <constraint firstItem="L5i-kS-ZQk" firstAttribute="top" secondItem="QWU-WT-LmS" secondAttribute="bottom" id="ilS-Wz-wG4"/>
+                            <constraint firstAttribute="trailing" secondItem="L5i-kS-ZQk" secondAttribute="trailing" id="wTw-X7-0ME"/>
+                            <constraint firstItem="k2x-lT-Dmj" firstAttribute="leading" secondItem="ezV-YY-mrr" secondAttribute="leading" id="yTZ-lJ-F2M"/>
+                            <constraint firstItem="k2x-lT-Dmj" firstAttribute="top" secondItem="L5i-kS-ZQk" secondAttribute="bottom" id="zC7-vb-TB1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activeSectionSwitchButton" destination="Izp-W4-SeJ" id="heW-jp-j9Q"/>
+                        <outlet property="bottomContainerView" destination="k2x-lT-Dmj" id="aMj-rn-DuP"/>
+                        <outlet property="closedSectionSwitchButton" destination="Hso-os-byl" id="JLg-Le-0O9"/>
+                        <outlet property="contentContainerView" destination="WXr-oM-Kym" id="J5k-cg-DF4"/>
+                        <outlet property="pausedSectionSwitchButton" destination="1lY-t9-SQq" id="d8Z-ri-3JK"/>
+                        <outlet property="segmentSelectionView" destination="D17-1P-9et" id="Sks-ru-0YR"/>
+                        <outlet property="segmentViewCenterConstraint" destination="UjX-A4-nQ7" id="Nso-9v-vVC"/>
+                        <outlet property="segmentViewLeftConstraint" destination="zWk-FE-WwD" id="ZeL-FS-liC"/>
+                        <outlet property="segmentViewRightConstraint" destination="H8p-bT-YgI" id="BIa-ig-SSB"/>
+                        <outlet property="sergmentControlContainerView" destination="GBr-bL-HMn" id="zsg-O2-tBu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gE-gC-Huu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton-grey" width="10.5" height="19.5"/>
+    </resources>
+</document>

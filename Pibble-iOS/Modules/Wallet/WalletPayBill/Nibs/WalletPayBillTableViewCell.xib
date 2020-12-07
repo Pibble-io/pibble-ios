@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletPayBillTableViewCell" rowHeight="155" id="9cT-3D-7wV" customClass="WalletPayBillTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9cT-3D-7wV" id="pQ3-bj-G2z">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGk-Dz-bPT">
+                        <rect key="frame" x="15" y="0.0" width="345" height="140.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1h" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rw-XV-M0l">
+                                <rect key="frame" x="231.5" y="19.5" width="98.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limited Edition HeadPhones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJf-NE-1uC">
+                                <rect key="frame" x="100" y="58.5" width="230" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalletPayBill-ShopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8l2-55-Luz">
+                                <rect key="frame" x="15" y="12.5" width="24" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="tzm-V7-Hcp"/>
+                                    <constraint firstAttribute="height" constant="30" id="zeM-a5-vhz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment request has arrived." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5H-6d-iwk">
+                                <rect key="frame" x="49" y="18.5" width="172.5" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoppingItem" translatesAutoresizingMaskIntoConstraints="NO" id="fbN-lI-VAZ">
+                                <rect key="frame" x="10" y="50.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fbN-lI-VAZ" secondAttribute="height" multiplier="1:1" id="1CN-d9-9zS"/>
+                                    <constraint firstAttribute="width" constant="80" id="iae-Ix-bls"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-2v-h1A">
+                                <rect key="frame" x="100" y="102.5" width="230" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiL-3J-nba">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="9cT-3D-7wV" eventType="touchUpInside" id="fHA-7L-idp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVS-Jo-6d0">
+                                        <rect key="frame" x="120" y="0.0" width="110" height="28"/>
+                                        <color key="backgroundColor" red="0.0" green="0.64705882349999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="confirmAction:" destination="9cT-3D-7wV" eventType="touchUpInside" id="hP3-T1-hIu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="uMc-mT-wtF"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIB 30,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKc-5N-1JB">
+                                <rect key="frame" x="100" y="78" width="71.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Rw-XV-M0l" firstAttribute="trailing" secondItem="lJf-NE-1uC" secondAttribute="trailing" id="05r-V6-Jvk"/>
+                            <constraint firstItem="lJf-NE-1uC" firstAttribute="top" secondItem="fbN-lI-VAZ" secondAttribute="top" constant="8" id="1Wt-iM-g2a"/>
+                            <constraint firstItem="8Rw-XV-M0l" firstAttribute="centerY" secondItem="8l2-55-Luz" secondAttribute="centerY" id="7VP-MJ-p5D"/>
+                            <constraint firstItem="8l2-55-Luz" firstAttribute="leading" secondItem="cGk-Dz-bPT" secondAttribute="leading" constant="15" id="Emo-ZP-fOR"/>
+                            <constraint firstItem="zKc-5N-1JB" firstAttribute="top" secondItem="lJf-NE-1uC" secondAttribute="bottom" id="Lc4-Fj-10A"/>
+                            <constraint firstItem="U5H-6d-iwk" firstAttribute="leading" secondItem="8l2-55-Luz" secondAttribute="trailing" constant="10" id="M6N-eL-fiK"/>
+                            <constraint firstItem="U5H-6d-iwk" firstAttribute="centerY" secondItem="8l2-55-Luz" secondAttribute="centerY" id="OUE-dm-Oab"/>
+                            <constraint firstItem="8l2-55-Luz" firstAttribute="top" secondItem="cGk-Dz-bPT" secondAttribute="top" constant="12" id="SRI-BS-gfp"/>
+                            <constraint firstItem="v7m-2v-h1A" firstAttribute="top" secondItem="zKc-5N-1JB" secondAttribute="bottom" constant="5" id="Uxl-3V-PEW"/>
+                            <constraint firstItem="zKc-5N-1JB" firstAttribute="leading" secondItem="lJf-NE-1uC" secondAttribute="leading" id="Vuj-Em-Q7Y"/>
+                            <constraint firstAttribute="bottom" secondItem="v7m-2v-h1A" secondAttribute="bottom" priority="750" constant="10" id="bjM-Jn-ji9"/>
+                            <constraint firstItem="v7m-2v-h1A" firstAttribute="leading" secondItem="zKc-5N-1JB" secondAttribute="leading" id="gLS-w6-EMu"/>
+                            <constraint firstItem="fbN-lI-VAZ" firstAttribute="leading" secondItem="cGk-Dz-bPT" secondAttribute="leading" constant="10" id="jKy-BQ-a3u"/>
+                            <constraint firstItem="v7m-2v-h1A" firstAttribute="trailing" secondItem="lJf-NE-1uC" secondAttribute="trailing" id="jOZ-x0-Cqn"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fbN-lI-VAZ" secondAttribute="bottom" constant="10" id="mR3-ai-yYO"/>
+                            <constraint firstAttribute="trailing" secondItem="lJf-NE-1uC" secondAttribute="trailing" constant="15" id="mfg-Br-Yqs"/>
+                            <constraint firstItem="fbN-lI-VAZ" firstAttribute="top" secondItem="8l2-55-Luz" secondAttribute="bottom" constant="8" id="uvV-5T-ZFJ"/>
+                            <constraint firstItem="lJf-NE-1uC" firstAttribute="leading" secondItem="fbN-lI-VAZ" secondAttribute="trailing" constant="10" id="wwC-re-ujD"/>
+                            <constraint firstItem="8Rw-XV-M0l" firstAttribute="leading" secondItem="U5H-6d-iwk" secondAttribute="trailing" constant="10" id="xtc-4X-6iP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="cGk-Dz-bPT" firstAttribute="top" secondItem="pQ3-bj-G2z" secondAttribute="top" id="YPx-Ny-wDJ"/>
+                    <constraint firstAttribute="trailing" secondItem="cGk-Dz-bPT" secondAttribute="trailing" constant="15" id="Zxd-XS-zoY"/>
+                    <constraint firstItem="cGk-Dz-bPT" firstAttribute="leading" secondItem="pQ3-bj-G2z" secondAttribute="leading" constant="15" id="ghd-gN-gXm"/>
+                    <constraint firstAttribute="bottom" secondItem="cGk-Dz-bPT" secondAttribute="bottom" constant="15" id="jIc-Bz-M53"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="backgroundContainerView" destination="cGk-Dz-bPT" id="xMG-4Y-BzB"/>
+                <outlet property="cancelButton" destination="WiL-3J-nba" id="eU7-Qr-bnA"/>
+                <outlet property="confirmButton" destination="KVS-Jo-6d0" id="lar-VN-6Iz"/>
+                <outlet property="dateLabel" destination="8Rw-XV-M0l" id="spg-2q-Plg"/>
+                <outlet property="invoiceDescriptionLabel" destination="lJf-NE-1uC" id="gWG-Jp-CI1"/>
+                <outlet property="invoiceItemImageView" destination="fbN-lI-VAZ" id="EDt-Kv-aGa"/>
+                <outlet property="invoiceValueLabel" destination="zKc-5N-1JB" id="qMr-5q-IWw"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="-96"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WalletPayBill-ShopIcon" width="24.5" height="30.5"/>
+        <image name="shoppingItem" width="80" height="80"/>
+    </resources>
+</document>

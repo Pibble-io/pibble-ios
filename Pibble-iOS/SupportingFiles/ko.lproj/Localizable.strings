@@ -1,0 +1,2012 @@
+/*
+ Localizable.strings
+ Pibble-iOS
+ 
+ Created by Sergey Kazakov on 04/05/2019.
+ Copyright © 2019 com.kazai. All rights reserved.
+ */
+
+"Pibble.ChatRoomGroupsContent.Strings.postAttachmentMessage" = "첨부";
+
+"Pibble.ChatRoomGroupsContent.Strings.muteButton" = "알림해제";
+
+"Pibble.ChatRoomGroupsContent.Strings.leaveButton" = "떠나기";
+
+"Pibble.Chat.Strings.ChatNavigationBar.price" = "가격";
+
+"Pibble.Chat.Strings.ChatNavigationBar.reward" = "보상";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.download" = "아이템 보기";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.buy" = "아이템 구매";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.show" = "아이템 보기";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.invoiceRequesting" = "결제 요청중";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.booked" = "예약중";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.soldOut" = "거래 완료";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.pendingBuyerApproval" = "구매 승인 대기중";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.confirmed" = "승인완료";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.pendingSellerApproval" = "판매자의 승인 대기중";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.approveReturn" = "반품 승인";
+
+"Pibble.Chat.Strings.DigitalGoodPostHeaderActionsTitle.returnApproved" = "반품 완료";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.requested" = "구매자 승인 대기중";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.accepted" = "운송 대기중";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.rejected" = "";
+
+"Pibble.Chat.Strings.CheckoutStatusDescriptionFor.empty" = "구매확정 대기중";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.requested" = "지불 요청중";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.accepted" = "지불 승인 완료";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.rejected" = "지불 거절";
+
+"Pibble.Chat.Strings.CheckoutStatusFor.empty" = "";
+
+"Pibble.Chat.Strings.Messages.unsupportedMessageType" = "현재 버전에서 지원하지 않는 메세지 타입입니다.";
+
+"Pibble.Chat.Strings.Alerts.alertTitleForInvoiceWithValueSymbolUsername" = "아이템 구매 가격: % % % 에게 전송합니다.";
+
+"Pibble.Chat.Strings.Alerts.alertTitleForGoodsOrderWithValueSymbolUsername" = " 구매자의 최종 확인이 있을 때 까지 플랫폼에 에스크로 보관됩니다.";
+
+"Pibble.Chat.Strings.Alerts.deleteCommentMessage" = "댓글을 삭제할까요?";
+
+"Pibble.Chat.Strings.Alerts.deleteCommentAction" = "삭제";
+
+"Pibble.Chat.Strings.Alerts.buyAction" = "아이템 구매";
+
+"Pibble.Chat.Strings.Alerts.cancelAction" = "취소";
+
+"Pibble.Chat.Strings.Alerts.okAction" = "확인";
+
+"Pibble.Chat.Strings.Alerts.invoicePaymentSuccessAlertTitle" = "감사합니다.";
+
+"Pibble.Chat.Strings.Alerts.invoicePaymentSuccessAlertMessage" = "지불이 완료되었습니다.";
+
+"Pibble.Chat.Strings.Alerts.downloading" = "다운로드 중...";
+
+"Pibble.Chat.Strings.Alerts.confirmGoodsItemAction" = "구매 확정";
+
+"Pibble.Chat.Strings.Alerts.returnGoodsItemAction" = "환불/반품 요청";
+
+"Pibble.Chat.Strings.Alerts.approveReturnGoodsItemAction" = "반품 승인하기";
+
+"Pibble.Chat.Strings.Alerts.confirmGoodsItemMessage" = "구매를 확정하시겠습니까? 구매가 확정된 뒤에는 구매를 취소할 수 없습니다.";
+
+"Pibble.Chat.Strings.Alerts.returnRequestGoodsItemMessage" = "환불요청을 위해 판매자와 반품처리를 진행해주세요. 판매자가 반품에 동의하면 즉시 구매대금이 환불됩니다.";
+
+"Pibble.Chat.Strings.Alerts.returnGoodsItemMessage" = "반품요청을 승인하시겠습니다? 승인하면 에스크로 보관된 결제 대금이 즉시 구매자에게 환불됩니다.";
+
+"Pibble.Chat.Strings.Errors.invoiceRequestError" = "결제 요청 에러";
+
+"Pibble.Chat.Strings.Errors.digitalGoodDownloadError" = "다운로드 에러";
+
+"Pibble.Chat.Strings.Errors.roomForPostIsNotFound" = "채팅방을 찾을 수 없습니다.";
+
+"Pibble.ChatRooms.Strings.Post.postAttachmentMessage" = "첨부";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.muteAction" = "알림해제";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.umMuteAction" = "알림";
+
+"Pibble.ChatRooms.Strings.ChatRoomItem.leaveAction" = "떠나기";
+
+"Pibble.ChatRooms.Strings.ChatNavigationBar.price" = "가격";
+
+"Pibble.ChatRooms.Strings.ChatNavigationBar.reward" = "보상";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertTitle" = "";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertMessage" = "채팅방을 떠나겠습니까?";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertConfirm" = "예";
+
+"Pibble.ChatRooms.Strings.Alerts.leaveRoomAlertCancel" = "아니오";
+
+"Pibble.SearchResultTagDetailContent.Strings.posted" = "게시물";
+
+"Pibble.SearchResultTagDetailContent.Strings.follow" = "팔로우";
+
+"Pibble.SearchResultTagDetailContent.Strings.following" = "팔로잉";
+
+"Pibble.DiscoverSearchContent.Strings.posted" = "게시";
+
+"Pibble.CommercialPostDetail.Strings.eulaTitle" = "사용 허가 계약서 동의 (EULA)";
+
+"Pibble.CommercialPostDetail.Strings.downloadAvailable" = "예";
+
+"Pibble.CommercialPostDetail.Strings.downloadNotAvailable" = "아니오";
+
+"Pibble.CommercialPostDetail.Strings.Errors.invoiceRequestError" = "결제 요청 에러";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.buyItem" = "아이템 구매";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.requestingInvoice" = "결제 진행중...";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.booked" = "예약중";
+
+"Pibble.CommercialPostDetail.Strings.CheckoutButtonTitle.soldOut" = "거래 완료";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.wrongURL" = "웹사이트 URL이 유효하지 않습니다.";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.lengthLimit" = "% 글자수 초과 % 최대";
+
+"Pibble.UserDescriptionPicker.Strings.Errors.empty" = "% 없음";
+
+"Pibble.MediaEdit.Strings.Errors.couldNotLoadMedia" = "미디어 가져오기 실패";
+
+"Pibble.Comments.Strings.deleteCommentMessage" = "댓글을 삭제할까요?";
+
+"Pibble.Comments.Strings.deleteCommentAction" = "삭제";
+
+"Pibble.Comments.Strings.cancelDeleteComment" = "취소";
+
+"Pibble.Comments.Strings.brushed" = "브러시";
+
+"Pibble.PostsFeed.Strings.budgetTitleWithBudgets" = "홍보중 (%/%)";
+
+"Pibble.PostsFeed.Strings.locationDescription" = "장소 추가...";
+
+"Pibble.PostsFeed.Strings.brushedCount" = "% 브러시";
+
+"Pibble.PostsFeed.Strings.showAllCommentsTitle" = "댓글 % 개 모두 보기";
+
+"Pibble.PostsFeed.Strings.deletePostConfirmation" = "게시물을 삭제할까요?";
+
+"Pibble.PostsFeed.Strings.notEnoughFundsForPostDeleteWithSymbol" = "삭제하기 위한 PRB가 부족합니다. 필요수량: % ";
+
+"Pibble.PostsFeed.Strings.alertTitleForInvoiceWithValueSymbolUsername" = "아이템 구매 가격: % % %에게 전송합니다.";
+
+"Pibble.PostsFeed.Strings.alertMessageForPostDeleteWithValueSymbol" = "필요수량: % %";
+
+"Pibble.PostsFeed.Strings.alertTitleForGoodsOrderValueSymbol" = " % % 를 안심결제할까요? 결제대금은 당신의 구매승인이 있을 때까지 시스템에 에스크로 보관됩니다.";
+
+"Pibble.PostsFeed.Strings.alertTitleForPostHelpCreation" = "도움요청을 시작하기위해  % 를 선금으로 결제합니다"; //translate
+
+"Pibble.PostsFeed.Strings.brushed" = "브러시";
+
+"Pibble.PostsFeed.Strings.following" = "팔로잉";
+
+"Pibble.PostsFeed.Strings.notFollowing" = "팔로우";
+
+"Pibble.PostsFeed.Strings.mute" = "차단";
+
+"Pibble.PostsFeed.Strings.followAction" = "팔로우";
+
+"Pibble.PostsFeed.Strings.unfollowAction" = "언팔";
+
+"Pibble.PostsFeed.Strings.friendAction" = "친구 신청";
+
+"Pibble.PostsFeed.Strings.unfriendAction" = "친구 삭제";
+
+"Pibble.UsersListing.Strings.unmuteAction" = "차단 해제";
+
+"Pibble.PostsFeed.Strings.teamMembers" = "멤버: ";
+
+"Pibble.PostsFeed.Strings.Video.soundHelpInfo" = "탭하면 소리가 켜집니다";
+
+"Pibble.PostsFeed.Strings.Video.soundless" = "소리가 없는 동영상입니다";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.preparing" = "준비중...";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.uploading" = "게시중입니다...";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.failed" = "게시중 에러가 발생했습니다.";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.completed" = "게시완료";
+
+"Pibble.PostsFeed.Strings.TitleForCreationStatus.cancelled" = "취소";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.waiting" = "대기중";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.inProgress" = "진행중";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.failed" = "실패";
+
+"Pibble.PostsFeed.Strings.StatusTitleForCommerce.success" = "성공";
+
+"Pibble.PostsFeed.Strings.EditAlerts.removeLocationAction" = "장소 삭제";
+
+"Pibble.PostsFeed.Strings.EditAlerts.changeLocationAction" = "장소 변경";
+
+"Pibble.PostsFeed.Strings.EditAlerts.cancelAction" = "취소";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.currentUserCommercePosts" = "내 상품";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.currentUserPurchasedPosts" = "구매 아이템";
+
+"Pibble.PostsFeed.Strings.NavigationBarTitles.postPromotionPreview" = "검토하기";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.currentUserCommercePosts" = "지금 창작자가 되세요";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.currentUserPurchasedPosts" = "구매 아이템 없음";
+
+"Pibble.PostsFeed.Strings.PlaceholderTitle.userPromotedPosts" = "% 홍보 없음";
+
+"Pibble.PostsFeed.Strings.PlaceholderSubtitle.currentUserCommercePosts" = "당신이 창작한 개성있는 사진들을 피블의 커머스로 게시하세요.";
+
+"Pibble.PostsFeed.Strings.PlaceholderSubtitle.currentUserPurchasedPosts" = "";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserActiveFundings" = "현재 진행중인 펀딩 캠페인이 없습니다.";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserEndedFundings" = "종료된 펀딩 캠페인이 없습니다.";
+
+"Pibble.PostsFeed.Strings.FundingPlaceholderTitle.currentUserBackedFundings" = "참여한 캠페인이 없습니다.";
+
+"Pibble.PostsFeed.Strings.TopGroupsHeader.timerLeftTitle" = "남음";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.daysLeft" = "% 일 남음";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.ended" = "종료";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.donate" = "기부하기";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.contribute" = "후원하기";
+
+"Pibble.PostsFeed.Strings.FundingCampaignSection.ActionButton.pledge" = "구매하기";
+
+"Pibble.PostsFeed.Strings.Alerts.turnOnNotificationAction" = "게시물 알림 켜기";
+
+"Pibble.PostsFeed.Strings.Alerts.copyLink" = "링크 복사";
+
+"Pibble.PostsFeed.Strings.Alerts.editCaptionAction" = "수정";
+
+"Pibble.PostsFeed.Strings.Alerts.editTagsAction" = "태그 수정";
+
+"Pibble.PostsFeed.Strings.Alerts.shareAction" = "공유";
+
+"Pibble.PostsFeed.Strings.Alerts.addPromotionAction" = "홍보 하기";
+
+"Pibble.PostsFeed.Strings.Alerts.cancelAction" = "취소";
+
+"Pibble.PostsFeed.Strings.Alerts.reportAction" = "신고하기";
+
+"Pibble.PostsFeed.Strings.Alerts.deleteAction" = "삭제";
+
+"Pibble.PostsFeed.Strings.Alerts.viewEngagement" = "인사이트 보기";
+
+"Pibble.PostsFeed.Strings.Alerts.okAction" = "확인";
+
+"Pibble.PostsFeed.Strings.Alerts.deletePostAlertMessage" = "게시물을 삭제할까요?";
+
+"Pibble.PostsFeed.Strings.Alerts.invoicePaymentSuccessAlertTitle" = "감사합니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.invoicePaymentSuccessAlertMessage" = "결제가 완료되었습니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.inappropriateReportAlertTitle" = "부적절한 게시물 신고";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportAlertTitle" = "스펨 신고";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertTitle" = "신고해주셔서 감사합니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertMessage" = "게시물을 보고 싶지 않으면 지금 차단 해주세요. 이 게시물이 커뮤니티 권고사항을 위반했다고 판단되면, 다른 사람을 위해서 부적절한 게시물로 신고해주시기 바랍니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.spamReportSuccessAlertBlockAction" = "게시물차단";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.pause" = "일시 중단";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.resume" = "홍보 재개";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.close" = "종료";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionActions.insight" = "인사이트";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingActions.donators" = "후원자목록 보기";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingActions.details" = "모금현황 보기";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingMessages.stopFundingConfirmMessage" = "진행중인 모금 캠페인을 정말 종료할까요? 캠페인을 종료시키면 모금활동이 지금 마감되고 수수료를 제외한 모금액이 당신의 계좌로 전달됩니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.FundingMessages.stopFundingSuccessMessage" = "당신의 모금 캠페인이 방금 마감되었습니다. 소정의 확인절차를 거친 뒤 수수료를 제외한 모금액이 당신의 계좌로 전달됩니다.";
+
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.pause" = "이 홍보를 일시 중단할까요? 일시 중단된 홍보는 언제든지 다시 재개할 수 있습니다.";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.resume" = "이 홍보를 다시 재개할까요?";
+
+"Pibble.PostsFeed.Strings.Alerts.PromotionMessages.close" = "홍보를 완전히 중단하고 예산 지출도 같이 중단합니다. 남은 예산은 지금 당신의 지갑으로 전송됩니다.";
+
+"Pibble.Donate.Strings.action" = "후원";
+
+"Pibble.Donate.Strings.postingBegin" = "좋아요! ";
+
+"Pibble.Donate.Strings.postingEnd" = " 합니다.";
+
+"Pibble.Donate.Strings.zeroValue" = "0";
+
+"Pibble.UpVote.Strings.action" = "업보트";
+
+"Pibble.UpVote.Strings.titleBegin" = "좋아요! ";
+
+"Pibble.UpVote.Strings.postingEnd" = " 합니다.";
+
+"Pibble.UpVote.Strings.commentEnd" = " 합니다.";
+
+"Pibble.UpVote.Strings.userBegin" = "감사합니다. 나도 ";
+
+"Pibble.UpVote.Strings.userEnd" = " 맞보팅 합니다.";
+
+"Pibble.TagsListing.Strings.followAction" = "팔로우";
+
+"Pibble.TagsListing.Strings.unfollowAction" = "언팔";
+
+"Pibble.TagsListing.Strings.friendAction" = "친구 신청";
+
+"Pibble.TagsListing.Strings.unfriendAction" = "친구 삭제";
+
+"Pibble.TagsListing.Strings.postsCount" = "게시";
+
+"Pibble.UsersListing.Strings.followAction" = "팔로우";
+
+"Pibble.UsersListing.Strings.unfollowAction" = "언팔";
+
+"Pibble.UsersListing.Strings.friendAction" = "친구 신청";
+
+"Pibble.UsersListing.Strings.unfriendAction" = "친구 삭제";
+
+"Pibble.UsersListing.Strings.hashTagsTitle" = "해시태그";
+
+"Pibble.UsersListing.Strings.NavigationBar.followers" = "팔로워";
+
+"Pibble.UsersListing.Strings.NavigationBar.following" = "팔로잉";
+
+"Pibble.UsersListing.Strings.NavigationBar.friends" = "친구";
+
+"Pibble.UsersListing.Strings.NavigationBar.editFriends" = "친구 관리";
+
+"Pibble.UsersListing.Strings.NavigationBar.mutedUsers" = "친구 관리";
+
+"Pibble.UserProfileContent.Strings.Titles.points" = "% 점";
+
+"Pibble.UserProfileContent.Strings.Titles.level" = "레벨 (Lv.%)";
+
+"Pibble.UserProfileContent.Strings.Titles.rewards" = "보상 (24h)";
+
+"Pibble.UserProfileContent.Strings.Titles.friendsCount" = "친구 (%)";
+
+"Pibble.UserProfileContent.Strings.Titles.friendsRequestCount" = "% 건의 친구 신청 도착";
+
+"Pibble.UserProfileContent.Strings.Titles.rich" = "Rich";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.followAction" = "팔로우";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.unfollowAction" = "언팔";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.friendAction" = "친구 신청";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.friendshipRequestedAction" = "친구 신청중";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.acceptFriendshipAction" = "승락";
+
+"Pibble.UserProfileContent.Strings.ButtonStates.unfriendAction" = "친구";
+
+"Pibble.UserProfileContent.Strings.TimePeriod.thisYearPeriod" = "연간";
+
+"Pibble.UserProfileContent.Strings.TimePeriod.thisWeekPeriod" = "주간";
+
+"Pibble.UserProfileContent.Strings.Placeholder.userDescriptionCaptionPlaceholder" = "소개";
+
+"Pibble.UserProfileContent.Strings.UserStats.followers" = "팔로워";
+
+"Pibble.UserProfileContent.Strings.UserStats.following" = "팔로잉";
+
+"Pibble.UserProfileContent.Strings.UserStats.friends" = "친구";
+
+"Pibble.UserProfileContent.Strings.UserStats.post" = "게시물";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.accepted" = "승락";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.denied" = "거절";
+
+"Pibble.UserProfileContent.Strings.FriendsStatus.none" = "";
+
+"Pibble.UserProfileContainer.Strings.cancelAction" = "취소";
+
+"Pibble.UserProfileContainer.Strings.chat" = "메시지";
+
+"Pibble.UserProfileContainer.Strings.mute" = "차단";
+
+"Pibble.UserProfileContainer.Strings.report" = "신고하기";
+
+"Pibble.UserProfileContainer.Strings.messageRooms" = "메시지룸 열기";
+
+"Pibble.UserProfileContainer.Strings.settings" = "설정";
+
+"Pibble.UserProfileContainer.Strings.logout" = "로그 아웃";
+
+"Pibble.BannedUserProfileContent.Strings.accountBlockStatus" = "차단된 계정";
+
+"Pibble.AboutHome.Strings.commerce" = "커머스";
+
+"Pibble.AboutHome.Strings.croudFunding" = "크라우드 펀딩";
+
+"Pibble.AboutHome.Strings.album" = "앨범";
+
+"Pibble.AboutHome.Strings.event" = "이벤트";
+
+"Pibble.AboutHome.Strings.settings" = "로그아웃";
+
+"Pibble.AboutHome.Strings.notifications" = "알림";
+
+"Pibble.CampaignPick.Strings.members" = "멤버";
+
+"Pibble.CampaignPick.Strings.createdAt" = "시작";
+
+"Pibble.CampaignPick.Strings.raise" = "펀딩";
+
+"Pibble.CampaignPick.Strings.goal" = "목표";
+
+"Pibble.CampaignPick.Strings.currency" = "PIB";
+
+"Pibble.CampaignEdit.Strings.NavBarButtons.next" = "다음";
+
+"Pibble.CampaignEdit.Strings.NavBarButtons.post" = "게시";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.media" = "미디어 게시";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.charity" = "자선 게시";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.crowdfunding" = "펀딩 게시";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.commercial" = "커머스 게시";
+
+"Pibble.CampaignEdit.Strings.TitleForPostingType.goods" =  "굿즈 게시";
+
+"Pibble.CampaignEdit.Strings.draftEmptyTitle" = "캠페인 제목";
+
+"Pibble.CampaignEdit.Strings.draftEmptyRaisingFor" = "누구를 위한 펀딩인가요?";
+
+"Pibble.CampaignEdit.Strings.draftEmptyCategoryFor" = "분류를 설정하세요";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamTitle" = "개별 펀딩";
+
+"Pibble.CampaignEdit.Strings.teamCampaignTeamTitle" = "팀 펀딩";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamDescription" = "개인이 펀딩 사용권한을 갖습니다.";
+
+"Pibble.CampaignEdit.Strings.individualCampaignTeamAdditionalDescription" = "팀 펀딩으로 나중에 바꿀 수 있습니다.";
+
+"Pibble.CampaignEdit.Strings.teamCampaignTeamDescription" = "나의 펀딩에 다른 사람을 초대하기.";
+
+"Pibble.CampaignEdit.Strings.draftEmptyTeamName" = "팀 이름";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.charity" = "자선 또는 비영리";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.myself" = "나 자신을 위한";
+
+"Pibble.CampaignEdit.Strings.FundRaiseRecipient.someoneElse" = "타인을 위한";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardType.hasReward" = "보상 있음";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardType.noReward" = "보상 없음";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardTypeInfo.hasReward" = "펀딩금액에 대해 보상을 갖고 있습니다.";
+
+"Pibble.CampaignEdit.Strings.CrowdFundingRewardTypeInfo.noReward" = "이 펀딩은 보상에 대한 의무가 없습니다.";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.rewardType" = "보상 설정:";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.fundraiseAsType" = "펀딩 대상:";
+
+"Pibble.CampaignEdit.Strings.SectionHeaders.rewardsPick" = "보상"; //translate
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.regularPrice" = "정상가";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.superEarlyBirdPrice" = "슈퍼얼리버드(베스트)";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputType.earlyBirdPrice" = "얼리버드(할인가)";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputPlaceholder.price" = "가격";
+
+"Pibble.CampaignEdit.Strings.RewardsAmountInputPlaceholder.amount" = "한정";
+
+"Pibble.CampaignEdit.Strings.Errors.teamNameAlreadyTaken" = "팀 이름이 이미 존재합니다."; //translate
+
+"Pibble.CampaignEdit.Strings.Errors.emptyTeamName" = "팀이름을 작성하세요.";
+
+"Pibble.PromotionPick.Strings.currentBalance" = "현재 % 잔고 ";
+
+"Pibble.PromotionPick.Strings.promotionalBudget" = "설정된 홍보 예산 : ";
+
+"Pibble.PromotionPick.Strings.reach" = ". 게시물의 예상 홍보 인원: ";
+
+"Pibble.PromotionPick.Strings.people" = " 명";
+
+"Pibble.PromotionPick.Strings.zeroValue" = "0";
+
+"Pibble.MediaPosting.Strings.Titles.description" = "설명";
+
+"Pibble.MediaPosting.Strings.Titles.pickLocation" = "장소 추가";
+
+"Pibble.MediaPosting.Strings.Titles.pickTags" = "태그 추가";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.media" = "미디어 게시";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.charity" = "자선 게시";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.crowdfunding" = "펀딩 게시";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.commercial" = "커머스 게시";
+
+"Pibble.MediaPosting.Strings.TitleForPostingType.goods" =  "굿즈 게시";
+
+"Pibble.MediaPosting.Strings.PickCampaign.find" = "이미 있는 모금팀에 참여하기";
+
+"Pibble.MediaPosting.Strings.PickCampaign.create" = "새 모금활동 만들기";
+
+"Pibble.MediaPosting.Strings.NavBarButtons.next" = "다음";
+
+"Pibble.MediaPosting.Strings.NavBarButtons.post" = "게시";
+
+"Pibble.CameraCapture.Strings.videoTimelimitReachedAlertMessage" = "비디오 길이가 제한 시간을 넘습니다.";
+
+"Pibble.CameraCapture.Strings.videoTimelimitReachedAlertActionTitle" = "다음";
+
+"Pibble.MediaPick.Strings.allPhotos" = "모든 사진";
+
+"Pibble.MediaPick.Strings.videoLengthWarning" = "비디오 길이가 % 초를 초과하는 분량은 자동으로 잘라낸 뒤 게시합니다.";
+
+"Pibble.MediaPick.Strings.nextButtonTitle" = "다음";
+
+"Pibble.MediaPick.Strings.doneButtonTitle" = "완료";
+
+"Pibble.MediaPick.Strings.cancel" = "취소";
+
+"Pibble.MediaPick.Strings.confirm" = "확인";
+
+"Pibble.MediaPick.Strings.Errors.access" = "폰의 설정 메뉴에서 미디어 라이브러리 접근 권한을 설정하세요.";
+
+"Pibble.MediaPick.Strings.Errors.videoLength" = "비디오길이가 제한 시간을 넘습니다.";
+
+"Pibble.MediaPick.Strings.Errors.unsupportedMediaType" = "지원되지 않는 게시물 형식입니다.";
+
+"Pibble.MediaPick.Strings.Errors.videoWillBeTrimmed" = "비디오 길이가 % 초를 초과하는 분량은 자동으로 잘라낸 뒤 게시합니다.";
+
+"Pibble.ResetPassword.Strings.Fields.password" = "비밀번호";
+
+"Pibble.ResetPassword.Strings.Fields.passwordConfirm" = "비밀번호 확인";
+
+"Pibble.ResetPassword.Strings.Errors.empty" = "비밀번호를 설정하세요.";
+
+"Pibble.ResetPassword.Strings.Errors.notMatching" = "비밀번호가 일치하지 않습니다.";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.empty" = "전화번호를 등록하세요";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.wrongFormat" = "전화번호 형식 오류";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.signUpUserIsNotSet" = "유저가 설정되지 않았습니다.";
+
+"Pibble.ResetPasswordPhonePick.Strings.Errors.signUpCountryIsNotSet" = "국가가 설정되지 않았습니다.";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertOkActionTitle" = "확인";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertTitle" = "기다려 주셔서 감사합니다.";
+
+"Pibble.TabBar.Strings.Alerts.notImplementedAlertMessage" = "이 메뉴는 현재 제작중이어서 사용할 수 없습니다.";
+
+"Pibble.TabBar.Strings.MenuItems.camera" = "미디어";
+
+"Pibble.TabBar.Strings.MenuItems.commerce" = "커머스";
+
+"Pibble.TabBar.Strings.MenuItems.charity" = "자선";
+
+"Pibble.TabBar.Strings.MenuItems.album" = "앨범";
+
+"Pibble.TabBar.Strings.MenuItems.goods" = "굿즈";
+
+"Pibble.TabBar.Strings.MenuItems.funding" = "펀딩";
+
+"Pibble.TabBar.Strings.SideMenuItems.gift" = "선물";
+
+"Pibble.TabBar.Strings.SideMenuItems.wallet" = "지갑";
+
+"Pibble.TabBar.Strings.SideMenuItems.notifications" = "알림";
+
+"Pibble.TabBar.Strings.SideMenuItems.settings" = "설정";
+
+"Pibble.ResetPasswordVerifyCode.Strings.Password.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordVerifyCode.Strings.PinCode.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordVerifyCode.Strings.ResendButtonTitles.resend" = "코드 재전송";
+
+"Pibble.ResetPasswordVerifyCode.Strings.ResendButtonTitles.resendAfter" = "코드 재전송( %s )";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.title" = "도움말";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.message" = "인증에 실패했습니다.";
+
+"Pibble.ResetPasswordVerifyCode.Strings.VerificationFailAlert.okAction" = "확인";
+
+"Pibble.RestorePasswordMethod.Strings.Password.information" = "비밀번호를 설정할 주소를 선택하세요.";
+
+"Pibble.RestorePasswordMethod.Strings.Password.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.RestorePasswordMethod.Strings.PinCode.information" = "비밀번호를 설정할 주소를 선택하세요.";
+
+"Pibble.RestorePasswordMethod.Strings.PinCode.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.RestorePasswordMethod.Strings.Errors.noVerifiedPhoneNumber" = "전화번호가 인증되지 않았습니다.";
+
+"Pibble.SignIn.Strings.Errors.empty" = "내용을 입력하세요";
+
+"Pibble.SignIn.Strings.InputFields.login" = "로그인";
+
+"Pibble.SignIn.Strings.InputFields.password" = "비밀번호";
+
+"Pibble.Registration.Strings.Errors.empty" = "내용을 입력하세요";
+
+"Pibble.Registration.Strings.InputFields.email" = "이메일";
+
+"Pibble.Registration.Strings.InputFields.username" = "닉네임";
+
+"Pibble.Registration.Strings.InputFields.password" = "비밀번호";
+
+"Pibble.PhonePick.Strings.Errors.empty" = "전화번로를 등록하세요";
+
+"Pibble.PhonePick.Strings.Errors.wrongFormat" = "전화번호 형식 오류";
+
+"Pibble.PhonePick.Strings.Errors.signUpUserIsNotSet" = "유저가 설정되지 않았습니다.";
+
+"Pibble.PhonePick.Strings.Errors.signUpCountryIsNotSet" = "국가가 설정되지 않았습니다.";
+
+"Pibble.VerifyCode.Strings.NavigationBarTitleForPurpose.enterVerifyCode" = "인증 코드 입력";
+
+"Pibble.VerifyCode.Strings.NavigationBarTitleForPurpose.verifyEmail" = "이메일 인증";
+
+"Pibble.VerifyCode.Strings.InformationTitleForPurpose.phoneVerification" = "방금 인증코드를 보내드렸습니다. SMS를 확인해주세요.";
+
+"Pibble.VerifyCode.Strings.InformationSubtitleForPurpose.initialEmailVerification" = "이메일로 보낸 인증코드를 확인해주세요.";
+
+"Pibble.VerifyCode.Strings.InformationSubtitleForPurpose.forcedEmailVerification" = "이메일이 인증되지 않았습니다. 이메일로 보낸 인증코드를 확인해주세요.";
+
+"Pibble.VerifyCode.Strings.ResendButtonTitles.resend" = "코드 재전송";
+
+"Pibble.VerifyCode.Strings.ResendButtonTitles.resendAfter" = "코드 재전송( %s )";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.title" = "도움말";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.message" = "인증에 실패했습니다.";
+
+"Pibble.VerifyCode.Strings.VerificationFailAlert.okAction" = "확인";
+
+"Pibble.WalletTransactionAmountPick.Strings.confirmExchangeAction" = "교환";
+
+"Pibble.WalletTransactionAmountPick.Strings.cancelExchangeAction" = "취소";
+
+"Pibble.WalletTransactionAmountPick.Strings.invoiceTitle" = "입금 요청";
+
+"Pibble.WalletTransactionAmountPick.Strings.outcomingTitle" = "출금";
+
+"Pibble.WalletTransactionAmountPick.Strings.invoiceNavBarTitle" = "입금 요청";
+
+"Pibble.WalletTransactionAmountPick.Strings.outcomingNavBarTitle" = "출금";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeNavBarTitle" = "교환";
+
+"Pibble.WalletTransactionAmountPick.Strings.nextButtonTitle" = "다음";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeButtonTitle" = "요청";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeBackWarningTitle" = "확인";
+
+"Pibble.WalletTransactionAmountPick.Strings.exchangeTitle" = "교환 % 를 % 로";
+
+"Pibble.WalletTransactionAmountPick.Strings.ExchangeBackWarningMessage.piblePGBExchangeWarning" = "% 는 게시물을 업보트하는데 주로 사용됩니다.";
+
+"Pibble.WalletTransactionAmountPick.Strings.ExchangeBackWarningMessage.exchangeWarning" = "% 는 % 로 교환할 수 없음에 유의해주세요.";
+
+"Pibble.WalletPinCode.Strings.registerNewPinCode" = "지갑 비밀번호를 등록하세요.";
+
+"Pibble.WalletPinCode.Strings.confirmNewPinCode" = "지갑 비밀번호 확인";
+
+"Pibble.WalletPinCode.Strings.unlock" = "지갑 비밀번호를 입력하세요";
+
+"Pibble.WalletPinCode.Strings.restorePinCode" = "지갑 비밀번호를 등록하세요.";
+
+"Pibble.WalletPinCode.Strings.leftDigitButton" = "취소";
+
+"Pibble.WalletPinCode.Strings.rightDigitButton" = "이전";
+
+"Pibble.WalletHome.Strings.payBill" = "지불";
+
+"Pibble.WalletHome.Strings.send" = "출금";
+
+"Pibble.WalletHome.Strings.recieve" = "입금";
+
+"Pibble.WalletHome.Strings.exchange" = "교환";
+
+"Pibble.WalletHome.Strings.activity" = "활동내역";
+
+"Pibble.WalletHome.Strings.market" = "코인마켓";
+
+"Pibble.Wallet.Strings.incomingInvoice" = " 지불 요청 도착";
+
+"Pibble.Wallet.Strings.rejectedInvoice" = "지불 거절 ";
+
+"Pibble.Wallet.Strings.acceptedInvoice" = "지불 승인 ";
+
+"Pibble.Wallet.Strings.outcomingInvoice" = "지불 요청 ";
+
+"Pibble.WalletPreview.Strings.upvotes" = "업보트";
+
+"Pibble.WalletActivityContent.Strings.brushSegmentTitle" = "브러시";
+
+"Pibble.WalletActivityContent.Strings.pibbleUsername" = "피블";
+
+"Pibble.WalletActivityContent.Strings.incomingInvoice" = " 지불 요청 도착";
+
+"Pibble.WalletActivityContent.Strings.outcomingInvoice" = "지불 요청 ";
+
+"Pibble.WalletActivityContent.Strings.rewardForPosting" = "게시/판매 보상";
+
+"Pibble.WalletActivityContent.Strings.challengeReward" = "인기게시물 보상";
+
+"Pibble.WalletActivityContent.Strings.unsupportedReward" = "보상";
+
+"Pibble.WalletActivityContent.Strings.feeForDeletePosting" = "보상차감(게시물 삭제)";
+
+"Pibble.WalletActivityContent.Strings.freeReward" = "무료 업보트";
+
+"Pibble.WalletActivityContent.Strings.airdrop" = "에어드랍";
+
+"Pibble.WalletActivityContent.Strings.incomingForVoting" = "업보트 ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForVotingBegin" = "업보트 ";
+
+"Pibble.WalletActivityContent.Strings.incomingForComment" = "댓글 업보트 ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForComment" = "댓글 업보트 ";
+
+"Pibble.WalletActivityContent.Strings.incomingForPostHelpAnswer" = "도움말업보트 "; //translate
+
+"Pibble.WalletActivityContent.Strings.outcomingForPostHelpAnswer" = "도움말업보트 ";
+
+"Pibble.WalletActivityContent.Strings.referralReward" = "친구초대보상";
+
+"Pibble.WalletActivityContent.Strings.incomingForProfile" = "맞보트 ";
+
+"Pibble.WalletActivityContent.Strings.outcomingForProfile" = "맞보트 ";
+
+"Pibble.WalletActivityContent.Strings.exchanged" = "교환 ";
+
+"Pibble.WalletActivityContent.Strings.exchangedTo" = " - ";
+
+"Pibble.WalletActivityContent.Strings.exchangedExternalWithApp" = " - ";
+
+"Pibble.WalletActivityContent.Strings.digitalGoodTitlePlaceholder" = "커머스";
+
+"Pibble.WalletActivityContent.Strings.goodsTitlePlaceholder" = "굿즈";
+
+"Pibble.WalletActivityContent.Strings.promotedPostRewardIncoming" = "홍보 참여 보상 입금";
+
+"Pibble.WalletActivityContent.Strings.promotedPostRewardOutcoming" = "홍보 참여 보상 출금";
+
+"Pibble.WalletActivityContent.Strings.promotionDebitWith" = "홍보 %";
+
+"Pibble.WalletActivityContent.Strings.receivedFrom" = "입금 % 발신: ";
+
+"Pibble.WalletActivityContent.Strings.sentTo" = "송금 % 수신: ";
+
+"Pibble.WalletActivityContent.Strings.sellTo" = "판매 % ";
+
+"Pibble.WalletActivityContent.Strings.buyFrom" = "구매 % ";
+
+"Pibble.WalletActivityContent.Strings.sellEscrowTo" = "에스크로 거래 % ";
+
+"Pibble.WalletActivityContent.Strings.buyEscrowFrom" = "에스크로 거래 % ";
+
+"Pibble.WalletActivityContent.Strings.rewardedWith" = "보상 %";
+
+"Pibble.WalletActivityContent.Strings.withdrawalOf" = "출금 %";
+
+"Pibble.WalletActivityContent.Strings.returnGoods" = "반품 % ";
+
+"Pibble.WalletActivityContent.Strings.charityFundingTo" = "자선 참여 % ";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noActivity" = " % 내역";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noBrushActivityMessage" = "보여줄 브러시 활동내역이 없습니다.";
+
+"Pibble.WalletActivityContent.Strings.DataPlaceholderMessages.noActivityMessage" = "보여줄 % 거래내역이 없습니다.";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotedPostRewardIncoming" = "홍보 보상";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotedPostRewardOutcoming" = "홍보 보상";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.promotionDebit" = "홍보 예산 설정";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.impression" = "홍보보상-조회 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.upvote" = "홍보보상-업보트 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.comment" = "홍보보상-댓글 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.collect" = "홍보보상-즐겨찾기 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.follow" = "홍보보상-팔로우 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.action" = "홍보보상-액션 참여n ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.followTag" = "홍보보상-태그팔로우 ";
+
+"Pibble.WalletActivityContent.Strings.PromotionTransactions.profileView" = "홍보보상-프로파일방문 ";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingDonate" = "기부 ";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingDonate" = "크라우드 펀딩 ";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardDonate" = "크라우드 펀딩 구매 ";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingRefund" = "기부금 반납";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingRefund" = "크라우드 펀 딩 반납";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardRefund" = "크라우드 펀 딩 구매 환 불";
+
+"Pibble.WalletActivityContent.Strings.Funding.charityFundingCollected" = "자선모금 완 료";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingCollected" = "크라우드 펀 딩 모금 완 료";
+
+"Pibble.WalletActivityContent.Strings.Funding.crowdFundingWithRewardCollected" = "보상형 크라 우드 펀딩 모금 완료";
+
+"Pibble.WalletActivityContent.Strings.PostHelpAnswers.postHelpPayment" = "도움말보상선불"; //translate
+
+"Pibble.WalletActivityContent.Strings.PostHelpAnswers.postHelpReward" = "도움말보상 ";
+
+"Pibble.MediaDetail.Strings.Alerts.downloading" = "다운로드 중...";
+
+"Pibble.MediaDetail.Strings.Alerts.cancelAction" = "취소";
+
+"Pibble.ReportPostReason.Strings.doNotLike" = "단지 마음에 들지 않습니다";
+
+"Pibble.ReportPostReason.Strings.nudity" = "신체 노출, 나체, 또는 음란물";
+
+"Pibble.ReportPostReason.Strings.hateSymbols" = "혐오 발언이나 상징";
+
+"Pibble.ReportPostReason.Strings.violence" = "폭력 또는 협박 위협";
+
+"Pibble.ReportPostReason.Strings.fireArms" = "총기류 판매 및 홍보";
+
+"Pibble.ReportPostReason.Strings.drugs" = "마약 판매 및 홍보";
+
+"Pibble.ReportPostReason.Strings.harassment" = "괴롭힘 또는 따돌림";
+
+"Pibble.ReportPostReason.Strings.propertyViolation" = "지적 재산권 침해";
+
+"Pibble.ReportPostReason.Strings.selfInjury" = "자해";
+
+"Pibble.ReportPostReason.Strings.spam" = "스팸 신고";
+
+"Pibble.ReportPostReason.Strings.blockForSpam" = "스팸 블록";
+
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.pibble" = "피블";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.etherium" = "이더";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.greenBrush" = "그린브러시";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.redBrush" = "레드브러시";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.unknown" = "알수없음";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.won" = "한국 원화";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.bitcoin" = "비트코인";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.australianDollar" = "호주 달러";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.greatBritainPound" = "영국 파운드";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.canadianDollar" = "캐나다 달러";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.chineseYuan" = "중국 런민비 위안";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.euro" = "유로";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.japaneseYen" = "일본 엔화";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.usDollar" = "미국 달러";
+
+"Pibble.BalanceCurrency.Strings.LocalizedNames.unsupportedCurrency" = "지원하지 않는 통화";
+
+"Pibble.AppLanguage.Strings.english" = "영어";
+
+"Pibble.AppLanguage.Strings.korean" = "한글";
+
+"Pibble.WalletReceivePresenter.Strings.shareTextForCurrency" = " % 주소: %";
+
+"Pibble.WalletReceivePresenter.Strings.Title.recieveAddressBegin" = "입금 ";
+
+"Pibble.WalletReceivePresenter.Strings.Title.recieveAddressEnd" = " 주소";
+
+"Pibble.SettingsHome.Strings.MenuItems.inviteFriends" = "친구 초대";
+
+"Pibble.SettingsHome.Strings.MenuItems.closeFriends" = "친구 관리";
+
+"Pibble.SettingsHome.Strings.MenuItems.notifications" = "알림";
+
+"Pibble.SettingsHome.Strings.MenuItems.commerce" = "커머스";
+
+"Pibble.SettingsHome.Strings.MenuItems.promotions" = "홍보";
+
+"Pibble.SettingsHome.Strings.MenuItems.funding" = "펀딩";
+
+"Pibble.SettingsHome.Strings.MenuItems.wallet" = "지갑";
+
+"Pibble.SettingsHome.Strings.MenuItems.account" = "계정";
+
+"Pibble.SettingsHome.Strings.MenuItems.help" = "도움말";
+
+"Pibble.SettingsHome.Strings.MenuItems.about" = "정보";
+
+"Pibble.SettingsHome.Strings.MenuItems.logout" = "로그 아웃";
+
+"Pibble.ReferUser.Strings.headerTitle" = "친구 초대하고 % 를 받으세요";
+
+"Pibble.ReferUser.Strings.headerSubtitle" = "초대받은 친구들이 피블에 등록할 때 마다, % 를 지급합니다. 최대 %를 지급해드립니다.";
+
+"Pibble.ReferUser.Strings.shareTitle" = "이 앱은 정말 좋은데요. 함께 사용해요~ \n다운로드 https://www.pibbleapp.io \n초청 ID : % \n가입하신 뒤, 7일 이내에 초청 ID를 등록하면. 500 PRB를 벌 수 있어요. 잊지 마세요.";
+
+"Pibble.ReferUser.Strings.referralRegistrationSuccess" = "추천 친구가 등록되었습니다. % 지급 완료\n친구에게도 % 를 지급해드렸습니다.";
+
+"Pibble.ReferUser.Strings.okAlertAction" = "확인";
+
+"Pibble.AccountSettings.Strings.MenuItems.language" = "언어 설정";
+
+"Pibble.AccountSettings.Strings.MenuItems.username" = "사용자 이름";
+
+"Pibble.AccountSettings.Strings.MenuItems.mutedUsers" = "차단된 계정";
+
+"Pibble.WalletSettings.Strings.MenuItems.nativeCurrency" = "사용통화";
+
+"Pibble.About.Strings.MenuItems.appVersion" = "버전";
+
+"Pibble.About.Strings.MenuItems.terms" = "약관";
+
+"Pibble.About.Strings.MenuItems.privacyPolicy" = "개인정보 보호정책";
+
+"Pibble.About.Strings.MenuItems.communityGuide" = "커뮤니티 안내";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationTitle" = "확인";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationMessage" = "사용중인 언어를 변경할까요? \n변경된 언어는 앱을 새로 시작할 때 적용됩니다.";
+
+"Pibble.LanguagePicker.Strings.Alert.confirmationAction" = "변경";
+
+"Pibble.LanguagePicker.Strings.Alert.cancelAction" = "취소";
+
+"Pibble.CommerceTypePick.Strings.MenuItems.myGoods" = "내 상품";
+
+"Pibble.CommerceTypePick.Strings.MenuItems.purchasedGoods" = "구매 아이템";
+
+"Pibble.PromotionBudgetPick.Strings.days" = "기간";
+
+"Pibble.PromotionBudgetPick.Strings.dailyBudget" = "%/일일";
+
+"Pibble.PromotionBudgetPick.Strings.availableBalance" = "사용 가능 %: %";
+
+"Pibble.PromotionBudgetPick.Strings.budgetLimits" = "하루 최소 % ~ 최대 %";
+
+"Pibble.PromotionBudgetPick.Strings.durationLimits" = "% 일 ~ % 일";
+
+"Pibble.CreatePromotionConfirm.Strings.days" = "일";
+
+"Pibble.CreatePromotionConfirm.Strings.headerSubtitle" = "예상되는 도달수는 대략 % - % 명 입니다. 홍보가 시작되면 언제든지 예산 사용을 일시 중지 시킬 수 있습니다.";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.destinationMissing" = "목표를 설정하세요";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.budgetMissing" = "홍보 예산을 설정하세요.";
+
+"Pibble.CreatePromotionConfirm.Strings.Errors.durationMissing" = "홍보 기간을 설정하세요,";
+
+"Pibble.VisitProfilePromotionActionType.Strings.visitProfile" = "프로필 방문";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.ok" = "확인";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.cancel" = "취소";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionConfirm.title" = "홍보를 시작하기 위해 책정된 예산 % 를 지금 결제할까요?";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionConfirm.message" = "책정된 예산의 %는 게시물의 도달률을 높이기 위해 플랫폼에서 사용됩니다. 남은 %의 예산은 당신의 게시물 참여자들에게 보상으로 사용됩니다.";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionCreationSuccess.title" = "감사합니다.";
+
+"Pibble.CreatePromotionConfirm.Strings.Alerts.PromotionCreationSuccess.message" = "홍보 예산이 성공적으로 결제되었습니다.";
+
+"Pibble.VisitProfilePromotionActionType.Strings.visitProfile" = "프로필 방문";
+
+"Pibble.PromotionInsights.Strings.Budget.used" = "사용 예산 %";
+
+"Pibble.PromotionInsights.Strings.Budget.left" = "남은 예산 %";
+
+"Pibble.PromotionInsights.Strings.Sections.engage" = "참여";
+
+"Pibble.PromotionInsights.Strings.Sections.impressions" = "도달";
+
+"Pibble.EngagementType.Strings.upvotes" = "업보트";
+
+"Pibble.EngagementType.Strings.comments" = "댓글";
+
+"Pibble.EngagementType.Strings.collected" = "즐겨찾기";
+
+"Pibble.EngagementType.Strings.tags" = "태그";
+
+"Pibble.EngagementType.Strings.followings" = "팔로우";
+
+"Pibble.PromotionStatus.Strings.active" = "진행중";
+
+"Pibble.PromotionStatus.Strings.paused" = "일시 중단";
+
+"Pibble.PromotionStatus.Strings.closed" = "종료";
+
+"Pibble.NotificationsFeed.Strings.followAction" = "팔로우";
+
+"Pibble.NotificationsFeed.Strings.unfollowAction" = "팔로잉";
+
+"Pibble.Onboarding.Strings.One.title" = "찰~칵!";
+
+"Pibble.Onboarding.Strings.One.subtitle" = "자기야 잠깐! 피블이 먼저지";
+
+"Pibble.Onboarding.Strings.Two.title" = "땡그렁!";
+
+"Pibble.Onboarding.Strings.Two.subtitle" = "돈 들어온다아! 그래 이거그든~";
+
+"Pibble.Onboarding.Strings.Three.title" = "실화임?!";
+
+"Pibble.Onboarding.Strings.Three.subtitle" = "피블에서 좀 놀았을 뿐인데";
+
+"Pibble.Onboarding.Strings.Four.title" = "가즈아!!";
+
+"Pibble.Onboarding.Strings.Four.subtitle" = "이봐요~ 같이 가요!";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.title" = "전송할 % 체인 선택";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.Warning.warningTitle" = "주의:";
+
+"Pibble.WalletTransactionCurrencyPick.Strings.Warning.warningSubtitle" = "전송할 PIB 주소의 체인을 잘못 설정하면 전송된 PIB 토큰이 한동안 잠기거나 손실 될 수 있으므로 유의해주세요.";
+
+"Pibble.WalletTransactionCreate.Strings.inputTitle" = "요청 금액";
+
+"Pibble.WalletTransactionCreate.Strings.nextButtonTitle" = "다음";
+
+"Pibble.WalletTransactionCreate.Strings.NavBarButtons.send" = "출금";
+
+"Pibble.WalletTransactionCreate.Strings.NavBarButtons.next" = "다음";
+
+"Pibble.PostStatistics.Strings.Budget.used" = "사용 예산 %";
+
+"Pibble.PostStatistics.Strings.Budget.left" = "남은 예산 %";
+
+"Pibble.PostStatistics.Strings.Sections.engage" = "참여";
+
+"Pibble.PostStatistics.Strings.Sections.impressions" = "도달";
+
+"Pibble.TopGroupPostsType.Strings.news" = "소식";
+
+"Pibble.TopGroupPostsType.Strings.coin" = "블록체인";
+
+"Pibble.TopGroupPostsType.Strings.webtoon" = "웹툰";
+
+"Pibble.TopGroupPostsType.Strings.newbie" = "새내기";
+
+"Pibble.TopGroupPostsType.Strings.funding" = "펀딩";
+
+"Pibble.TopGroupPostsType.Strings.promoted" = "홍보";
+
+"Pibble.TopGroupPostsType.Strings.shop" = "쇼핑";
+
+"Pibble.TopGroupPostsType.Strings.hot" = "인기";
+
+"Pibble.UpvotedUsers.Strings.followAction" = "팔로우";
+
+"Pibble.UpvotedUsers.Strings.unfollowAction" = "팔로잉";
+
+"Pibble.GoodsAvailabilityStatus.Strings.soldOut" = "거래 완료";
+
+"Pibble.GoodsAvailabilityStatus.Strings.booked" = "예약중";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.startDate" = "시작날짜 %";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.finished" = "마감됨";
+
+"Pibble.FundingPostDetail.Strings.CampaignTime.finishesInDays" = "마감 (d-%)";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.charity" = "% 명 기부";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.crowdfunding" = "% 명 후원";
+
+"Pibble.FundingPostDetail.Strings.Donators.Single.crowdfundingWithReward" = "% 명 계약";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.charity" = "% 명 기부";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.crowdfunding" = "% 명 후원";
+
+"Pibble.FundingPostDetail.Strings.Donators.Plural.crowdfundingWithReward" = "% 명 계약";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.regular" = "정상가";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.earlyBird" = "슈퍼얼리버드";
+
+"Pibble.FundingPostDetail.Strings.RewardTitle.discount" = "얼리버드";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Active.unlimited" = "무제한 (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Active.limited" = "한정수량 % (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Passed.unlimited" = "무제한 (%)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Passed.limited" = "한정수량 % (매진)";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Upcoming.unlimited" = "무제한";
+
+"Pibble.FundingPostDetail.Strings.RewardAmount.Upcoming.limited" = "한정수량 %";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.charity" = "% 기부";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.crowdfunding" = "% 후원";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountTitle.crowdfundingWithReward" = "% 계약";
+
+"Pibble.FundingPostDetail.Strings.DonatedCountLeftTitle.left" = "% 개 남음";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.goal" = "모금 목표: %";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.raised" = "현재 모금액: % %";
+
+"Pibble.FundingPostDetail.Strings.FundraisingFinishStats.endDate" = "종료: %";
+
+"Pibble.FundingPostDetail.Strings.CampaignFinishMessage.failed" = "모금캠페인 실패! \n안타깝게도 이 모금활동은 목표의 30%에 도달하지 못했으므로 자동 취소됩니다. 현재까지 모금된 액수는 참여자들에게 전부 반환됩니다.";
+
+"Pibble.FundingPostDetail.Strings.FundingActions.donate" = "후원하기";
+
+"Pibble.FundingPostDetail.Strings.FundingActions.closeCampaign" = "캠페인 지금 종료";
+
+"Pibble.FundingPostDetail.Strings.CampaignFinishMessage.reachedGoal" = "축하드립니다!\n모금 목표를 달성했습니다. 이미 목표를 달성했으므로 당신의 모금활동을 지금 종료시킬 수 있습니다. 혹은 마감날짜까지 캠페인을 계속 진행할 수 있습니다.";
+
+"Pibble.GiftsFeed.Strings.NavigationBarTitles.giftHome" = "피블의 선물";
+
+"Pibble.GiftsFeed.Strings.NavigationBarTitles.search" = "찾기";
+
+"Pibble.GiftsFeed.Strings.Alerts.exitMessage" = "피블의 선물을 종료할까요?";
+
+"Pibble.GiftsFeed.Strings.Alerts.okAction" = "확인";
+
+"Pibble.GiftsFeed.Strings.Alerts.cancelAction" = "취소";
+
+"Pibble.PlayRoom.Strings.NavigationBarTitles.playroom" = "플레이룸";
+
+"Pibble.PlayRoom.Strings.NavigationBarTitles.playroomFor" = "%의 플레이룸";
+
+"Pibble.PlayRoom.Strings.Alerts.exitMessage" = "플레이룸에서 나갈까요?";
+
+"Pibble.PlayRoom.Strings.Alerts.okAction" = "확인";
+
+"Pibble.PlayRoom.Strings.Alerts.cancelAction" = "취소";
+
+"Pibble.CreatePostHelp.Strings.HelpTypes.translateToEnglish" = "영어로 번역"; //translate
+
+"Pibble.CreatePostHelp.Strings.HelpTypes.translateToKorean" = "한글로 번역";
+
+"Pibble.CreatePostHelp.Strings.RewardTitles.set" = "설정";
+
+"Pibble.PostHelpAnswers.Strings.deleteCommentMessage" = "삭제할까요?"; //translate
+
+"Pibble.PostHelpAnswers.Strings.deleteCommentAction" = "삭제";
+
+"Pibble.PostHelpAnswers.Strings.cancelDeleteComment" = "취소";
+
+"Pibble.PostHelpAnswers.Strings.brushed" = "브러시";
+
+"Pibble.PostHelpAnswers.Strings.pickAnswerAction" = "선택";
+
+"Pibble.PostHelpRewardPick.Strings.limits" = "최소 % ~ 최대 %";
+
+"Pibble.PostHelpRewardPick.Strings.balance" = "사용 가능 %: %";
+
+"Pibble.TopBannerInfo.Strings.navBarTitle" = "인기";
+
+"Pibble.GiftsInvite.Strings.navBarTitle" = "피블의 선물";
+
+//MARK:- Errors
+
+"Pibble.ErrorStrings.PibbleError.methodNotImplemented" = "방법이 정해지지 않았습니다.";
+
+"Pibble.ErrorStrings.PibbleError.parsingError" = "응답 형식 오류";
+
+"Pibble.ErrorStrings.PibbleError.objectDeallocated" = "오브젝트 할당 오류";
+
+"Pibble.ErrorStrings.PibbleError.notAllowedError" = "허용되지 않음 오류";
+
+"Pibble.ErrorStrings.PibbleError.wrondVericationCode" = "인증 코드 오류";
+
+"Pibble.ErrorStrings.PibbleError.resendCodeTimeInterval" = "잠시뒤에 다시 요청해주세요";
+
+"Pibble.ErrorStrings.PibbleError.mapKitSearchError" = "장소를 찾을 수 없습니다: %";
+
+"Pibble.ErrorStrings.PibbleError.googlePlaceSearchError" = "장소를 찾을 수 없습니다: %";
+
+"Pibble.ErrorStrings.PibbleError.notAuthorizedError" = "인증 에러";
+
+"Pibble.ErrorStrings.PibbleError.internalServerError" = "알수 없는 오류가 발생했습니다.";
+
+"Pibble.ErrorStrings.PibbleError.missingAttribute" = "상태 오류: '%'";
+
+"Pibble.ErrorStrings.PibbleError.socketEventParsingError" = "소켓 메시지 형식 오류: %";
+
+"Pibble.ErrorStrings.PibbleError.chatRoomsGroupForPostNotFound" = "그룹 메시지방을 찾을 수 없습니다.";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.operationInputNotFound" = "미디어 처리중 오류가 발생했습니다.";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.mediaLibraryExportError" = "미디어 라이브러리 사용 에러: %";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoExportError" = "이미지 생성 에러: %";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoResizeError" = "이미지 리사이즈 에러";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.videoExportSessionError" = "비디오 생성 에러";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.assetTypeError" = "리소스 타입 오류.";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.noAssetResourceError" = "리소스를 발견할 수 없습니다.";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.unSupportedAssetTypeError" = "지원되지 않는 포멧 오류";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.videoResizeError" = "비디오 리사이즈 오류";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.couldNotObtainMediaToken" = "미디어 사용 토큰 오류";
+
+"Pibble.ErrorStrings.MediaProcessingPipelineError.photoSaveError" = "이미지 저장 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.accessDenied" = "카메라 와 마이크 작업 권한이 필요합니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionAlreadyRunning" = "이미 캡쳐중입니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionIsMissing" = "캡처 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.inputsAreInvalid" = "캡처 입력 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.invalidOperation" = "캡쳐 동작 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.noCamerasAvailable" = "카메라를 찾을 수 없습니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.unknown" = "카메라 캡처 서비스 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureSessionIsNotRunning" = "캡처 동작 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.captureServiceIsAlreadyPreparing" = "이미 캡처 작업이 진행중입니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoRecordingItemsManagerIsMissing" = "비디오 녹화 아이템을 찾을 수 없습니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoRecordingItemCreationFailure" = "비디오 영상 생성 오류";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoIsTooShort" = "비디오 길이가 너무 짧습니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoNotRecorded" = "녹화된 비디오가 없습니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.videoLengthLimitationReached" = "비디오 최대 길이에 도달했습니다.";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.mergingVideoFailed" = "비디오를 합치는 중 에러가 발생했습니다. =  %";
+
+"Pibble.ErrorStrings.CameraCaptureServiceError.exportVideoSessionFailed" = "비디오 생성중 에러";
+
+"Pibble.ErrorStrings.CommerceProcessingError.notOriginalContentError" = "원본 인증 실패";
+
+"Pibble.ErrorStrings.CommerceProcessingError.bitDNAServiceError" = "원본 인증 서비스 실패";
+
+"Pibble.ErrorStrings.CommerceProcessingError.bitDNAServiceAddHashError" = "원본 해시값 생성 실패";
+
+"Pibble.ErrorStrings.CommerceProcessingError.notEnoughBalanceError" = "원본 인증을 위한 잔고 부족";
+
+"Pibble.ErrorStrings.CommerceProcessingError.paymentProcessError" = "컨텐트 인증 지불 실패";
+
+"Pibble.ErrorStrings.CommerceProcessingError.unknownError" = "커머스 게시하는 동안 알 수 없는 오류가 발생";
+
+"Pibble.ErrorStrings.errorAlertTitle" = "도움말";
+
+//Storyboards Strings
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.navBarTitle" = "메시지룸";
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.Buttons.goods" = "커머스메시지";
+
+"Pibble.ChatRoomsContainer.Strings.Storyboards.Buttons.personal" = "개인메시지";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.price" = "가격:";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.reward" = "보상:";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.resolution" = "해상도";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.dpi" = "DPI";
+
+"Pibble.Chat.Strings.Storyboards.DigitanlGoodHeader.filesFormat" = "파일형식:";
+
+"Pibble.Chat.Strings.Storyboards.messagePlaceholder" = "메시지";
+
+"Pibble.ChatRooms.Strings.Storyboards.navBarTitle" = "메시지룸";
+
+"Pibble.SearchResultTagDetailContent.Strings.Storyboards.relatedTags" = "연관 태그:";
+
+"Pibble.SearchResultTagDetailContent.Strings.Storyboards.posts" = "게시";
+
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.search" = "검색";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.top" = "인기";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.people" = "계정";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.tags" = "태그";
+
+"Pibble.DiscoverFeedMainContainer.Strings.Storyboards.Segments.place" = "장소";
+
+"Pibble.ReportPost.Strings.Storyboards.navBarTitle" = "신고";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.downloadable" = "다운로드 허용";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.photoLicensing" = "사진 라이선스";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.commercial" = "상업적 용도";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.editorial" = "출판 용도";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.royalty" = "로열티 없음";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.Licensing.exclusive" = "전용 용도";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.eula" = "사용허가계약서 동의 (EULA)";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.chat" = "판매자와 대화";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.buy" = "아이템 구매";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.buyInfo" = "구매후 바로 사용가능하며 결제후 환불은 불가합니다.";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.price" = "가격:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.reward" = "보상:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.resolution" = "해상도:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.dpi" = "DPI:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.fileFormat" = "파일 형식:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.size" = "크기:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.price" = "가격:";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.isNewCondition" = "새상품";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.description" = "설명";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.escrowInfo" = "구매자가 구매 물품을 최종 승인한 뒤 판매자에게 결제 대금이 수령됩니다.";
+
+"Pibble.CommercialPostDetail.Strings.Storyboards.escrowInfoTitle" = "에스크로 서비스";
+
+"Pibble.Comments.Strings.Storyboards.navBarTitle" = "댓글";
+
+"Pibble.Comments.Strings.Storyboards.commentPlaceholder" = "댓글 작성";
+
+"Pibble.Comments.Strings.Storyboards.replyButton" = "답신";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarTitle.edit" = "문구 입력";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarButtons.cancel" = "취소";
+
+"Pibble.PostsFeed.Strings.Storyboards.NavBarButtons.done" = "완료";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.viewAllComments" = "전부보기";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.raised" = "펀딩";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.goal" = "목표";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.contribute" = "후원하기";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.team" = "팀:";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.members" = "멤버:";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Funding.joinTeam" = "가입";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.commentPlaceholder" = "댓글 작성";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Edit.editCaption" = "문구 작성..";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.DigitalGood.reward" = "PIB 보상";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.viewEngagementButton" = "인사이트 보기";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.PromotionAdd.promoteButton" = "홍보하기";
+
+"Pibble.PostsFeed.Strings.Storyboards.Items.Good.isNew" = "새상품";
+
+"Pibble.PostsFeed.Strings.Storyboards.Placeholder.createButton" = "만들기";
+
+"Pibble.PostsFeed.Strings.Storyboards.TopGroupHeader.leaderBoardButton" = "리더보드";
+
+"Pibble.Donate.Strings.Storyboards.donateButton" = "후원";
+
+"Pibble.Donate.Strings.Storyboards.cancelButton" = "취소";
+
+"Pibble.Donate.Strings.Storyboards.donateTitle" = "좋아요! 이 캠페인을 후원합니다..";
+
+"Pibble.Donate.Strings.Storyboards.minButton" = "최소";
+
+"Pibble.Donate.Strings.Storyboards.maxButton" = "최대";
+
+"Pibble.Upvote.Strings.Storyboards.upvoteButton" = "업보트";
+
+"Pibble.Upvote.Strings.Storyboards.cancelButton" = "취소";
+
+"Pibble.Upvote.Strings.Storyboards.upvoteTitle" = "좋아요! 업보트합니다..";
+
+"Pibble.Upvote.Strings.Storyboards.minButton" = "최소";
+
+"Pibble.Upvote.Strings.Storyboards.maxButton" = "최대";
+
+"Pibble.Upvote.Strings.Storyboards.brush" = "브러시";
+
+"Pibble.TagsListing.Strings.Storyboards.navBarTitle" = "해시태그";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.navBarTitle" = "소개";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.firstName" = "이름";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.lastName" = "성";
+
+"Pibble.UserDescriptionPicker.Strings.Storyboards.Placeholders.website" = "웹사이트";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Description.aboutMeTitle" = "소개글 작성";
+
+"Pibble.UserProfileContent.Strings.Storyboards.RequestsButtons.deny" = "거절";
+
+"Pibble.UserProfileContent.Strings.Storyboards.RequestsButtons.accepted" = "승락";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.rewardsTitle" = "브러시 보상";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.pgb" = "PGB";
+
+"Pibble.UserProfileContent.Strings.Storyboards.Chart.prb" = "PRB";
+
+"Pibble.CampaignPick.Strings.Storyboards.navBarTitle" = "캠페인 가입";
+
+"Pibble.CampaignPick.Strings.Storyboards.navBarTitle.done" = "게시";
+
+"Pibble.CampaignEdit.Strings.Storyboards.navBarTitle.done" = "다음";
+
+"Pibble.CampaignEdit.Strings.Storyboards.goalInput" = "펀딩 목표를 설정하세요.";
+
+"Pibble.CampaignEdit.Strings.Storyboards.currency" = "PIB";
+
+"Pibble.CampaignEdit.Strings.Storyboards.goalInfo" = "펀딩 목표 금액은 나중에 변경할 수 있습니다. 얼마로 정할지 잘 모르겠다면 30,000 PIB 로 캠페인을 시작해보세요.";
+
+"Pibble.CampaignEdit.Strings.Storyboards.campaignTitlePlaceholder" = "캠페이 제목";
+
+"Pibble.CampaignEdit.Strings.Storyboards.fundraiseAs" = "펀딩 대상:";
+
+"Pibble.CampaignEdit.Strings.Storyboards.addTeamNameTitle" = "팀 이름:";
+
+"Pibble.CampaignEdit.Strings.Storyboards.addTeamLogoTitle" = "팀 로고 작성";
+
+"Pibble.PromotionPick.Strings.Storyboards.navBarTitle" = "홍보 설정";
+
+"Pibble.PromotionPick.Strings.Storyboards.budgetTitle" = "홍보 예산 설정";
+
+"Pibble.PromotionPick.Strings.Storyboards.increaseBalanceInfo" = "지갑 잔고 늘리기";
+
+"Pibble.PromotionPick.Strings.Storyboards.activityInfo" = "브러시 보상 대상 설정";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.upvote" = "업보트";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.share" = "공유";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.collect" = "즐겨찾기";
+
+"Pibble.PromotionPick.Strings.Storyboards.Activities.tag" = "태그";
+
+"Pibble.DescriptionPick.Strings.Storyboards.navBarTitle" = "설명";
+
+"Pibble.LocationPick.Strings.Storyboards.navBarTitle" = "장소";
+
+"Pibble.LocationPick.Strings.Storyboards.searchPlaceholder" = "장소 검색";
+
+"Pibble.TagPick.Strings.Storyboards.navBarTitle" = "태그 작성";
+
+"Pibble.MediaPosting.Strings.Storyboards.navBarTitle" = "미디어 게시";
+
+"Pibble.MediaPosting.Strings.Storyboards.navBarPostButton" = "게시";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.description" = "설명";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.location" = "장소";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.tag" = "태그";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.promotion" = "홍보";
+
+"Pibble.MediaPosting.Strings.Storyboards.Placeholders.promotionBudget" = "홍보 예산";
+
+"Pibble.MediaPosting.Strings.Storyboards.Sections.fundingCampaign" = "프로젝트 성격";
+
+"Pibble.MediaPosting.Strings.Storyboards.Sections.commerce" = "커머스 게시";
+
+"Pibble.MediaPosting.Strings.Storyboards.Funding.findButton" = "검색";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.digitalGoodToggle" = "디지틀 커머스";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.downloadableToggle" = "다운로드 허용";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.licensingTitle" = "사진 라이선스";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.commercial" = "상업적 용도";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.royalty" = "로열티 없음";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.editorial" = "출판 용도";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.Licensing.exclusive" = "전용 용도";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.terms" = "이 컨텐츠의 소유권은 본인에게 있으며, 이 컨텐츠의 공유와 게시에 대한 책임을 본인에게 있다는 점을 동의합니다.";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.titlePlaceholder" = "제목";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.pricePlaceholder" = "가격";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.priceCurrency" = "PIB";
+
+"Pibble.MediaPosting.Strings.Storyboards.Commerce.rewardRateTitle" = "보상률";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.Escrow.title" = "에스크로 서비스";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.Escrow.terms" = "굿즈 상품의 온라인쇼핑에 사용되는 피블의 안심결제 에스크로 서비스 정책에 동의합니다.";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.GoodUsage.isNew" = "새 상품";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.GoodUsage.isUsed" = "중고 상품";
+
+"Pibble.MediaPosting.Strings.Storyboards.Goods.urlPlaceholder" = "굿즈 웹사이트";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.library" = "갤러리";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.photo" = "사진";
+
+"Pibble.MediaSource.Strings.Storyboards.Segments.video" = "동영상";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarBackButton" = "이전";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarNextButton" = "다음";
+
+"Pibble.CameraCapture.Strings.Storyboards.navBarTitleQRScanner" = "QR 스캐너";
+
+"Pibble.MediaPick.Strings.Storyboards.navBarNextButton" = "다음";
+
+"Pibble.MediaPick.Strings.Storyboards.navBarCancelButton" = "취소";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.welcomeTitle" = "돌아온겻을 환영합니다.";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.welcomeSubtitle" = "여기 새로운 게시물들이 있어요";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.continueButton" = "들어가기";
+
+"Pibble.WelcomeScreen.Strings.Storyboards.switchAccountButton" = "계정 변경";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetSubtitle" = "성공!";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.passwordResetInfo" = "비밀번호가 새로 등록되었습니다. 방금 등록된 비밀번호를 사용해서 로그인해 주세요.";
+
+"Pibble.ResetPasswordSuccess.Strings.Storyboards.loginButton" = "로그인";
+
+"Pibble.ResetPassword.Strings.Storyboards.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPassword.Strings.Storyboards.title" = "비밀번호 설정";
+
+"Pibble.ResetPassword.Strings.Storyboards.Placeholders.password" = "비밀번호";
+
+"Pibble.ResetPassword.Strings.Storyboards.Placeholders.confirmPassword" = "비밀번호 확인";
+
+"Pibble.ResetPassword.Strings.Storyboards.resetPasswordButton" = "비밀번호 재설정";
+
+
+"Pibble.ResetPasswordVerifyCode.Strings.Storyboards.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordVerifyCode.Strings.Storyboards.resetInfo" = "방금 비밀번호를 재설정하기위한 인증코드를 발송했습니다.";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.phoneNumber" = "전화번호";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.codeButton" = "코드";
+
+"Pibble.ResetPasswordPhonePick.Strings.Storyboards.nextButton" = "다음";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.title" = "이메일로 보낸 인증코드를 확인해주세요.";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.subtitle" = "인증 코드를 입력해주세요.";
+
+"Pibble.ResetPasswordEmailSent.Strings.Storyboards.nextButton" = "다음";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.infoTitle" = "회원가입시 사용한 이메일주소를 입력해주세요. 비밀번호를 재설정하기 위한 인증코드를 보내드리겠습니다.";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.emailPlaceholder" = "이메일";
+
+"Pibble.ResetPasswordWithEmail.Strings.Storyboards.resetPasswordButton" = "비밀번호 재설정";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards..navBarTitle" = "비밀번호 재설정";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards..infoTitle" = "비밀번호를 재설정하기 위해 주소를 설정하세요.";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards.smsButton" = "SMS";
+
+"Pibble.RestorePasswordMethod.Strings.Storyboards.emailButton" = "이메일";
+
+"Pibble.SignIn.Strings.Storyboards.navBarTitle" = "로그인";
+
+"Pibble.SignIn.Strings.Storyboards.Placeholders.email" = "이메일";
+
+"Pibble.SignIn.Strings.Storyboards.Placeholders.password" = "비밀번호";
+
+"Pibble.SignIn.Strings.Storyboards.forgotPasswordButton" = "비밀번호를 잊으셨나요?";
+
+"Pibble.SignIn.Strings.Storyboards.signInButton" = "로그인";
+
+"Pibble.SignIn.Strings.Storyboards.signUpTitle" = "계정이 없으신가요?";
+
+"Pibble.SignIn.Strings.Storyboards.signUpButton" = "가입하기";
+
+"Pibble.VerifyCode.Strings.Storyboards.navBarTitle" = "인증코드";
+
+"Pibble.VerifyCode.Strings.Storyboards.infoTitle" = "방금 인증코드를 보내드렸습니다. SMS를 확인해주세요.";
+
+"Pibble.Registration.Strings.Storyboards.navBarTitle" = "가입하기";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.username" = "닉네임";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.email" = "이메일";
+
+"Pibble.Registration.Strings.Storyboards.Placeholders.password" = "비밀번호";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.special" = "특수문자 포함";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.uppercase" = "대문자 포함";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.number" = "숫자 포함";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.length" = "8자 이상의 비밀번호";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.username.chars" = "영문자 또는 숫자 닉네임";
+
+"Pibble.Registration.Strings.Storyboards.Requirements.username.length" = "6 글자 이상";
+
+"Pibble.Registration.Strings.Storyboards.signUpButton" = "가입하기";
+
+"Pibble.Registration.Strings.Storyboards.termsTitle" = "피블";
+
+"Pibble.Registration.Strings.Storyboards.termsSubtitle" = "개인정보호정책 및 약관에 동의";
+
+"Pibble.Registration.Strings.Storyboards.signInTitle" = "이미 계정이 있으신가요?";
+
+"Pibble.Registration.Strings.Storyboards.signInButton" = "로그인";
+
+"Pibble.Registration.Strings.Links.terms" = "약관";
+
+"Pibble.Registration.Strings.Links.privacyPolicy" = "개인정보 보호정책";
+
+"Pibble.PhonePick.Strings.Storyboards.navBarTitle" = "비밀번호 재설정";
+
+"Pibble.PhonePick.Strings.Storyboards.phoneNumber" = "전화번호";
+
+"Pibble.PhonePick.Strings.Storyboards.codeButton" = "코드";
+
+"Pibble.PhonePick.Strings.Storyboards.nextButton" = "다음";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.sendButton" = "입금";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.navBarTitle" = "입금";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.requestTitle" = "요청 금액";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.noteTitle" = "노트";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.Segments.friends" = "친구";
+
+"Pibble.WalletInvoiceCreate.Strings.Storyboards.Segments.recent" = "최근 사용";
+
+"Pibble.WalletTransactionAmountPick.Strings.Storyboards.navBarTitle" = "입금";
+
+"Pibble.WalletPinCode.Strings.Storyboards.title" = "피블 지갑";
+
+"Pibble.WalletPinCode.Strings.Storyboards.subtitle" = "지갑 비밀번호를 입력하세요";
+
+"Pibble.WalletPinCode.Strings.Storyboards.forgotPinCodeButton" = "비밀번호를 잊었나요?";
+
+"Pibble.WalletHome.Strings.Storyboards.navBarTitle" = "피블 지갑";
+
+"Pibble.WalletHome.Strings.Storyboards.Dashboard.availableBalance" = "사용 가능";
+
+"Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel" = "취소";
+
+"Pibble.Wallet.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm" = "확인";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.title" = "요청 금액";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.nextButton" = "다음";
+
+"Pibble.Wallet.Strings.Storyboards.WalletRequestAmountInputView.availableTitle" = "사용 가능:";
+
+"Pibble.Wallet.Strings.Storyboards.WalletInvoiceNoteInputView.title" = "요청 금액";
+
+"Pibble.WalletActivity.Strings.Storyboards.navBarTitle" = "활동내역";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.brush" = "브러시";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.pib" = "PIB";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.eth" = "ETH";
+
+"Pibble.WalletActivity.Strings.Storyboards.Segments.btc" = "BTC";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.ExternalTransaction.txId" = "전송ID";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.ExternalTransaction.copied" = "복사됨";
+
+"Pibble.WalletActivityContent.Strings.Storyboards.NavBar.fundingDonations" = "후원";
+
+"Pibble.WalletPayBill.Strings.Storyboards.navBarTitle" = "지불";
+
+"Pibble.WalletPayBill.Strings.Storyboards.emptyTitle" = "지불요청";
+
+"Pibble.WalletPayBill.Strings.Storyboards.emptySubtitle" = "도착된 지불요청이 없습니다.";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.title" = "지불요청 도착";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.cancel" = "취소";
+
+"Pibble.WalletPayBill.Strings.Storyboards.WalletActivityIncomingInvoice.Buttons.confirm" = "확인";
+
+"Pibble.WalletPreview.Strings.Storyboards.walletButton" = "피블 지갑";
+
+"Pibble.WalletReceive.Strings.Storyboards.navBarTitle" = "입금";
+
+"Pibble.WalletReceive.Strings.Storyboards.copyAddressButton" = "지갑 주소 복사";
+
+"Pibble.WalletReceive.Strings.Storyboards.shareButton" = "공유";
+
+"Pibble.WalletReceive.Strings.Storyboards.requestFromFriends" = "친구에게 요청";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.navBarTitle" = "출금";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.navBarSendButton" = "출금";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.sendTitle" = "출금 금액";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.sendToTitle" = "출금";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.friends" = "친구";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.address" = "주소 입력";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.Segments.scan" = "QR 코드";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.addressPlaceholder" = "전송할 지갑주소를 입력하세요";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.UserSegments.friends" = "친구";
+
+"Pibble.WalletTransactionCreate.Strings.Storyboards.UserSegments.recent" = "최근 사용";
+
+"Pibble.SettingsHome.Strings.Storyboards.navBarTitle" = "설정";
+
+"Pibble.ReferUser.Strings.Storyboards.navBarTitle" = "친구 초대";
+
+"Pibble.ReferUser.Strings.Storyboards.Header.timeTitle" = "한정 기간 행사중";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.title" = "친구 초대 코드";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.ActionButtons.copy" = "복사";
+
+"Pibble.ReferUser.Strings.Storyboards.InviteCode.ActionButtons.invite" = "초대";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisteredUsers.title" = "초대 가입 보너스";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.title" = "추천 친구의 아이디 등록";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.registerButton" = "등록";
+
+"Pibble.ReferUser.Strings.Storyboards.RegisterUser.registeredUserPlaceholder" = "추천 친구의 아이디를 입력하세요";
+
+"Pibble.CommerceTypePick.Strings.Storyboards.navBarTitle" = "커머스";
+
+"Pibble.AccountSettings.Strings.Storyboards.navBarTitle" = "계정";
+
+"Pibble.WalletSettings.Strings.Storyboards.navBarTitle" = "지갑";
+
+"Pibble.AccountCurrencyPicker.Strings.Storyboards.navBarTitle" = "사용 화폐";
+
+"Pibble.About.Strings.Storyboards.navBarTitle" = "정보";
+
+"Pibble.LanguagePicker.Strings.Storyboards.navBarTitle" = "언어 설정";
+
+"Pibble.UsernamePicker.Strings.Storyboards.navBarTitle" = "사용자 이름";
+
+"Pibble.UsernamePicker.Strings.Storyboards.input" = "사용자 이름";
+
+"Pibble.UsernamePicker.Strings.Storyboards.navBarDoneButton" = "확인";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.nextButton" = "다음";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.cancelButton" = "취소";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.navBar.title" = "목표 설정";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.headerTitle" = "홍보를 통해 사람들을 어디로 보낼까요?";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.Destinations.userProfile" = "내 프로필";
+
+"Pibble.PromotionDestinationPick.Strings.Storyboards.Destinations.url" = "내 웹사이트";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.navBar.title" = "웹사이트 설정";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.navBar.done" = "확인";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.headerTitle" = "URL 과 행동 버튼 추가";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.urlInputTitle" = "웹사이트 설정";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.urlInputPlaceholder" = "웹사이트 URL을 입력하세요";
+
+"Pibble.PromotionUrlDestinationPick.Strings.Storyboards.actionSelectTitle" = "참여자들의 행동 버튼을 설정하세요";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.navBar.title" = "예산 및 기간";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.navBar.nextButton" = "다음";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.header.budgetTitle" = "예산";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.header.reachTitle" = "도달수 예측";
+
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.budgetTitle" = "예산";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.durationTitle" = "기간";
+
+"Pibble.PromotionBudgetPick.Strings.Storyboards.inputs.daysTitle" = "일";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.navBar.title" = "검토하기";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.destination" = "목표 설정";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.action" = "행동 버튼";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionInfo.budget" = "예산 및 기간";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.promotionPreviewButton" = "홍보 게시물 미리보기";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.header.title" = "홍보 준비가 되었습니다.";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.createButton" = "홍보 작성";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.termsTitle" = "홍보를 만들면 피블의 이용 약관 및 광고 가이드라인에 동의하게 됩니다.";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.termsButton" = "이용 약관";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.guidlinesButton" = "광고 가이드라인 보기";
+
+"Pibble.CreatePromotionConfirm.Strings.Storyboards.footer.conjunctionTitle" = "및";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.NavBar.title" = "홍보";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.active" = "진행중";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.paused" = "일시 중단";
+
+"Pibble.PromotedPostsContainer.Strings.Storyboards.Buttons.closed" = "종료";
+
+"Pibble.PromotionInsights.Strings.Storyboards.NavBar.title" = "인사이트";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.title" = "예산";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.total" = "예산 총액";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.used" = "사용 예산";
+
+"Pibble.PromotionInsights.Strings.Storyboards.Budget.left" = "남은 예산";
+
+"Pibble.PostStatistics.Strings.Storyboards.impression" = "참여";
+
+"Pibble.PostStatistics.Strings.Storyboards.profile" = "프로필";
+
+"Pibble.NotificationsFeed.Strings.Storyboards.NavBar.title" = "내 소식";
+
+"Pibble.Onboarding.Strings.Storyboards.startButton" = "시작하기";
+
+"Pibble.TransactionCurrencyPick.Strings.Storyboards.navBarTitle" = "출금";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.navBarTitle" = "리더보드";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.navBar.helpButton" = "도움말";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.day" = "직전";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.week" = "최근 7일";
+
+"Pibble.LeaderboardContainer.Strings.Storyboards.segments.all" = "모든 기간";
+
+"Pibble.UpvotedUsers.Strings.Storyboards.navBar.title" = "업보트";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.raised" = "펀딩";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.goal" = "목표";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.started" = "시작일";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.about" = "펀딩현황";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.team" = "팀:";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.members" = "멤버:";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.joinTeam" = "팀게시물 올리기";
+
+"Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price" = "가격";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.NavBar.title" = "펀딩";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.active" = "진행중";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.ended" = "종료";
+
+"Pibble.FundingPostsContainer.Strings.Storyboards.Buttons.backer" = "후원";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.needHelp" = "도움이 필요한가요?"; //translate
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.helpPick" = "어떤 종류의 도움이 필요하세요?";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.SectionTitle.rewardPick" = "보상 설정";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Descriptions.help" = "피블친구들에게 요청해보세요. 즐겁게 도와줄겁니다.";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Descriptions.reward" = "당신이 선택한 친구 한명에게 설정된 보상이 지급됩니다.";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Inputs.helpTextPlaceholder" = "요청내용을 직접 작성..";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Inputs.rewardPick" = "설정";
+
+"Pibble.CreatePostHelp.Strings.Storyboards.Buttons.createHelp" = "도움요청";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.navBarTitle" = "도움 요청"; //translate
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.answerPlaceholder" = "당신의 답을 작성해주세요.";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.replyButton" = "댓글";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.inputTitle" = "당신의 답";
+
+"Pibble.PostHelpAnswers.Strings.Storyboards.inputMinLimitation" = "최소 10자 이상";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.minButton" = "최소"; //translate
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.maxButton" = "최대";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.rewardTitle" = "보상설정";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.okButton" = "확인";
+
+"Pibble.PostHelpRewardPick.Strings.Storyboards.cancelButton" = "취소";

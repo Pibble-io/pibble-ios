@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="PostsFeedCommercialPostTitleTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9r5-ST-6Jy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xm-dD-kHc">
+                                <rect key="frame" x="0.0" y="38.5" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="aaH-MX-dSg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIB Reward" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUv-5L-hu4">
+                                <rect key="frame" x="201.5" y="11" width="69.5" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.PostsFeed.Strings.Storyboards.Items.DigitalGood.reward"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wm-gJ-85F">
+                                <rect key="frame" x="260" y="11" width="50" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0U-e9-lh0">
+                                <rect key="frame" x="10" y="5" width="190" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="29" id="JuF-1i-Wnb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Sl-fx-Ici">
+                                <rect key="frame" x="276" y="0.0" width="44" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OJD-Jy-cRF"/>
+                                    <constraint firstAttribute="width" constant="44" id="g0T-AT-WeL"/>
+                                </constraints>
+                                <state key="normal" image="PostFeed-ChatButton">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="chatAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lm6-Hl-kw9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA5-HI-abk">
+                                <rect key="frame" x="284" y="12.5" width="24" height="15.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7J-AD-I19">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="39.5"/>
+                                <connections>
+                                    <action selector="selectItemAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qAQ-kL-hnh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K0U-e9-lh0" firstAttribute="leading" secondItem="9r5-ST-6Jy" secondAttribute="leading" constant="10" id="8yY-h7-MII"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="leading" secondItem="RUv-5L-hu4" secondAttribute="trailing" constant="5" id="9ES-40-2Zy"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="centerY" secondItem="XA5-HI-abk" secondAttribute="centerY" id="HR2-Eo-KyI"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="leading" secondItem="n7J-AD-I19" secondAttribute="trailing" constant="10" id="LLK-qk-WMs"/>
+                            <constraint firstAttribute="trailing" secondItem="7Sl-fx-Ici" secondAttribute="trailing" id="MYd-hS-zAa"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="centerY" secondItem="RUv-5L-hu4" secondAttribute="centerY" id="MyZ-wk-TaF"/>
+                            <constraint firstItem="n7J-AD-I19" firstAttribute="leading" secondItem="9r5-ST-6Jy" secondAttribute="leading" id="SQ9-LS-J2f"/>
+                            <constraint firstAttribute="bottom" secondItem="0Xm-dD-kHc" secondAttribute="bottom" id="Wpi-o3-2Nj"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="centerX" secondItem="XA5-HI-abk" secondAttribute="centerX" constant="2" id="YIt-12-mXL"/>
+                            <constraint firstAttribute="trailing" secondItem="K0U-e9-lh0" secondAttribute="trailing" constant="120" id="bEf-vO-yE3"/>
+                            <constraint firstAttribute="bottom" secondItem="n7J-AD-I19" secondAttribute="bottom" id="d0z-X7-sll"/>
+                            <constraint firstAttribute="trailing" secondItem="0Xm-dD-kHc" secondAttribute="trailing" id="fjh-RM-zAr"/>
+                            <constraint firstItem="0Xm-dD-kHc" firstAttribute="leading" secondItem="9r5-ST-6Jy" secondAttribute="leading" id="gOY-JR-RN0"/>
+                            <constraint firstItem="n7J-AD-I19" firstAttribute="top" secondItem="9r5-ST-6Jy" secondAttribute="top" id="jRg-Ii-Wsb"/>
+                            <constraint firstAttribute="bottom" secondItem="K0U-e9-lh0" secondAttribute="bottom" constant="5" id="kci-wX-c4c"/>
+                            <constraint firstItem="4Wm-gJ-85F" firstAttribute="centerY" secondItem="RUv-5L-hu4" secondAttribute="centerY" id="mis-dn-25R"/>
+                            <constraint firstItem="K0U-e9-lh0" firstAttribute="top" secondItem="9r5-ST-6Jy" secondAttribute="top" constant="5" id="r40-hE-UQH"/>
+                            <constraint firstAttribute="trailing" secondItem="4Wm-gJ-85F" secondAttribute="trailing" constant="10" id="rLh-LT-G4i"/>
+                            <constraint firstItem="7Sl-fx-Ici" firstAttribute="top" secondItem="9r5-ST-6Jy" secondAttribute="top" id="xD8-jj-dUK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9r5-ST-6Jy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FlB-fv-trU"/>
+                    <constraint firstItem="9r5-ST-6Jy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PsP-5e-4h1"/>
+                    <constraint firstAttribute="bottom" secondItem="9r5-ST-6Jy" secondAttribute="bottom" id="QDP-Kl-ICN"/>
+                    <constraint firstAttribute="trailing" secondItem="9r5-ST-6Jy" secondAttribute="trailing" id="eCt-mz-C18"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chatButton" destination="7Sl-fx-Ici" id="xGp-Eh-SwL"/>
+                <outlet property="commercialPostPrice" destination="K0U-e9-lh0" id="Zbc-lK-LRy"/>
+                <outlet property="rewardAmountLabel" destination="XA5-HI-abk" id="UE6-PK-xYe"/>
+                <outlet property="rewardTitleLabel" destination="RUv-5L-hu4" id="CpR-oP-Vkg"/>
+                <outlet property="statusLabel" destination="4Wm-gJ-85F" id="ba4-OI-NeS"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="45.877061469265371"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PostFeed-ChatButton" width="34" height="29.5"/>
+    </resources>
+</document>

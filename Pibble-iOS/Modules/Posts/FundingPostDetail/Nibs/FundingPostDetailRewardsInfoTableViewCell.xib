@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="156" id="LBy-xE-El8" customClass="FundingPostDetailRewardsInfoTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LBy-xE-El8" id="Fpa-EQ-PIb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="155.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvf-jI-zzP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="155.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fn-UD-9Z0">
+                                <rect key="frame" x="15" y="15" width="240" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.5" id="bsp-dC-SgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ1-4F-DTS">
+                                <rect key="frame" x="0.0" y="49.5" width="320" height="105.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Kg3-KA-Yba">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-jR-RxJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-2X-QuW">
+                                                        <rect key="frame" x="15" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI3-ak-Mxb">
+                                                        <rect key="frame" x="130" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgW-b4-7dt">
+                                                        <rect key="frame" x="272" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-3o-3I3">
+                                                        <rect key="frame" x="8" y="0.0" width="304" height="34"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="cJ3-2X-QuW" secondAttribute="bottom" id="BUN-rK-uPK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VgW-b4-7dt" secondAttribute="trailing" constant="15" id="Cut-K3-uB2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DwO-3o-3I3" secondAttribute="bottom" id="FNS-T1-2R1"/>
+                                                    <constraint firstItem="VgW-b4-7dt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TI3-ak-Mxb" secondAttribute="trailing" constant="15" id="JUs-Pd-N2f"/>
+                                                    <constraint firstItem="DwO-3o-3I3" firstAttribute="top" secondItem="WDd-jR-RxJ" secondAttribute="top" id="Mrw-vl-4ce"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DwO-3o-3I3" secondAttribute="trailing" constant="8" id="ObC-Kw-gO4"/>
+                                                    <constraint firstItem="cJ3-2X-QuW" firstAttribute="leading" secondItem="WDd-jR-RxJ" secondAttribute="leading" constant="15" id="QET-1u-Ozn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VgW-b4-7dt" secondAttribute="bottom" id="SVG-5N-ir4"/>
+                                                    <constraint firstAttribute="height" constant="34" id="Smx-LT-q18"/>
+                                                    <constraint firstItem="TI3-ak-Mxb" firstAttribute="leading" secondItem="WDd-jR-RxJ" secondAttribute="leading" constant="130" id="U4c-at-BB5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TI3-ak-Mxb" secondAttribute="bottom" id="Wp2-HS-W5k"/>
+                                                    <constraint firstItem="DwO-3o-3I3" firstAttribute="leading" secondItem="WDd-jR-RxJ" secondAttribute="leading" constant="8" id="cUV-ft-OIY"/>
+                                                    <constraint firstItem="VgW-b4-7dt" firstAttribute="top" secondItem="WDd-jR-RxJ" secondAttribute="top" id="cZL-v6-bEq"/>
+                                                    <constraint firstItem="TI3-ak-Mxb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cJ3-2X-QuW" secondAttribute="trailing" constant="15" id="gHx-n2-fAW"/>
+                                                    <constraint firstItem="cJ3-2X-QuW" firstAttribute="top" secondItem="WDd-jR-RxJ" secondAttribute="top" id="pWB-Vw-JU6"/>
+                                                    <constraint firstItem="TI3-ak-Mxb" firstAttribute="top" secondItem="WDd-jR-RxJ" secondAttribute="top" id="qbn-eZ-k5l"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-5j-Vdq">
+                                                <rect key="frame" x="0.0" y="36" width="320" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjn-dv-pHS">
+                                                        <rect key="frame" x="15" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-MJ-958">
+                                                        <rect key="frame" x="130" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D3-lq-dWR">
+                                                        <rect key="frame" x="272" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7o8-YE-YDb">
+                                                        <rect key="frame" x="8" y="0.0" width="304" height="34"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0D3-lq-dWR" firstAttribute="top" secondItem="0qs-5j-Vdq" secondAttribute="top" id="7JQ-2t-GoQ"/>
+                                                    <constraint firstItem="7o8-YE-YDb" firstAttribute="top" secondItem="0qs-5j-Vdq" secondAttribute="top" id="8Xe-Rq-MIg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7o8-YE-YDb" secondAttribute="bottom" id="AHF-CS-dN4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ssf-MJ-958" secondAttribute="bottom" id="Bcs-iz-RBn"/>
+                                                    <constraint firstAttribute="height" constant="34" id="KSu-uH-P2z"/>
+                                                    <constraint firstItem="pjn-dv-pHS" firstAttribute="leading" secondItem="0qs-5j-Vdq" secondAttribute="leading" constant="15" id="Kf1-wn-h1K"/>
+                                                    <constraint firstItem="pjn-dv-pHS" firstAttribute="top" secondItem="0qs-5j-Vdq" secondAttribute="top" id="Lbc-PD-XKR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0D3-lq-dWR" secondAttribute="bottom" id="NX5-Rj-UBt"/>
+                                                    <constraint firstItem="0D3-lq-dWR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ssf-MJ-958" secondAttribute="trailing" constant="15" id="RUf-mR-1VR"/>
+                                                    <constraint firstItem="7o8-YE-YDb" firstAttribute="leading" secondItem="0qs-5j-Vdq" secondAttribute="leading" constant="8" id="Tx0-wh-5QV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pjn-dv-pHS" secondAttribute="bottom" id="W2j-jN-Qg1"/>
+                                                    <constraint firstItem="Ssf-MJ-958" firstAttribute="leading" secondItem="0qs-5j-Vdq" secondAttribute="leading" constant="130" id="cbQ-xi-02u"/>
+                                                    <constraint firstItem="Ssf-MJ-958" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pjn-dv-pHS" secondAttribute="trailing" constant="15" id="crZ-oQ-fD1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7o8-YE-YDb" secondAttribute="trailing" constant="8" id="eSd-wq-npI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0D3-lq-dWR" secondAttribute="trailing" constant="15" id="fIi-iP-rlb"/>
+                                                    <constraint firstItem="Ssf-MJ-958" firstAttribute="top" secondItem="0qs-5j-Vdq" secondAttribute="top" id="yPh-gw-INl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-AP-PcF">
+                                                <rect key="frame" x="0.0" y="71.5" width="320" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xk-oe-UQa">
+                                                        <rect key="frame" x="15" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhV-OQ-J2s">
+                                                        <rect key="frame" x="130" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmL-jT-O88">
+                                                        <rect key="frame" x="272" y="0.0" width="33" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.price"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-Mz-Ec8">
+                                                        <rect key="frame" x="8" y="0.0" width="304" height="34"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="4YJ-QQ-jQt"/>
+                                                    <constraint firstItem="MhV-OQ-J2s" firstAttribute="top" secondItem="U6D-AP-PcF" secondAttribute="top" id="8cX-kS-KLi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AmL-jT-O88" secondAttribute="trailing" constant="15" id="8sj-AH-5nx"/>
+                                                    <constraint firstItem="MhV-OQ-J2s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6xk-oe-UQa" secondAttribute="trailing" constant="15" id="Ch1-ai-5G0"/>
+                                                    <constraint firstItem="gzg-Mz-Ec8" firstAttribute="leading" secondItem="U6D-AP-PcF" secondAttribute="leading" constant="8" id="F6s-t9-b7r"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AmL-jT-O88" secondAttribute="bottom" id="MDj-Dj-55f"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6xk-oe-UQa" secondAttribute="bottom" id="Pel-m9-iF8"/>
+                                                    <constraint firstItem="gzg-Mz-Ec8" firstAttribute="top" secondItem="U6D-AP-PcF" secondAttribute="top" id="Qam-Xb-HhY"/>
+                                                    <constraint firstItem="6xk-oe-UQa" firstAttribute="leading" secondItem="U6D-AP-PcF" secondAttribute="leading" constant="15" id="R3X-mI-t2G"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MhV-OQ-J2s" secondAttribute="bottom" id="VcQ-9c-KNs"/>
+                                                    <constraint firstItem="AmL-jT-O88" firstAttribute="top" secondItem="U6D-AP-PcF" secondAttribute="top" id="XD6-j6-foH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gzg-Mz-Ec8" secondAttribute="trailing" constant="8" id="Zb5-8o-5w5"/>
+                                                    <constraint firstItem="AmL-jT-O88" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MhV-OQ-J2s" secondAttribute="trailing" constant="15" id="cOj-IG-eQO"/>
+                                                    <constraint firstItem="6xk-oe-UQa" firstAttribute="top" secondItem="U6D-AP-PcF" secondAttribute="top" id="d95-eG-KeM"/>
+                                                    <constraint firstItem="MhV-OQ-J2s" firstAttribute="leading" secondItem="U6D-AP-PcF" secondAttribute="leading" constant="130" id="hTQ-WF-k3I"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gzg-Mz-Ec8" secondAttribute="bottom" id="j6o-HQ-zJQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="105.5" id="yYs-AS-yeB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Kg3-KA-Yba" secondAttribute="bottom" id="SdD-sd-Q8d"/>
+                                    <constraint firstItem="Kg3-KA-Yba" firstAttribute="top" secondItem="mJ1-4F-DTS" secondAttribute="top" id="fYm-Dg-CtJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kg3-KA-Yba" secondAttribute="trailing" id="lBZ-E9-wYD"/>
+                                    <constraint firstItem="Kg3-KA-Yba" firstAttribute="leading" secondItem="mJ1-4F-DTS" secondAttribute="leading" id="wbX-nQ-YOG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mJ1-4F-DTS" secondAttribute="trailing" id="0tQ-C2-dPf"/>
+                            <constraint firstItem="mJ1-4F-DTS" firstAttribute="leading" secondItem="Lvf-jI-zzP" secondAttribute="leading" id="O7y-do-yaT"/>
+                            <constraint firstItem="9fn-UD-9Z0" firstAttribute="top" secondItem="Lvf-jI-zzP" secondAttribute="top" constant="15" id="dyL-tY-fIM"/>
+                            <constraint firstAttribute="bottom" secondItem="mJ1-4F-DTS" secondAttribute="bottom" constant="0.5" id="eIS-cR-vGJ"/>
+                            <constraint firstItem="mJ1-4F-DTS" firstAttribute="top" secondItem="9fn-UD-9Z0" secondAttribute="bottom" constant="15" id="iht-SV-IKl"/>
+                            <constraint firstAttribute="trailing" secondItem="9fn-UD-9Z0" secondAttribute="trailing" constant="65" id="jku-XK-Njc"/>
+                            <constraint firstItem="9fn-UD-9Z0" firstAttribute="leading" secondItem="Lvf-jI-zzP" secondAttribute="leading" constant="15" id="lob-5s-luV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nfn-RR-LP1"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lvf-jI-zzP" secondAttribute="bottom" id="6P0-oy-mwh"/>
+                    <constraint firstItem="Lvf-jI-zzP" firstAttribute="leading" secondItem="Fpa-EQ-PIb" secondAttribute="leading" id="8RI-mH-xtI"/>
+                    <constraint firstAttribute="trailing" secondItem="Lvf-jI-zzP" secondAttribute="trailing" id="Xwz-lO-4Ch"/>
+                    <constraint firstItem="Lvf-jI-zzP" firstAttribute="top" secondItem="Fpa-EQ-PIb" secondAttribute="top" id="e0P-UA-XCw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="zud-iN-vOa"/>
+            <connections>
+                <outletCollection property="rewardTypeLabels" destination="cJ3-2X-QuW" collectionClass="NSMutableArray" id="kpW-8T-flR"/>
+                <outletCollection property="rewardTypeLabels" destination="pjn-dv-pHS" collectionClass="NSMutableArray" id="ltr-i0-zNd"/>
+                <outletCollection property="rewardTypeLabels" destination="6xk-oe-UQa" collectionClass="NSMutableArray" id="O81-DS-nVC"/>
+                <outletCollection property="rewardPriceLabels" destination="TI3-ak-Mxb" collectionClass="NSMutableArray" id="CbR-tW-jmn"/>
+                <outletCollection property="rewardPriceLabels" destination="Ssf-MJ-958" collectionClass="NSMutableArray" id="2ya-mL-0GU"/>
+                <outletCollection property="rewardPriceLabels" destination="MhV-OQ-J2s" collectionClass="NSMutableArray" id="tpZ-Ev-Fl2"/>
+                <outletCollection property="rewardAmountLabels" destination="VgW-b4-7dt" collectionClass="NSMutableArray" id="KYx-qT-htD"/>
+                <outletCollection property="rewardAmountLabels" destination="0D3-lq-dWR" collectionClass="NSMutableArray" id="BiU-oz-Vpf"/>
+                <outletCollection property="rewardAmountLabels" destination="AmL-jT-O88" collectionClass="NSMutableArray" id="Hbg-BV-AkY"/>
+                <outletCollection property="rewardSelectionView" destination="DwO-3o-3I3" collectionClass="NSMutableArray" id="cap-MZ-fce"/>
+                <outletCollection property="rewardSelectionView" destination="7o8-YE-YDb" collectionClass="NSMutableArray" id="Xw9-aH-GV1"/>
+                <outletCollection property="rewardSelectionView" destination="gzg-Mz-Ec8" collectionClass="NSMutableArray" id="4AK-g8-cwo"/>
+            </connections>
+            <point key="canvasLocation" x="-113.59999999999999" y="146.62668665667167"/>
+        </tableViewCell>
+    </objects>
+</document>

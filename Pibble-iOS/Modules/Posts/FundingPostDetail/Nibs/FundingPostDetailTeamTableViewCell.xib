@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="49" id="1i9-fd-dcF" customClass="FundingPostDetailTeamTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1i9-fd-dcF" id="nRY-41-Cxe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa8-ak-mEV">
+                        <rect key="frame" x="76.5" y="20.5" width="98.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPV-55-cHk">
+                        <rect key="frame" x="175" y="4" width="130" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="X1q-IZ-PVj"/>
+                            <constraint firstAttribute="width" constant="130" id="v7x-hq-nfF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <state key="normal" title="Post for this team">
+                            <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.joinTeam"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="joinAction:" destination="1i9-fd-dcF" eventType="touchUpInside" id="jNF-fw-gok"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvR-op-MVv">
+                        <rect key="frame" x="53.5" y="4" width="121.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSz-OJ-AEy">
+                        <rect key="frame" x="15" y="4" width="33.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.team"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-9D-GJS">
+                        <rect key="frame" x="15" y="20.5" width="56.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.FundingPostDetail.Strings.Storyboards.Items.Funding.members"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xa8-ak-mEV" firstAttribute="top" secondItem="RvR-op-MVv" secondAttribute="bottom" id="7zE-Rl-gc4"/>
+                    <constraint firstItem="xa8-ak-mEV" firstAttribute="leading" secondItem="9WY-9D-GJS" secondAttribute="trailing" constant="5" id="9ci-Oj-Boa"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dPV-55-cHk" secondAttribute="bottom" id="EMz-IP-mAP"/>
+                    <constraint firstItem="dSz-OJ-AEy" firstAttribute="leading" secondItem="nRY-41-Cxe" secondAttribute="leading" constant="15" id="FAI-Jq-dUO"/>
+                    <constraint firstItem="RvR-op-MVv" firstAttribute="leading" secondItem="dSz-OJ-AEy" secondAttribute="trailing" constant="5" id="GTh-dy-NOi"/>
+                    <constraint firstItem="9WY-9D-GJS" firstAttribute="leading" secondItem="dSz-OJ-AEy" secondAttribute="leading" id="OO7-2V-oWK"/>
+                    <constraint firstAttribute="trailing" secondItem="dPV-55-cHk" secondAttribute="trailing" constant="15" id="X0g-Gg-Cnf"/>
+                    <constraint firstAttribute="bottom" secondItem="xa8-ak-mEV" secondAttribute="bottom" priority="750" constant="4.5" id="aN1-vD-Grm"/>
+                    <constraint firstItem="dPV-55-cHk" firstAttribute="leading" secondItem="RvR-op-MVv" secondAttribute="trailing" id="kVp-Oe-2Nz"/>
+                    <constraint firstItem="xa8-ak-mEV" firstAttribute="top" secondItem="9WY-9D-GJS" secondAttribute="top" id="m9J-d3-b8P"/>
+                    <constraint firstItem="RvR-op-MVv" firstAttribute="top" secondItem="dSz-OJ-AEy" secondAttribute="top" id="oP2-NI-gfl"/>
+                    <constraint firstItem="dSz-OJ-AEy" firstAttribute="top" secondItem="nRY-41-Cxe" secondAttribute="top" constant="4" id="pek-Hc-WiI"/>
+                    <constraint firstItem="xa8-ak-mEV" firstAttribute="trailing" secondItem="RvR-op-MVv" secondAttribute="trailing" id="uQd-a4-Mgr"/>
+                    <constraint firstItem="dPV-55-cHk" firstAttribute="top" secondItem="nRY-41-Cxe" secondAttribute="top" constant="4" id="x1F-uw-JnJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="9tm-Ox-NBH"/>
+            <connections>
+                <outlet property="joinTeamButton" destination="dPV-55-cHk" id="wT6-lP-oOH"/>
+                <outlet property="teamInfoLabel" destination="xa8-ak-mEV" id="mcL-Q2-5kx"/>
+                <outlet property="teamNameLabel" destination="RvR-op-MVv" id="W00-kQ-Gv1"/>
+            </connections>
+            <point key="canvasLocation" x="67.200000000000003" y="56.221889055472268"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="R5f-Md-w6b" customClass="NotificationsFeedUserRelatedItemTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R5f-Md-w6b" id="lio-NX-e2l">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOM-fn-9FF">
+                        <rect key="frame" x="60" y="10" width="160" height="41.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r65-Wd-ajT">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ccv-WX-Ar4"/>
+                            <constraint firstAttribute="height" constant="40" id="kp6-y0-Mnw"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DFH-Qh-agV">
+                        <rect key="frame" x="270" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="E2F-cf-t2I"/>
+                            <constraint firstAttribute="width" constant="40" id="POv-Rh-KKo"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tau-kn-r9m">
+                        <rect key="frame" x="270" y="0.0" width="50" height="61.5"/>
+                        <connections>
+                            <action selector="showUserAction:" destination="R5f-Md-w6b" eventType="touchUpInside" id="TTT-Oq-RWS"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aOM-fn-9FF" firstAttribute="leading" secondItem="r65-Wd-ajT" secondAttribute="trailing" constant="10" id="0AK-Pc-SUe"/>
+                    <constraint firstItem="DFH-Qh-agV" firstAttribute="leading" secondItem="tau-kn-r9m" secondAttribute="leading" id="B2r-A0-Oy4"/>
+                    <constraint firstAttribute="trailing" secondItem="aOM-fn-9FF" secondAttribute="trailing" constant="100" id="Br3-e9-msd"/>
+                    <constraint firstItem="r65-Wd-ajT" firstAttribute="top" secondItem="lio-NX-e2l" secondAttribute="top" constant="10" id="CYL-3d-EkQ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="r65-Wd-ajT" secondAttribute="bottom" constant="10" id="LaF-aR-cW6"/>
+                    <constraint firstAttribute="bottom" secondItem="tau-kn-r9m" secondAttribute="bottom" id="Mha-P8-lea"/>
+                    <constraint firstAttribute="trailing" secondItem="tau-kn-r9m" secondAttribute="trailing" id="RHW-wl-lNJ"/>
+                    <constraint firstItem="r65-Wd-ajT" firstAttribute="leading" secondItem="lio-NX-e2l" secondAttribute="leading" constant="10" id="TMB-pD-s69"/>
+                    <constraint firstItem="aOM-fn-9FF" firstAttribute="top" secondItem="lio-NX-e2l" secondAttribute="top" constant="10" id="YMu-az-eQd"/>
+                    <constraint firstAttribute="bottom" secondItem="aOM-fn-9FF" secondAttribute="bottom" priority="750" constant="10" id="Ztd-dD-Tld"/>
+                    <constraint firstItem="DFH-Qh-agV" firstAttribute="top" secondItem="lio-NX-e2l" secondAttribute="top" constant="10" id="eQN-Jr-wfD"/>
+                    <constraint firstItem="tau-kn-r9m" firstAttribute="top" secondItem="lio-NX-e2l" secondAttribute="top" id="okc-wo-thz"/>
+                    <constraint firstAttribute="trailing" secondItem="DFH-Qh-agV" secondAttribute="trailing" constant="10" id="wo7-RF-7eV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="uyC-Zq-i43"/>
+            <connections>
+                <outlet property="messageLabel" destination="aOM-fn-9FF" id="Bh7-pZ-0tO"/>
+                <outlet property="relatedUserAvatarImageView" destination="DFH-Qh-agV" id="chY-Lp-cvZ"/>
+                <outlet property="userImageView" destination="r65-Wd-ajT" id="Fj1-ug-sVK"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="-58.47076461769116"/>
+        </tableViewCell>
+    </objects>
+</document>

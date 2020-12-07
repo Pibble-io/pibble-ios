@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostingMediaItemReusableView" id="ECD-lk-YfS" customClass="PostingMediaItemReusableView" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE7-xo-hcu">
+                    <rect key="frame" x="10.5" y="58.5" width="53" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="BRC-wJ-RGK"/>
+                        <constraint firstAttribute="width" constant="53" id="U6F-og-KjI"/>
+                    </constraints>
+                    <state key="normal" image="MediaPosting-AddMediaItemButton"/>
+                    <connections>
+                        <action selector="addItemAction:" destination="ECD-lk-YfS" eventType="touchUpInside" id="eET-VC-B2K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yE7-xo-hcu" firstAttribute="centerX" secondItem="ECD-lk-YfS" secondAttribute="centerX" id="8ot-JQ-1NW"/>
+                <constraint firstItem="yE7-xo-hcu" firstAttribute="centerY" secondItem="ECD-lk-YfS" secondAttribute="centerY" id="NdX-K4-zoR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eyh-rX-jVM"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="MediaPosting-AddMediaItemButton" width="53" height="53"/>
+    </resources>
+</document>

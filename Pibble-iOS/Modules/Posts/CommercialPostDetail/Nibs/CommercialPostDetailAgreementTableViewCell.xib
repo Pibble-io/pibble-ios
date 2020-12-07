@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommercialPostDetailAgreementTableViewCell" rowHeight="74" id="KGk-i7-Jjw" customClass="CommercialPostDetailAgreementTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End-User License Agreement (EULA)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tO-FK-qlU">
+                        <rect key="frame" x="15" y="15" width="290" height="23.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.CommercialPostDetail.Strings.Storyboards.eula"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9u-Ab-UcZ">
+                        <rect key="frame" x="15" y="15" width="290" height="23.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <connections>
+                            <action selector="showAgreementAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HFq-FA-nSl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="bottom" secondItem="Q9u-Ab-UcZ" secondAttribute="bottom" id="5v4-wn-A02"/>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="top" secondItem="Q9u-Ab-UcZ" secondAttribute="top" id="QMa-m2-4Js"/>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="RvN-KX-rIh"/>
+                    <constraint firstAttribute="bottom" secondItem="4tO-FK-qlU" secondAttribute="bottom" constant="15" id="TQO-gV-CfC"/>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="TVB-fh-qV2"/>
+                    <constraint firstAttribute="trailing" secondItem="4tO-FK-qlU" secondAttribute="trailing" constant="15" id="hmf-Cn-2MY"/>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="leading" secondItem="Q9u-Ab-UcZ" secondAttribute="leading" id="scx-Oc-e9I"/>
+                    <constraint firstItem="4tO-FK-qlU" firstAttribute="trailing" secondItem="Q9u-Ab-UcZ" secondAttribute="trailing" id="ygf-33-iIY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="agreementTitleLable" destination="4tO-FK-qlU" id="sTM-iS-PP7"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="62.068965517241381"/>
+        </tableViewCell>
+    </objects>
+</document>

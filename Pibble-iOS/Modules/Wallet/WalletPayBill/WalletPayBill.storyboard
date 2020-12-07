@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Pay Bill View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="WalletPayBillViewController" id="xqD-av-Raz" customClass="WalletPayBillViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anu-6u-ZqA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLn-O9-kJ8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azH-le-nbY">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="IFR-ny-cn4"/>
+                                            <constraint firstAttribute="height" constant="44" id="IIn-FC-LNe"/>
+                                        </constraints>
+                                        <state key="normal" image="BackButton-grey">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="JV4-yV-I4w"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jg-Dt-Spc">
+                                        <rect key="frame" x="158" y="9.5" width="59" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.navBarTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTl-xa-4yk">
+                                        <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="XqB-Gk-hHg"/>
+                                            <constraint firstAttribute="width" constant="44" id="yLO-U0-IVu"/>
+                                        </constraints>
+                                        <state key="normal" image="settingIcon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VTl-xa-4yk" secondAttribute="trailing" id="2Cp-SH-uvM"/>
+                                    <constraint firstItem="7Jg-Dt-Spc" firstAttribute="centerY" secondItem="qLn-O9-kJ8" secondAttribute="centerY" id="8ft-mK-DXB"/>
+                                    <constraint firstItem="azH-le-nbY" firstAttribute="leading" secondItem="qLn-O9-kJ8" secondAttribute="leading" id="AMb-ld-Rcb"/>
+                                    <constraint firstItem="7Jg-Dt-Spc" firstAttribute="centerX" secondItem="qLn-O9-kJ8" secondAttribute="centerX" id="Q2T-VU-fqT"/>
+                                    <constraint firstItem="VTl-xa-4yk" firstAttribute="centerY" secondItem="qLn-O9-kJ8" secondAttribute="centerY" id="a9H-WQ-mif"/>
+                                    <constraint firstItem="azH-le-nbY" firstAttribute="centerY" secondItem="qLn-O9-kJ8" secondAttribute="centerY" id="bQh-zy-nmn"/>
+                                    <constraint firstAttribute="height" constant="44" id="v3y-I0-4Ws"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ER-vo-5ci" customClass="WalletProfileHeaderView" customModule="Pibble" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="f0a-hs-a5p"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iQ9-LK-4Qa">
+                                <rect key="frame" x="13" y="141" width="349" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajt-nr-4r7">
+                                <rect key="frame" x="55" y="235" width="265" height="325"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalletPayBill-EmptyPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="qwJ-fJ-fQU">
+                                        <rect key="frame" x="50.5" y="0.0" width="180" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Jnu-WP-mrk"/>
+                                            <constraint firstAttribute="width" constant="180" id="uVL-co-KLq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Purchases!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t9-HE-fn4">
+                                        <rect key="frame" x="0.0" y="274" width="265" height="29"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.29411764705882354" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.emptyTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no payment request." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQU-1S-9E0">
+                                        <rect key="frame" x="0.0" y="303" width="265" height="22"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" red="0.20392156862745098" green="0.29411764705882354" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletPayBill.Strings.Storyboards.emptySubtitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8t9-HE-fn4" firstAttribute="leading" secondItem="ajt-nr-4r7" secondAttribute="leading" id="4W1-59-2il"/>
+                                    <constraint firstAttribute="bottom" secondItem="pQU-1S-9E0" secondAttribute="bottom" id="4vA-WK-DoT"/>
+                                    <constraint firstItem="pQU-1S-9E0" firstAttribute="top" secondItem="8t9-HE-fn4" secondAttribute="bottom" id="7lX-Lo-iec"/>
+                                    <constraint firstAttribute="width" constant="265" id="Eq3-W9-ZSN"/>
+                                    <constraint firstItem="pQU-1S-9E0" firstAttribute="leading" secondItem="ajt-nr-4r7" secondAttribute="leading" id="IrY-9s-0G1"/>
+                                    <constraint firstItem="qwJ-fJ-fQU" firstAttribute="centerX" secondItem="ajt-nr-4r7" secondAttribute="centerX" constant="8" id="Tb2-nc-oco"/>
+                                    <constraint firstAttribute="trailing" secondItem="pQU-1S-9E0" secondAttribute="trailing" id="dAe-CR-H8J"/>
+                                    <constraint firstAttribute="trailing" secondItem="8t9-HE-fn4" secondAttribute="trailing" id="jP2-pM-Jo8"/>
+                                    <constraint firstAttribute="height" constant="325" id="m8t-3w-XNV"/>
+                                    <constraint firstItem="qwJ-fJ-fQU" firstAttribute="top" secondItem="ajt-nr-4r7" secondAttribute="top" id="tCz-c3-WNa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qLn-O9-kJ8" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="6de-Xs-q62"/>
+                            <constraint firstItem="qLn-O9-kJ8" firstAttribute="top" secondItem="anu-6u-ZqA" secondAttribute="bottom" id="72y-eg-tov"/>
+                            <constraint firstItem="anu-6u-ZqA" firstAttribute="top" secondItem="kgt-o0-aP8" secondAttribute="top" id="9br-yn-QRF"/>
+                            <constraint firstItem="iQ9-LK-4Qa" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="13" id="DXO-mx-2Ou"/>
+                            <constraint firstAttribute="trailing" secondItem="iQ9-LK-4Qa" secondAttribute="trailing" constant="13" id="EMc-sA-cIC"/>
+                            <constraint firstItem="qLn-O9-kJ8" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="FD2-QH-5fK"/>
+                            <constraint firstItem="ajt-nr-4r7" firstAttribute="centerY" secondItem="iQ9-LK-4Qa" secondAttribute="centerY" id="Mkv-1W-DLW"/>
+                            <constraint firstItem="iQ9-LK-4Qa" firstAttribute="top" secondItem="3ER-vo-5ci" secondAttribute="bottom" constant="13" id="ONg-w8-pzq"/>
+                            <constraint firstItem="3ER-vo-5ci" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="g6R-f6-JSK"/>
+                            <constraint firstItem="3ER-vo-5ci" firstAttribute="top" secondItem="qLn-O9-kJ8" secondAttribute="bottom" id="hIU-x9-BFD"/>
+                            <constraint firstAttribute="bottom" secondItem="iQ9-LK-4Qa" secondAttribute="bottom" constant="13" id="luR-89-9xS"/>
+                            <constraint firstAttribute="trailing" secondItem="qLn-O9-kJ8" secondAttribute="trailing" id="qJ9-WF-jhE"/>
+                            <constraint firstItem="ajt-nr-4r7" firstAttribute="centerX" secondItem="iQ9-LK-4Qa" secondAttribute="centerX" id="rX2-cV-6lX"/>
+                            <constraint firstItem="anu-6u-ZqA" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="sx8-gl-vi0"/>
+                            <constraint firstAttribute="trailing" secondItem="3ER-vo-5ci" secondAttribute="trailing" id="vGZ-mG-hsG"/>
+                            <constraint firstAttribute="trailing" secondItem="anu-6u-ZqA" secondAttribute="trailing" id="zjJ-rf-TrA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="placeholderView" destination="ajt-nr-4r7" id="4Lq-p2-Pnw"/>
+                        <outlet property="profileHeaderViewHeight" destination="f0a-hs-a5p" id="55X-Bp-810"/>
+                        <outlet property="tableView" destination="iQ9-LK-4Qa" id="bxo-Pn-vcm"/>
+                        <outlet property="walletProfileHeaderView" destination="3ER-vo-5ci" id="e6L-K0-WB6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton-grey" width="10.5" height="19.5"/>
+        <image name="WalletPayBill-EmptyPlaceholder" width="200" height="217.5"/>
+        <image name="settingIcon" width="20" height="20"/>
+    </resources>
+</document>

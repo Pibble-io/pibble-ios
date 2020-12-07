@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoodsPostDetailDescriptionView" customModule="Pibble" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JFG-PR-fjk"/>
+                <outlet property="textBackgroundView" destination="gaY-Vz-wjd" id="TQC-Rf-ume"/>
+                <outlet property="textView" destination="GaD-KJ-R52" id="90r-zb-LYm"/>
+                <outlet property="textViewHeightConstraint" destination="atb-Iw-fg0" id="hS8-Xd-8JD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="325"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gv-S9-ulb">
+                    <rect key="frame" x="15" y="15" width="345" height="18"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                    <color key="textColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.GoodsPostDetail.Strings.Storyboards.description"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-Vz-wjd">
+                    <rect key="frame" x="15" y="48" width="345" height="262"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-KJ-R52">
+                            <rect key="frame" x="15" y="0.0" width="315" height="262"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="262" id="atb-Iw-fg0"/>
+                            </constraints>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GaD-KJ-R52" secondAttribute="trailing" constant="15" id="Ccs-jG-sHM"/>
+                        <constraint firstItem="GaD-KJ-R52" firstAttribute="top" secondItem="gaY-Vz-wjd" secondAttribute="top" id="DJJ-7Z-UxK"/>
+                        <constraint firstAttribute="bottom" secondItem="GaD-KJ-R52" secondAttribute="bottom" id="Hav-UI-End"/>
+                        <constraint firstItem="GaD-KJ-R52" firstAttribute="leading" secondItem="gaY-Vz-wjd" secondAttribute="leading" constant="15" id="ofF-Nd-mbl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gaY-Vz-wjd" firstAttribute="top" secondItem="4gv-S9-ulb" secondAttribute="bottom" constant="15" id="317-n4-2sJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4gv-S9-ulb" secondAttribute="trailing" constant="15" id="4jU-Ix-YCV"/>
+                <constraint firstItem="4gv-S9-ulb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="F86-2t-7ea"/>
+                <constraint firstItem="4gv-S9-ulb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="NRL-PL-Wb7"/>
+                <constraint firstItem="gaY-Vz-wjd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="nOw-C1-dvf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gaY-Vz-wjd" secondAttribute="bottom" constant="15" id="w5C-Rh-kFP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gaY-Vz-wjd" secondAttribute="trailing" constant="15" id="zci-NO-fqF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="85.599999999999994" y="-281.10944527736132"/>
+        </view>
+    </objects>
+</document>

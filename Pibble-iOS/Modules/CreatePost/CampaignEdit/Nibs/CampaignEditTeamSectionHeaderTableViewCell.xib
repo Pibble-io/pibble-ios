@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="CampaignEditTeamSectionHeaderTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpJ-zZ-8EX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9j-4N-4d6">
+                                <rect key="frame" x="10" y="5" width="300" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fundraise as:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-2E-fP6">
+                                        <rect key="frame" x="20" y="15" width="260" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="YBv-H4-Hhr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.CampaignEdit.Strings.Storyboards.fundraiseAs"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ECV-2E-fP6" firstAttribute="top" secondItem="v9j-4N-4d6" secondAttribute="top" constant="15" id="P7X-8j-sFZ"/>
+                                    <constraint firstItem="ECV-2E-fP6" firstAttribute="leading" secondItem="v9j-4N-4d6" secondAttribute="leading" constant="20" id="U9b-du-zMd"/>
+                                    <constraint firstAttribute="bottom" secondItem="ECV-2E-fP6" secondAttribute="bottom" priority="750" constant="10" id="nav-nQ-2K2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ECV-2E-fP6" secondAttribute="trailing" constant="20" id="srT-tu-MBf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v9j-4N-4d6" firstAttribute="top" secondItem="EpJ-zZ-8EX" secondAttribute="top" constant="5" id="6VE-a2-zQg"/>
+                            <constraint firstItem="v9j-4N-4d6" firstAttribute="leading" secondItem="EpJ-zZ-8EX" secondAttribute="leading" constant="10" id="CuU-ba-izT"/>
+                            <constraint firstAttribute="bottom" secondItem="v9j-4N-4d6" secondAttribute="bottom" id="K3d-86-1Yi"/>
+                            <constraint firstAttribute="trailing" secondItem="v9j-4N-4d6" secondAttribute="trailing" constant="10" id="az1-ev-MR5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U6j-Ok-5G3"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EpJ-zZ-8EX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="50W-Ua-ysI"/>
+                    <constraint firstAttribute="trailing" secondItem="EpJ-zZ-8EX" secondAttribute="trailing" id="DUr-2V-agB"/>
+                    <constraint firstItem="EpJ-zZ-8EX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Emv-UT-ti8"/>
+                    <constraint firstAttribute="bottom" secondItem="EpJ-zZ-8EX" secondAttribute="bottom" id="np6-kI-8Vv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundContainerView" destination="v9j-4N-4d6" id="hPl-eZ-RkC"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="140.5"/>
+        </tableViewCell>
+    </objects>
+</document>

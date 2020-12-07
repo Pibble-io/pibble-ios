@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="UsersListingItemTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DN-Op-iIh">
+                        <rect key="frame" x="0.0" y="60.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cur-kv-mbo"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr7-T1-Bod">
+                        <rect key="frame" x="60" y="10" width="130" height="22"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5E-GS-NLE">
+                        <rect key="frame" x="60" y="32" width="130" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xmo-9y-zqV">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="af5-ED-9WW"/>
+                            <constraint firstAttribute="height" constant="40" id="be0-1G-LqJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-Xr-Cak">
+                        <rect key="frame" x="190" y="14" width="120" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="HvF-pP-lsa"/>
+                            <constraint firstAttribute="height" constant="34" id="tag-7K-eoo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="userAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vOC-Sq-Rmb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xmo-9y-zqV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="38B-4d-cbm"/>
+                    <constraint firstItem="nr7-T1-Bod" firstAttribute="leading" secondItem="j5E-GS-NLE" secondAttribute="leading" id="83V-V3-Ury"/>
+                    <constraint firstAttribute="bottom" secondItem="5DN-Op-iIh" secondAttribute="bottom" id="Bl3-ch-HIe"/>
+                    <constraint firstItem="qHv-Xr-Cak" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="E5X-Ne-Ecu"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j5E-GS-NLE" secondAttribute="bottom" constant="10" id="Qz6-f1-Rhg"/>
+                    <constraint firstAttribute="bottom" secondItem="xmo-9y-zqV" secondAttribute="bottom" priority="750" constant="10" id="Rrd-qO-Y5Q"/>
+                    <constraint firstAttribute="trailing" secondItem="qHv-Xr-Cak" secondAttribute="trailing" constant="10" id="Zn9-S6-alX"/>
+                    <constraint firstItem="nr7-T1-Bod" firstAttribute="trailing" secondItem="j5E-GS-NLE" secondAttribute="trailing" id="bfe-ej-rCS"/>
+                    <constraint firstItem="5DN-Op-iIh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dNC-hy-BZ8"/>
+                    <constraint firstAttribute="trailing" secondItem="5DN-Op-iIh" secondAttribute="trailing" id="oZr-zD-EiQ"/>
+                    <constraint firstAttribute="trailing" secondItem="nr7-T1-Bod" secondAttribute="trailing" constant="130" id="orY-Lb-4qf"/>
+                    <constraint firstItem="nr7-T1-Bod" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r94-Sf-p4U"/>
+                    <constraint firstItem="xmo-9y-zqV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rf1-Ub-RmP"/>
+                    <constraint firstItem="j5E-GS-NLE" firstAttribute="top" secondItem="nr7-T1-Bod" secondAttribute="bottom" id="sCa-To-G2s"/>
+                    <constraint firstItem="nr7-T1-Bod" firstAttribute="leading" secondItem="xmo-9y-zqV" secondAttribute="trailing" constant="10" id="uJx-Fr-PiJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userActionButton" destination="qHv-Xr-Cak" id="Xa5-Z4-m6P"/>
+                <outlet property="userImageView" destination="xmo-9y-zqV" id="XGy-cN-4ib"/>
+                <outlet property="userLevelLabel" destination="j5E-GS-NLE" id="RhB-Qq-JTO"/>
+                <outlet property="usernameLabel" destination="nr7-T1-Bod" id="I39-YI-uJ3"/>
+            </connections>
+            <point key="canvasLocation" x="103" y="62"/>
+        </tableViewCell>
+    </objects>
+</document>

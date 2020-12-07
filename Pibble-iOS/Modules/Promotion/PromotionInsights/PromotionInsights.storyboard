@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Promotion Insights View Controller-->
+        <scene sceneID="htw-l1-ahc">
+            <objects>
+                <viewController storyboardIdentifier="PromotionInsightsViewController" id="xqD-av-Raz" customClass="PromotionInsightsViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EcR-ye-kTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="vb6-4r-Epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gJ-E2-za7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-9x-3d1">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="spJ-Xv-az3"/>
+                                            <constraint firstAttribute="height" constant="44" id="vBU-XR-8Ms"/>
+                                        </constraints>
+                                        <state key="normal" image="BackButton-grey">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="Nez-bj-1L4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsF-Hi-MHV">
+                                        <rect key="frame" x="155.5" y="9.5" width="64" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.PromotionInsights.Strings.Storyboards.NavBar.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-xO-uES">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aSH-Lg-G8I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rgG-xO-uES" firstAttribute="leading" secondItem="1gJ-E2-za7" secondAttribute="leading" id="44H-Pp-d9n"/>
+                                    <constraint firstItem="RsF-Hi-MHV" firstAttribute="centerX" secondItem="1gJ-E2-za7" secondAttribute="centerX" id="B7J-5i-4Pz"/>
+                                    <constraint firstAttribute="trailing" secondItem="rgG-xO-uES" secondAttribute="trailing" id="Kmb-UG-H3V"/>
+                                    <constraint firstItem="RsF-Hi-MHV" firstAttribute="centerY" secondItem="1gJ-E2-za7" secondAttribute="centerY" id="TlH-vA-5UH"/>
+                                    <constraint firstAttribute="bottom" secondItem="rgG-xO-uES" secondAttribute="bottom" id="Ypl-Wu-6wl"/>
+                                    <constraint firstAttribute="height" constant="44" id="lKf-M6-vnj"/>
+                                    <constraint firstItem="2uc-9x-3d1" firstAttribute="leading" secondItem="1gJ-E2-za7" secondAttribute="leading" id="rgf-zV-krN"/>
+                                    <constraint firstItem="2uc-9x-3d1" firstAttribute="centerY" secondItem="1gJ-E2-za7" secondAttribute="centerY" id="ttU-Ml-fgM"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdC-Tx-J5F">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-KF-hmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="744"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zde-XZ-mkf">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGh-1a-Z0w">
+                                                        <rect key="frame" x="0.0" y="48" width="375" height="1"/>
+                                                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Cno-MT-Hpp"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB1-z9-Kar">
+                                                        <rect key="frame" x="15" y="15" width="345" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.PromotionInsights.Strings.Storyboards.NavBar.title"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="kB1-z9-Kar" firstAttribute="centerY" secondItem="zde-XZ-mkf" secondAttribute="centerY" id="G54-sV-EXk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iGh-1a-Z0w" secondAttribute="bottom" id="Kfn-Lu-02v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kB1-z9-Kar" secondAttribute="trailing" constant="15" id="W4e-Vt-gIA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iGh-1a-Z0w" secondAttribute="trailing" id="iSO-l2-XUP"/>
+                                                    <constraint firstAttribute="height" constant="49" id="jQH-Gm-NvO"/>
+                                                    <constraint firstItem="iGh-1a-Z0w" firstAttribute="leading" secondItem="zde-XZ-mkf" secondAttribute="leading" id="rIA-pH-890"/>
+                                                    <constraint firstItem="kB1-z9-Kar" firstAttribute="leading" secondItem="zde-XZ-mkf" secondAttribute="leading" constant="15" id="u5Q-4O-uOM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiq-nc-LZC" customClass="PromotionPostStatsBudgetView" customModule="Pibble" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="49" width="375" height="215"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="215" placeholder="YES" id="FFa-xB-dyP"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puE-T9-icK" customClass="PromotionPostStatsChartContainerView" customModule="Pibble" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="264" width="375" height="240"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="240" placeholder="YES" id="TdH-Dp-lao"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nk7-eg-RBU" customClass="PromotionPostStatsChartContainerView" customModule="Pibble" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="504" width="375" height="240"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="750" constant="240" placeholder="YES" id="VEq-Vo-gse"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uxd-KF-hmI" secondAttribute="trailing" id="0Fs-is-cw4"/>
+                                    <constraint firstItem="uxd-KF-hmI" firstAttribute="top" secondItem="MdC-Tx-J5F" secondAttribute="top" id="AM5-ug-aEi"/>
+                                    <constraint firstItem="uxd-KF-hmI" firstAttribute="centerX" secondItem="MdC-Tx-J5F" secondAttribute="centerX" id="CHO-Zo-VQ7"/>
+                                    <constraint firstItem="uxd-KF-hmI" firstAttribute="leading" secondItem="MdC-Tx-J5F" secondAttribute="leading" id="i4P-Nc-elf"/>
+                                    <constraint firstAttribute="bottom" secondItem="uxd-KF-hmI" secondAttribute="bottom" id="q1o-ez-bWu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1gJ-E2-za7" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="1b2-kr-gcm"/>
+                            <constraint firstItem="MdC-Tx-J5F" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="6bm-pa-ff4"/>
+                            <constraint firstItem="uxd-KF-hmI" firstAttribute="width" secondItem="kgt-o0-aP8" secondAttribute="width" id="G41-CI-seY"/>
+                            <constraint firstAttribute="trailing" secondItem="MdC-Tx-J5F" secondAttribute="trailing" id="dz8-YE-K8c"/>
+                            <constraint firstAttribute="bottom" secondItem="MdC-Tx-J5F" secondAttribute="bottom" id="moh-X4-TUt"/>
+                            <constraint firstAttribute="trailing" secondItem="1gJ-E2-za7" secondAttribute="trailing" id="smF-tD-gzP"/>
+                            <constraint firstItem="MdC-Tx-J5F" firstAttribute="top" secondItem="1gJ-E2-za7" secondAttribute="bottom" id="tsO-S9-Fwj"/>
+                            <constraint firstItem="1gJ-E2-za7" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="um9-Cq-fXd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateHeaderView" destination="zde-XZ-mkf" id="gRp-9T-qXK"/>
+                        <outlet property="dateLabel" destination="kB1-z9-Kar" id="rpc-eI-lZ3"/>
+                        <outlet property="promotionPostEngagementChartView" destination="puE-T9-icK" id="jIz-SK-6iA"/>
+                        <outlet property="promotionPostImpressionChartView" destination="nk7-eg-RBU" id="HL5-Mp-lDZ"/>
+                        <outlet property="promotionPostStatsBudgetView" destination="Oiq-nc-LZC" id="yaj-BI-7OV"/>
+                        <outlet property="stackView" destination="uxd-KF-hmI" id="GaL-te-KNx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton-grey" width="10.5" height="19.5"/>
+    </resources>
+</document>

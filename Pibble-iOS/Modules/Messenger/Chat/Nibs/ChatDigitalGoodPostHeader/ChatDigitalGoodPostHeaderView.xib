@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatDigitalGoodPostHeaderView" customModule="Pibble" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="m45-3h-wYO"/>
+                <outlet property="messageBackgroundView" destination="KmM-5w-cN7" id="SIV-LO-H0x"/>
+                <outlet property="tableView" destination="0pU-c2-4Aa" id="SQg-B3-su9"/>
+                <outlet property="tableViewHeight" destination="bU2-oS-Q8u" id="4pf-mv-CDm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmM-5w-cN7">
+                    <rect key="frame" x="40" y="10" width="295" height="205"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0pU-c2-4Aa">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="205"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="222.5" id="bU2-oS-Q8u"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0pU-c2-4Aa" secondAttribute="bottom" id="B02-co-Af6"/>
+                        <constraint firstItem="0pU-c2-4Aa" firstAttribute="leading" secondItem="KmM-5w-cN7" secondAttribute="leading" id="BpY-rv-0vR"/>
+                        <constraint firstAttribute="trailing" secondItem="0pU-c2-4Aa" secondAttribute="trailing" id="glI-Xe-FqO"/>
+                        <constraint firstItem="0pU-c2-4Aa" firstAttribute="top" secondItem="KmM-5w-cN7" secondAttribute="top" id="p0G-2q-dS0"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="RsR-AT-ACE"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KmM-5w-cN7" secondAttribute="trailing" constant="40" id="15g-Of-G0f"/>
+                <constraint firstItem="KmM-5w-cN7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="6Sg-7p-c5q"/>
+                <constraint firstItem="KmM-5w-cN7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="7v5-4B-XqT"/>
+                <constraint firstAttribute="bottom" secondItem="KmM-5w-cN7" secondAttribute="bottom" constant="10" id="c2F-X0-dHD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="159.19999999999999" y="-150.67466266866569"/>
+        </view>
+    </objects>
+</document>

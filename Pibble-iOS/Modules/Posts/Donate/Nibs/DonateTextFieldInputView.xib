@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonateTextFieldInputView" customModule="Pibble" customModuleProvider="target">
+            <connections>
+                <outlet property="currencyLabel" destination="QTS-iQ-tXf" id="RyP-8P-IO8"/>
+                <outlet property="inputTextField" destination="Nkd-a2-Ygh" id="NEZ-O3-FhQ"/>
+                <outlet property="inputsContainerView" destination="vXG-WC-p4n" id="tQ1-VY-YDF"/>
+                <outlet property="maxButton" destination="02z-6y-oVY" id="oBs-nT-pt1"/>
+                <outlet property="minButton" destination="gCP-RP-53Y" id="2gs-Ps-O1T"/>
+                <outlet property="upVoteIconImageView" destination="41Y-qM-ANx" id="Um7-hG-BLu"/>
+                <outlet property="upVoteTitleLabel" destination="VEP-02-vV5" id="BZJ-T3-AZ5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xWV-g1-5QF" userLabel="Content View">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="279"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-WC-p4n">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="279"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UpVote-VoteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="41Y-qM-ANx">
+                            <rect key="frame" x="13" y="23" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="dC8-1D-4M3"/>
+                                <constraint firstAttribute="height" constant="44" id="hIc-Lf-qPO"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love it! I will Donate for your campaign." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEP-02-vV5">
+                            <rect key="frame" x="80" y="23" width="252" height="41"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.Donate.Strings.Storyboards.donateTitle"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esB-qj-Hqh">
+                            <rect key="frame" x="8" y="118.5" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="GhK-z2-vjd"/>
+                                <constraint firstAttribute="height" constant="44" id="Nkj-QW-3bj"/>
+                            </constraints>
+                            <state key="normal" image="Donate-SwitchCurrencyButton"/>
+                            <connections>
+                                <action selector="switchCurrencyAction:" destination="-1" eventType="touchUpInside" id="9bq-tU-2ug"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFU-4S-AFE">
+                            <rect key="frame" x="83.5" y="117" width="188" height="47"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="PRB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTS-iQ-tXf">
+                                    <rect key="frame" x="125" y="0.0" width="63" height="47"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
+                                    <color key="textColor" red="0.0" green="0.89019607840000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nkd-a2-Ygh">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="47"/>
+                                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="j4Z-Sa-4Pc"/>
+                                    </constraints>
+                                    <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="34"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="inputTextChangeAction:" destination="-1" eventType="editingChanged" id="fTn-vj-OvI"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6me-Fz-hw5">
+                                    <rect key="frame" x="0.0" y="0.0" width="188" height="47"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="QTS-iQ-tXf" secondAttribute="trailing" id="6n6-cW-cEN"/>
+                                <constraint firstAttribute="bottom" secondItem="6me-Fz-hw5" secondAttribute="bottom" id="96N-aq-GcP"/>
+                                <constraint firstAttribute="bottom" secondItem="Nkd-a2-Ygh" secondAttribute="bottom" id="Ifg-SF-bcK"/>
+                                <constraint firstAttribute="bottom" secondItem="QTS-iQ-tXf" secondAttribute="bottom" id="QIw-RL-r3F"/>
+                                <constraint firstItem="QTS-iQ-tXf" firstAttribute="top" secondItem="fFU-4S-AFE" secondAttribute="top" id="UIQ-ud-hN1"/>
+                                <constraint firstItem="6me-Fz-hw5" firstAttribute="leading" secondItem="fFU-4S-AFE" secondAttribute="leading" id="V1h-om-5N7"/>
+                                <constraint firstItem="QTS-iQ-tXf" firstAttribute="leading" secondItem="Nkd-a2-Ygh" secondAttribute="trailing" constant="5" id="YRl-Rn-Rul"/>
+                                <constraint firstItem="Nkd-a2-Ygh" firstAttribute="top" secondItem="fFU-4S-AFE" secondAttribute="top" id="f85-xp-dlR"/>
+                                <constraint firstAttribute="trailing" secondItem="6me-Fz-hw5" secondAttribute="trailing" id="fil-zR-t8g"/>
+                                <constraint firstItem="Nkd-a2-Ygh" firstAttribute="leading" secondItem="fFU-4S-AFE" secondAttribute="leading" id="qui-uC-c5O"/>
+                                <constraint firstItem="6me-Fz-hw5" firstAttribute="top" secondItem="fFU-4S-AFE" secondAttribute="top" id="tdv-8t-0Xg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDg-1X-SQf">
+                            <rect key="frame" x="0.0" y="207.5" width="355" height="71.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-RP-53Y">
+                                    <rect key="frame" x="20" y="20" width="58" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="58" id="0xm-LC-ScA"/>
+                                        <constraint firstAttribute="height" constant="32" id="pL1-Pv-CHR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                    <state key="normal" title="MIN">
+                                        <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.Donate.Strings.Storyboards.minButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="minAction:" destination="-1" eventType="touchUpInside" id="Jjt-b9-t72"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02z-6y-oVY">
+                                    <rect key="frame" x="277" y="20" width="58" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="5Dv-g6-VxC"/>
+                                        <constraint firstAttribute="width" constant="58" id="8Ct-Fx-LzB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                    <state key="normal" title="MAX">
+                                        <color key="titleColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.Donate.Strings.Storyboards.maxButton"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="maxAction:" destination="-1" eventType="touchUpInside" id="Ewq-WA-jUY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="02z-6y-oVY" firstAttribute="centerY" secondItem="vDg-1X-SQf" secondAttribute="centerY" id="HSJ-LB-7VW"/>
+                                <constraint firstItem="gCP-RP-53Y" firstAttribute="leading" secondItem="vDg-1X-SQf" secondAttribute="leading" constant="20" id="T8l-4X-o0r"/>
+                                <constraint firstAttribute="trailing" secondItem="02z-6y-oVY" secondAttribute="trailing" constant="20" id="UG0-Zf-TDF"/>
+                                <constraint firstItem="gCP-RP-53Y" firstAttribute="centerY" secondItem="vDg-1X-SQf" secondAttribute="centerY" id="jFG-sd-nM7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vDg-1X-SQf" secondAttribute="bottom" id="5zJ-qQ-W6X"/>
+                        <constraint firstItem="41Y-qM-ANx" firstAttribute="top" secondItem="vXG-WC-p4n" secondAttribute="top" constant="23" id="6Z7-86-6R5"/>
+                        <constraint firstItem="VEP-02-vV5" firstAttribute="leading" secondItem="41Y-qM-ANx" secondAttribute="trailing" constant="23" id="GpG-5h-sPn"/>
+                        <constraint firstItem="fFU-4S-AFE" firstAttribute="centerX" secondItem="vXG-WC-p4n" secondAttribute="centerX" id="NKO-Q8-UvF"/>
+                        <constraint firstItem="Kze-Hb-r3R" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fFU-4S-AFE" secondAttribute="trailing" constant="55" id="RiY-Ey-5tw"/>
+                        <constraint firstItem="vDg-1X-SQf" firstAttribute="leading" secondItem="vXG-WC-p4n" secondAttribute="leading" id="Vnn-D3-YJB"/>
+                        <constraint firstItem="vDg-1X-SQf" firstAttribute="top" secondItem="41Y-qM-ANx" secondAttribute="bottom" constant="140.5" id="XVx-N8-Bhv"/>
+                        <constraint firstItem="fFU-4S-AFE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kze-Hb-r3R" secondAttribute="leading" constant="55" id="Ysy-y5-Mr4"/>
+                        <constraint firstAttribute="height" constant="279" id="Zur-KY-59Z"/>
+                        <constraint firstItem="VEP-02-vV5" firstAttribute="top" secondItem="41Y-qM-ANx" secondAttribute="top" id="bPu-m4-XCE"/>
+                        <constraint firstItem="fFU-4S-AFE" firstAttribute="top" secondItem="41Y-qM-ANx" secondAttribute="bottom" constant="50" id="bhs-Fv-67F"/>
+                        <constraint firstItem="fFU-4S-AFE" firstAttribute="centerY" secondItem="esB-qj-Hqh" secondAttribute="centerY" id="ceM-Uy-8BA"/>
+                        <constraint firstAttribute="trailing" secondItem="vDg-1X-SQf" secondAttribute="trailing" id="eYb-Ye-dcZ"/>
+                        <constraint firstAttribute="trailing" secondItem="VEP-02-vV5" secondAttribute="trailing" constant="23" id="fm8-9B-Y1O"/>
+                        <constraint firstItem="esB-qj-Hqh" firstAttribute="leading" secondItem="Kze-Hb-r3R" secondAttribute="leading" constant="8" id="gwy-mV-ex4"/>
+                        <constraint firstItem="VEP-02-vV5" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="41Y-qM-ANx" secondAttribute="bottom" id="lfE-3d-5Q6"/>
+                        <constraint firstItem="41Y-qM-ANx" firstAttribute="leading" secondItem="vXG-WC-p4n" secondAttribute="leading" constant="13" id="tYp-Dz-aB0"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Kze-Hb-r3R"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vXG-WC-p4n" firstAttribute="top" secondItem="y22-Tj-H4Y" secondAttribute="top" id="3Tx-af-8kA"/>
+                <constraint firstAttribute="bottom" secondItem="vXG-WC-p4n" secondAttribute="bottom" id="4Se-kF-KEo"/>
+                <constraint firstAttribute="trailing" secondItem="vXG-WC-p4n" secondAttribute="trailing" id="ker-Na-Syc"/>
+                <constraint firstItem="vXG-WC-p4n" firstAttribute="leading" secondItem="y22-Tj-H4Y" secondAttribute="leading" id="teK-1M-FCc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="y22-Tj-H4Y"/>
+            <point key="canvasLocation" x="168.80000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Donate-SwitchCurrencyButton" width="32" height="32"/>
+        <image name="UpVote-VoteIcon" width="44.5" height="42"/>
+    </resources>
+</document>

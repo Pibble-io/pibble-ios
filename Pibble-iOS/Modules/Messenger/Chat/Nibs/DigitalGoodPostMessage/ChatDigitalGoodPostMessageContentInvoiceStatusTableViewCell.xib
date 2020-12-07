@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="ChatDigitalGoodPostMessageContentInvoiceStatusTableViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ar2-4Z-Pqc">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Completed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlF-cJ-m8I">
+                                <rect key="frame" x="15" y="10" width="326" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Wating for buy's confirmation." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHK-D2-1o3">
+                                <rect key="frame" x="15" y="30.5" width="326" height="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8kG-Cv-ZOF">
+                                <rect key="frame" x="379" y="10" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Be3-kt-sHE"/>
+                                    <constraint firstAttribute="width" constant="37" id="tPu-uz-nb1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PlF-cJ-m8I" firstAttribute="leading" secondItem="Ar2-4Z-Pqc" secondAttribute="leading" constant="15" id="EQs-b2-ztQ"/>
+                            <constraint firstAttribute="trailing" secondItem="8kG-Cv-ZOF" secondAttribute="trailing" constant="15" id="Ich-UF-5Rz"/>
+                            <constraint firstItem="LHK-D2-1o3" firstAttribute="trailing" secondItem="PlF-cJ-m8I" secondAttribute="trailing" id="Lqk-Ig-47T"/>
+                            <constraint firstItem="LHK-D2-1o3" firstAttribute="leading" secondItem="PlF-cJ-m8I" secondAttribute="leading" id="OKC-ft-vgT"/>
+                            <constraint firstAttribute="trailing" secondItem="PlF-cJ-m8I" secondAttribute="trailing" constant="90" id="Vfe-7G-B9k"/>
+                            <constraint firstItem="PlF-cJ-m8I" firstAttribute="top" secondItem="Ar2-4Z-Pqc" secondAttribute="top" constant="10" id="eCt-wQ-BnH"/>
+                            <constraint firstItem="LHK-D2-1o3" firstAttribute="top" secondItem="PlF-cJ-m8I" secondAttribute="bottom" id="fWZ-5Z-hwC"/>
+                            <constraint firstItem="8kG-Cv-ZOF" firstAttribute="top" secondItem="Ar2-4Z-Pqc" secondAttribute="top" constant="10" id="i2s-wi-ybl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8kG-Cv-ZOF" secondAttribute="bottom" constant="10" id="m6D-Qg-8aH"/>
+                            <constraint firstAttribute="bottom" secondItem="LHK-D2-1o3" secondAttribute="bottom" priority="750" constant="10" id="mtn-uV-6YO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ar2-4Z-Pqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4rD-yC-7Sg"/>
+                    <constraint firstItem="Ar2-4Z-Pqc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vjh-CP-wlZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ar2-4Z-Pqc" secondAttribute="trailing" id="mwe-U9-gFL"/>
+                    <constraint firstAttribute="bottom" secondItem="Ar2-4Z-Pqc" secondAttribute="bottom" id="ofc-ko-Hq5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkoutStatusDescriptionLabel" destination="LHK-D2-1o3" id="g5Q-6F-G7Z"/>
+                <outlet property="checkoutStatusLabel" destination="PlF-cJ-m8I" id="Ftq-3A-fRU"/>
+                <outlet property="postAuthorImageView" destination="8kG-Cv-ZOF" id="gcE-4H-4qk"/>
+            </connections>
+            <point key="canvasLocation" x="226.40000000000001" y="161.91904047976013"/>
+        </tableViewCell>
+    </objects>
+</document>

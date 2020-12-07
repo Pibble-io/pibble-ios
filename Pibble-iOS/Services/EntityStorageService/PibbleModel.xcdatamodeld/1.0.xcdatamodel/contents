@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.0">
+    <entity name="AirdropTransaction" representedClassName="AirdropTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="BaseChatMessage" representedClassName="BaseChatMessageManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAtDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateComponent" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chatRoom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="messages" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingMessages" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="BaseFundingDonateTransaction" representedClassName="BaseFundingDonateTransactionManagedObject" isAbstract="YES" parentEntity="BaseFundingTransaction" syncable="YES">
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingDonateTransactions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="BaseFundingResultTransaction" representedClassName="BaseFundingResultTransactionManagedObject" isAbstract="YES" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="isSuccess" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="BaseFundingTransaction" representedClassName="BaseFundingTransactionManagedObject" isAbstract="YES" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="posting" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Posting" inverseName="relatedFundingTransactions" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="BaseInternalTransaction" representedClassName="BaseInternalTransactionManagedObject" isAbstract="YES" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingInternalTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingInternalTransactions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="BasePostHelpTransaction" representedClassName="PostHelpTransactionManagedObject" isAbstract="YES" parentEntity="BaseInternalTransaction" syncable="YES"/>
+    <entity name="BaseSearchResult" representedClassName="BaseSearchResultManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="resultType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="searchKey" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CharityFundingDonateTransaction" representedClassName="CharityFundingDonateTransactionManagedObject" parentEntity="BaseFundingDonateTransaction" syncable="YES"/>
+    <entity name="CharityFundingRefundTransaction" representedClassName="CharityFundingRefundTransactionManagedObject" parentEntity="BaseFundingTransaction" syncable="YES"/>
+    <entity name="CharityFundingResultTransaction" representedClassName="CharityFundingResultTransactionManagedObject" parentEntity="BaseFundingResultTransaction" syncable="YES"/>
+    <entity name="ChatRoom" representedClassName="ChatRoomManagedObject" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLeft" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMuted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastMessageCreatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastTriggeredUpdateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unreadMessageCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="chatRoomsGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoomsGroup" inverseName="rooms" inverseEntity="ChatRoomsGroup" syncable="YES"/>
+        <relationship name="lastDigitalGoodInvoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="chatRoom" inverseEntity="Invoice" syncable="YES"/>
+        <relationship name="lastMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BaseChatMessage" syncable="YES"/>
+        <relationship name="lastRelatedGoodsOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoodsOrder" inverseName="chatRoom" inverseEntity="GoodsOrder" syncable="YES"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatRoomMember" inverseName="chat" inverseEntity="ChatRoomMember" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseChatMessage" inverseName="chatRoom" inverseEntity="BaseChatMessage" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="relatedChatRooms" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="ChatRoomMember" representedClassName="ChatRoomMemberManagedObject" syncable="YES">
+        <attribute name="deletedAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="members" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="chatRooms" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="ChatRoomsGroup" representedClassName="ChatRoomsGroupManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastMessageCreatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="roomsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unreadMessageCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="lastMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BaseChatMessage" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="chatRoomsGroup" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="chatRoomsGroup" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="chatRoomsGroups" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="ChatSystemMessage" representedClassName="ChatSystemMessageManagedObject" parentEntity="BaseChatMessage" syncable="YES">
+        <attribute name="systemMessageType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="goodsOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoodsOrder" inverseName="chatSystemMessage" inverseEntity="GoodsOrder" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="CommentManagedObject" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCurentUserComment" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDraft" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLocallyDeletedComment" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isReply" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rootParentCommentId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shouldTriggerUpdate" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="upVoted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVotesAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inPreviewOfPosting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="previewComments" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="parentComment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comment" inverseName="replies" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="posting" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="comments" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="previewParentComment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comment" inverseName="previewReplies" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="previewReplies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="previewParentComment" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="parentComment" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="comments" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Commerce" representedClassName="CommerceManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="errorCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCommercialUse" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDownloadable" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isEditorialUse" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isExclusiveUse" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRoyaltyFreeUse" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="limit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="reward" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="commerce" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="CommerceTransaction" representedClassName="CommerceTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingCommerceTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="commerceTransaction" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="CrowdFundingDonateTransaction" representedClassName="CrowdFundingDonateTransactionManagedObject" parentEntity="BaseFundingDonateTransaction" syncable="YES"/>
+    <entity name="CrowdFundingRefundTransaction" representedClassName="CrowdFundingRefundTransactionManagedObject" parentEntity="BaseFundingTransaction" syncable="YES"/>
+    <entity name="CrowdFundingResultTransaction" representedClassName="CrowdFundingResultTransactionManagedObject" parentEntity="BaseFundingResultTransaction" syncable="YES"/>
+    <entity name="CrowdFundingWithRewardsDonateTransaction" representedClassName="CrowdFundingWithRewardsDonateTransactionManagedObject" parentEntity="BaseFundingDonateTransaction" syncable="YES">
+        <attribute name="priceTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CrowdFundingWithRewardsRefundTransaction" representedClassName="CrowdFundingWithRewardsRefundTransactionManagedObject" parentEntity="BaseFundingTransaction" syncable="YES"/>
+    <entity name="CrowdFundingWithRewardsResultTransaction" representedClassName="CrowdFundingWithRewardsResultTransactionManagedObject" parentEntity="BaseFundingResultTransaction" syncable="YES"/>
+    <entity name="DigitalGoodTransaction" representedClassName="DigitalGoodTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="fee" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingDigitalGoodTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="purchaseTransactions" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingDigitalGoodTransactions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="ExchangeTransaction" representedClassName="ExchangeTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="exchangeCurrencyRate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fromAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromCurrency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="toCurrency" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ExternalExchangeTransaction" representedClassName="ExternalExchangeTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="exchangeCurrencyRate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fromAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fromAppName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromCurrency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromCurrencyIconUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromCurrencyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="toCurrency" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ExternalTransaction" representedClassName="ExternalTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="fromAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transactionHash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="FundingCampaign" representedClassName="FundingCampaignManagedObject" syncable="YES">
+        <attribute name="activeRewardType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="collectedAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="donatorsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="goalAmount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hasRewards" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="membersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="raisingFor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rewardDiscountAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardDiscountLeftAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardDiscountPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rewardDiscountSoldAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardEarlyBirdAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardEarlyBirdLeftAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardEarlyBirdPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rewardEarlyBirdSoldAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rewardRegularPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rewardRegularSoldAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="postings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="relatedFundingCampaign" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FundingCampaignTeam" inverseName="campaign" inverseEntity="FundingCampaignTeam" syncable="YES"/>
+    </entity>
+    <entity name="FundingCampaignTeam" representedClassName="FundingCampaignTeamManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fundingType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isSearchResult" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="logoUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="membersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="campaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FundingCampaign" inverseName="team" inverseEntity="FundingCampaign" syncable="YES"/>
+        <relationship name="posting" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="relatedFundingCampaignTeam" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="fundingCampaignTeams" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="FundingTransaction" representedClassName="FundingTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingFundingTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="posting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="fundingTransactions" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="Goods" representedClassName="GoodsManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isNewState" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="goods" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="GoodsOrder" representedClassName="GoodsOrderManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chatRoom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="lastRelatedGoodsOrder" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="chatSystemMessage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatSystemMessage" inverseName="goodsOrder" inverseEntity="ChatSystemMessage" syncable="YES"/>
+    </entity>
+    <entity name="GoodTransaction" representedClassName="GoodTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="fee" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="goodsTransactionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingGoodTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="goodsTransactions" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingGoodTransactions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="InternalTransaction" representedClassName="InternalTransactionManagedObject" parentEntity="BaseInternalTransaction" syncable="YES"/>
+    <entity name="Invoice" representedClassName="InvoiceManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="activityDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="chatRoom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="lastDigitalGoodInvoice" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="currentUserInvoiceDigitalGoodPost" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="currentUserPurchaseInvoice" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingInvoices" inverseEntity="User" syncable="YES"/>
+        <relationship name="postChatMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostChatMessage" inverseName="invoice" inverseEntity="PostChatMessage" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingInvoices" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="LeaderboardEntry" representedClassName="LeaderboardEntryManagedObject" syncable="YES">
+        <attribute name="allHistoryChallenge" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dailyChallenge" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTop" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sortId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="leaderboardEntries" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="LocationManagedObject" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeDescription" attributeType="String" syncable="YES"/>
+        <attribute name="placeId" attributeType="String" syncable="YES"/>
+        <attribute name="posted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="mediaPostings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="location" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="searchResults" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LocationSearchResult" inverseName="relatedLocation" inverseEntity="LocationSearchResult" syncable="YES"/>
+    </entity>
+    <entity name="LocationSearchResult" representedClassName="LocationSearchResultManagedObject" parentEntity="BaseSearchResult" syncable="YES">
+        <relationship name="relatedLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="searchResults" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Media" representedClassName="MediaManagedObject" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="originalHeight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="originalUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="passedVerification" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posterUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s3Id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shouldPassVerification" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sortId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thumbnailUrlString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <attribute name="urlString" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="posting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="media" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="Notification" representedClassName="NotificationManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="createdAtDateComponent" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastTriggeredUpdateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="feedUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="feedNotifications" inverseEntity="User" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingNotifications" inverseEntity="User" syncable="YES"/>
+        <relationship name="relatedPost" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="notificationMentions" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="relatedUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="notificationMentions" inverseEntity="User" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingNotifications" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="PostChatMessage" representedClassName="PostChatMessageManagedObject" parentEntity="BaseChatMessage" syncable="YES">
+        <relationship name="invoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="postChatMessages" inverseEntity="Invoice" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="quotedChatMessage" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="PostHelpAnswer" representedClassName="PostHelpAnswerManagedObject" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCurentUserComment" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDraft" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLocallyDeletedComment" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPicked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isReply" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rootParentCommentId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shouldTriggerUpdate" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="upVoted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVotesAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parentAnswer" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="PostHelpAnswer" inverseName="replies" inverseEntity="PostHelpAnswer" syncable="YES"/>
+        <relationship name="postHelpRequest" maxCount="1" deletionRule="No Action" destinationEntity="PostHelpRequest" inverseName="answers" inverseEntity="PostHelpRequest" syncable="YES"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="PostHelpAnswer" inverseName="parentAnswer" inverseEntity="PostHelpAnswer" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="postHelpAnswers" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="PostHelpPaymentTransaction" representedClassName="PostHelpPaymentTransactionManagedObject" parentEntity="BasePostHelpTransaction" syncable="YES"/>
+    <entity name="PostHelpRequest" representedClassName="PostHelpRequestManagedObject" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isClosed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="reward" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostHelpAnswer" inverseName="postHelpRequest" inverseEntity="PostHelpAnswer" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="helpRequest" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="postHelpRequests" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="PostHelpRewardTransaction" representedClassName="PostHelpRewardTransactionManagedObject" parentEntity="BasePostHelpTransaction" syncable="YES"/>
+    <entity name="Posting" representedClassName="PostingManagedObject" syncable="YES">
+        <attribute name="cachedMainMediaFeedViewModelsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="captionDraft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentDraft" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="discoverDetailFeedForPostId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="draftId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="draftProgress" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="draftStatus" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasActiveCollectPromotions" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasActiveSharePromotions" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasActiveTagPromotions" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasActiveUpVotePromotions" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasCommentDraft" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hotFeedSortId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActiveFundingsFeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isAddedToFavorites" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isBackedByCurrentUserFundingsFeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isBeingEdited" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isBlocked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDiscoverFeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDraft" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isEndedFundingsFeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFundingPresentationExtended" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLocallyDeletedPost" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMainFeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPromotedPost" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRecommendedInMainFeed" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupCoin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupFunding" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupHot" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupNewbie" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupNews" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupPromoted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupShop" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isTopGroupWebtoon" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastTriggeredUpdateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mainFeedCursorId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainFeedSortId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prize" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tagsString" optional="YES" attributeType="String" customClassName="[String]" syncable="YES"/>
+        <attribute name="totalPromotionsBudget" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalPromotionsSpentBudget" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueUsersView" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVoted" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVoteDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="upVoteDateString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upVotesAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVotesAmountDraft" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="upVotesCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userPostsFeedForUserId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winnerPostsFeedUserId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="chatRoomsGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoomsGroup" inverseName="post" inverseEntity="ChatRoomsGroup" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="posting" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="commerce" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Commerce" inverseName="post" inverseEntity="Commerce" syncable="YES"/>
+        <relationship name="commerceTransaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CommerceTransaction" inverseName="post" inverseEntity="CommerceTransaction" syncable="YES"/>
+        <relationship name="currentUserPurchaseInvoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="currentUserInvoiceDigitalGoodPost" inverseEntity="Invoice" syncable="YES"/>
+        <relationship name="fundingTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FundingTransaction" inverseName="posting" inverseEntity="FundingTransaction" syncable="YES"/>
+        <relationship name="goods" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goods" inverseName="post" inverseEntity="Goods" syncable="YES"/>
+        <relationship name="goodsTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoodTransaction" inverseName="post" inverseEntity="GoodTransaction" syncable="YES"/>
+        <relationship name="helpRequest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostHelpRequest" inverseName="post" inverseEntity="PostHelpRequest" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="mediaPostings" inverseEntity="Location" syncable="YES"/>
+        <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Media" inverseName="posting" inverseEntity="Media" syncable="YES"/>
+        <relationship name="notificationMentions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="relatedPost" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="previewComments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comment" inverseName="inPreviewOfPosting" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="promotion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Promotion" inverseName="posting" inverseEntity="Promotion" syncable="YES"/>
+        <relationship name="purchasedUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="purchasedCommercePosts" inverseEntity="User" syncable="YES"/>
+        <relationship name="purchaseTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DigitalGoodTransaction" inverseName="post" inverseEntity="DigitalGoodTransaction" syncable="YES"/>
+        <relationship name="quotedChatMessage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostChatMessage" inverseName="post" inverseEntity="PostChatMessage" syncable="YES"/>
+        <relationship name="relatedChatRooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="post" inverseEntity="ChatRoom" syncable="YES"/>
+        <relationship name="relatedFundingCampaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FundingCampaign" inverseName="postings" inverseEntity="FundingCampaign" syncable="YES"/>
+        <relationship name="relatedFundingCampaignTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FundingCampaignTeam" inverseName="posting" inverseEntity="FundingCampaignTeam" syncable="YES"/>
+        <relationship name="relatedFundingTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseFundingTransaction" inverseName="posting" inverseEntity="BaseFundingTransaction" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="posts" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="upvotedUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="upvotedPostings" inverseEntity="User" syncable="YES"/>
+        <relationship name="upvotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Upvote" inverseName="posting" inverseEntity="Upvote" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="mediaPostings" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Promotion" representedClassName="PromotionManagedObject" syncable="YES">
+        <attribute name="actionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="budget" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destinationUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="posting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="promotion" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="PromotionTransaction" representedClassName="PromotionTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="promotionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingPromotionTransactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingPromotionTransactions" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="RewardTransaction" representedClassName="RewardTransactionManagedObject" parentEntity="WalletActivity" syncable="YES">
+        <attribute name="rewardType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingRewards" inverseEntity="User" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="incomingRewards" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="TagManagedObject" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFollowed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tagString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="followedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="followedTags" inverseEntity="User" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="tags" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="relatedTags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="relatedTags" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="searchResults" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TagSearchResult" inverseName="relatedTag" inverseEntity="TagSearchResult" syncable="YES"/>
+    </entity>
+    <entity name="TagSearchResult" representedClassName="TagSearchResultManagedObject" parentEntity="BaseSearchResult" syncable="YES">
+        <relationship name="relatedTag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="searchResults" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="TextChatMessage" representedClassName="TextChatMessageManagedObject" parentEntity="BaseChatMessage" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Upvote" representedClassName="UpvoteManagedObject" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastTriggeredUpdateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="upvoteBackAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="fromUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="outcomingUpvotes" inverseEntity="User" syncable="YES"/>
+        <relationship name="posting" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posting" inverseName="upvotes" inverseEntity="Posting" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="UserManagedObject" syncable="YES">
+        <attribute name="availablePoints" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="btcBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="earnedRewards" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ethBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="followersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="followingsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="friendsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="greenBrushBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isBanned" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFollowedByMe" optional="YES" attributeType="Boolean" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFollowingMe" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFriend" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFriendshipDenied" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isInboundFriendRequested" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMe" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isMuted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isOutboundFriendRequested" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="klaytnBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="necessaryPoints" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pibBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pibKlaytnBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="postsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prizeWon" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="profileDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileFirstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileLastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileSiteAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="redBrushBalance" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rewardsLimit" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wallCover" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="airdropTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AirdropTransaction" syncable="YES"/>
+        <relationship name="chatRooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatRoomMember" inverseName="user" inverseEntity="ChatRoomMember" syncable="YES"/>
+        <relationship name="chatRoomsGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChatRoomsGroup" inverseName="user" inverseEntity="ChatRoomsGroup" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="user" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="feedNotifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="feedUser" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="followedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="follows" inverseEntity="User" syncable="YES"/>
+        <relationship name="followedTags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="followedBy" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="follows" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="followedBy" inverseEntity="User" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="friends" inverseEntity="User" syncable="YES"/>
+        <relationship name="fundingCampaignTeams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FundingCampaignTeam" inverseName="user" inverseEntity="FundingCampaignTeam" syncable="YES"/>
+        <relationship name="incomingDigitalGoodTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DigitalGoodTransaction" inverseName="toUser" inverseEntity="DigitalGoodTransaction" syncable="YES"/>
+        <relationship name="incomingGoodTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoodTransaction" inverseName="toUser" inverseEntity="GoodTransaction" syncable="YES"/>
+        <relationship name="incomingInternalTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseInternalTransaction" inverseName="toUser" inverseEntity="BaseInternalTransaction" syncable="YES"/>
+        <relationship name="incomingInvoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Invoice" inverseName="toUser" inverseEntity="Invoice" syncable="YES"/>
+        <relationship name="incomingNotifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="toUser" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="incomingPromotionTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PromotionTransaction" inverseName="toUser" inverseEntity="PromotionTransaction" syncable="YES"/>
+        <relationship name="incomingRewards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RewardTransaction" inverseName="toUser" inverseEntity="RewardTransaction" syncable="YES"/>
+        <relationship name="leaderboardEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LeaderboardEntry" inverseName="user" inverseEntity="LeaderboardEntry" syncable="YES"/>
+        <relationship name="mediaPostings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="user" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="mutedByUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="mutedUsers" inverseEntity="User" syncable="YES"/>
+        <relationship name="mutedUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="mutedByUsers" inverseEntity="User" syncable="YES"/>
+        <relationship name="notificationMentions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="relatedUser" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="outcomingCommerceTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CommerceTransaction" inverseName="fromUser" inverseEntity="CommerceTransaction" syncable="YES"/>
+        <relationship name="outcomingDigitalGoodTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DigitalGoodTransaction" inverseName="fromUser" inverseEntity="DigitalGoodTransaction" syncable="YES"/>
+        <relationship name="outcomingDonateTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseFundingDonateTransaction" inverseName="fromUser" inverseEntity="BaseFundingDonateTransaction" syncable="YES"/>
+        <relationship name="outcomingFundingTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FundingTransaction" inverseName="fromUser" inverseEntity="FundingTransaction" syncable="YES"/>
+        <relationship name="outcomingGoodTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoodTransaction" inverseName="fromUser" inverseEntity="GoodTransaction" syncable="YES"/>
+        <relationship name="outcomingInternalTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseInternalTransaction" inverseName="fromUser" inverseEntity="BaseInternalTransaction" syncable="YES"/>
+        <relationship name="outcomingInvoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Invoice" inverseName="fromUser" inverseEntity="Invoice" syncable="YES"/>
+        <relationship name="outcomingMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BaseChatMessage" inverseName="fromUser" inverseEntity="BaseChatMessage" syncable="YES"/>
+        <relationship name="outcomingNotifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="fromUser" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="outcomingPromotionTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PromotionTransaction" inverseName="fromUser" inverseEntity="PromotionTransaction" syncable="YES"/>
+        <relationship name="outcomingRewards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RewardTransaction" inverseName="fromUser" inverseEntity="RewardTransaction" syncable="YES"/>
+        <relationship name="outcomingUpvotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Upvote" inverseName="fromUser" inverseEntity="Upvote" syncable="YES"/>
+        <relationship name="postHelpAnswers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostHelpAnswer" inverseName="user" inverseEntity="PostHelpAnswer" syncable="YES"/>
+        <relationship name="postHelpRequests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostHelpRequest" inverseName="user" inverseEntity="PostHelpRequest" syncable="YES"/>
+        <relationship name="purchasedCommercePosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="purchasedUsers" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="receivedFundsRecently" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="sentFundsRecently" inverseEntity="User" syncable="YES"/>
+        <relationship name="referralOwnerUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="registeredReferralUsers" inverseEntity="User" syncable="YES"/>
+        <relationship name="registeredReferralUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="referralOwnerUser" inverseEntity="User" syncable="YES"/>
+        <relationship name="searchResults" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserSearchResult" inverseName="relatedUser" inverseEntity="UserSearchResult" syncable="YES"/>
+        <relationship name="sentFundsRecently" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="receivedFundsRecently" inverseEntity="User" syncable="YES"/>
+        <relationship name="upvotedPostings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posting" inverseName="upvotedUsers" inverseEntity="Posting" syncable="YES"/>
+        <relationship name="walletActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WalletActivity" syncable="YES"/>
+        <relationship name="wallets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wallet" inverseName="user" inverseEntity="Wallet" syncable="YES"/>
+    </entity>
+    <entity name="UserSearchResult" representedClassName="UserSearchResultManagedObject" parentEntity="BaseSearchResult" syncable="YES">
+        <relationship name="relatedUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="searchResults" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Wallet" representedClassName="WalletManagedObject" syncable="YES">
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="wallets" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="WalletActivity" representedClassName="WalletActivityManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="activityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAtDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isBrushCurrencyType" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isCoinCurrencyType" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isHidden" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AirdropTransaction" positionX="-864.22265625" positionY="294.7265625" width="128" height="60"/>
+        <element name="BaseChatMessage" positionX="134.52734375" positionY="-190.125" width="128" height="150"/>
+        <element name="BaseFundingDonateTransaction" positionX="-657" positionY="-531" width="128" height="60"/>
+        <element name="BaseFundingResultTransaction" positionX="-621" positionY="-495" width="128" height="75"/>
+        <element name="BaseFundingTransaction" positionX="-648" positionY="-522" width="128" height="75"/>
+        <element name="BaseInternalTransaction" positionX="-857.796875" positionY="-185.2890625" width="128" height="90"/>
+        <element name="BasePostHelpTransaction" positionX="-639" positionY="-513" width="128" height="45"/>
+        <element name="BaseSearchResult" positionX="-621.87890625" positionY="729.671875" width="128" height="105"/>
+        <element name="CharityFundingDonateTransaction" positionX="-648" positionY="-522" width="128" height="45"/>
+        <element name="CharityFundingRefundTransaction" positionX="-621" positionY="-495" width="128" height="45"/>
+        <element name="CharityFundingResultTransaction" positionX="-612" positionY="-486" width="128" height="45"/>
+        <element name="ChatRoom" positionX="-67.828125" positionY="100.5859375" width="128" height="255"/>
+        <element name="ChatRoomMember" positionX="150.0078125" positionY="-3.3046875" width="128" height="105"/>
+        <element name="ChatRoomsGroup" positionX="-71.04296875" positionY="403.07421875" width="128" height="195"/>
+        <element name="ChatSystemMessage" positionX="-23.234375" positionY="-8.265625" width="128" height="90"/>
+        <element name="Comment" positionX="746.140625" positionY="127.17578125" width="128" height="345"/>
+        <element name="Commerce" positionX="720.203125" positionY="893.8828125" width="128" height="270"/>
+        <element name="CommerceTransaction" positionX="-865.109375" positionY="190.5625" width="128" height="90"/>
+        <element name="CrowdFundingDonateTransaction" positionX="-639" positionY="-513" width="128" height="45"/>
+        <element name="CrowdFundingRefundTransaction" positionX="-612" positionY="-486" width="128" height="45"/>
+        <element name="CrowdFundingResultTransaction" positionX="-603" positionY="-477" width="128" height="45"/>
+        <element name="CrowdFundingWithRewardsDonateTransaction" positionX="-630" positionY="-504" width="128" height="60"/>
+        <element name="CrowdFundingWithRewardsRefundTransaction" positionX="-603" positionY="-477" width="128" height="45"/>
+        <element name="CrowdFundingWithRewardsResultTransaction" positionX="-657" positionY="-531" width="128" height="45"/>
+        <element name="DigitalGoodTransaction" positionX="-861.72265625" positionY="44.59765625" width="128" height="120"/>
+        <element name="ExchangeTransaction" positionX="-861.08203125" positionY="-83.21875" width="128" height="120"/>
+        <element name="ExternalExchangeTransaction" positionX="-836.80859375" positionY="-539.18359375" width="128" height="165"/>
+        <element name="ExternalTransaction" positionX="-863.0546875" positionY="608.25" width="128" height="105"/>
+        <element name="FundingCampaign" positionX="565.04296875" positionY="526.98046875" width="128" height="435"/>
+        <element name="FundingCampaignTeam" positionX="350.359375" positionY="1197.9453125" width="128" height="195"/>
+        <element name="FundingTransaction" positionX="-857.91015625" positionY="-285.578125" width="128" height="90"/>
+        <element name="Goods" positionX="571.375" positionY="744.80078125" width="128" height="210"/>
+        <element name="GoodsOrder" positionX="727.27734375" positionY="-70.59375" width="128" height="165"/>
+        <element name="GoodTransaction" positionX="-612.52734375" positionY="-438.8671875" width="128" height="135"/>
+        <element name="InternalTransaction" positionX="-612" positionY="-486" width="128" height="45"/>
+        <element name="Invoice" positionX="-694.76171875" positionY="-679.0234375" width="128" height="165"/>
+        <element name="LeaderboardEntry" positionX="-49.43359375" positionY="-416.0390625" width="128" height="150"/>
+        <element name="Location" positionX="-442.8671875" positionY="850.05078125" width="128" height="165"/>
+        <element name="LocationSearchResult" positionX="-454.625" positionY="751.49609375" width="128" height="60"/>
+        <element name="Media" positionX="538.4296875" positionY="-0.19921875" width="128" height="270"/>
+        <element name="Notification" positionX="535.16015625" positionY="1594.7421875" width="128" height="210"/>
+        <element name="PostChatMessage" positionX="-27.21484375" positionY="-101.69140625" width="128" height="75"/>
+        <element name="PostHelpAnswer" positionX="-648" positionY="-522" width="128" height="315"/>
+        <element name="PostHelpPaymentTransaction" positionX="-621" positionY="-495" width="128" height="45"/>
+        <element name="PostHelpRequest" positionX="-657" positionY="-531" width="128" height="180"/>
+        <element name="PostHelpRewardTransaction" positionX="-630" positionY="-504" width="128" height="45"/>
+        <element name="Posting" positionX="336.890625" positionY="-1.8515625" width="128" height="1260"/>
+        <element name="Promotion" positionX="565.20703125" positionY="1119" width="128" height="180"/>
+        <element name="PromotionTransaction" positionX="-865.921875" positionY="367.1953125" width="128" height="105"/>
+        <element name="RewardTransaction" positionX="-863.34375" positionY="486.33984375" width="128" height="105"/>
+        <element name="Tag" positionX="568.2265625" positionY="1327.80859375" width="128" height="165"/>
+        <element name="TagSearchResult" positionX="-625.23828125" positionY="860.30078125" width="128" height="60"/>
+        <element name="TextChatMessage" positionX="-25.4375" positionY="-182.8671875" width="128" height="60"/>
+        <element name="Upvote" positionX="569.5234375" positionY="968.18359375" width="128" height="135"/>
+        <element name="User" positionX="125.0625" positionY="402.609375" width="128" height="1260"/>
+        <element name="UserSearchResult" positionX="-626.81640625" positionY="652.6171875" width="128" height="60"/>
+        <element name="Wallet" positionX="100.9609375" positionY="1653.21875" width="128" height="90"/>
+        <element name="WalletActivity" positionX="-561.43359375" positionY="-60.83203125" width="128" height="180"/>
+    </elements>
+</model>

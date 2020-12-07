@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet Activity View Controller-->
+        <scene sceneID="W0m-gy-0Gh">
+            <objects>
+                <viewController storyboardIdentifier="WalletActivityViewController" id="owM-6Q-eRr" customClass="WalletActivityViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMZ-0S-897">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAD-C4-Uyv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-fu-Tot">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwD-z7-iPK">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Rs2-G0-Eom"/>
+                                            <constraint firstAttribute="height" constant="44" id="iuO-xM-Czt"/>
+                                        </constraints>
+                                        <state key="normal" image="BackButton-grey">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hideAction:" destination="owM-6Q-eRr" eventType="touchUpInside" id="ZAg-6u-rvh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-0p-cAx">
+                                        <rect key="frame" x="157" y="9.5" width="61.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletActivity.Strings.Storyboards.navBarTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NTg-zV-RHO"/>
+                                    <constraint firstItem="Syl-0p-cAx" firstAttribute="centerY" secondItem="PFF-fu-Tot" secondAttribute="centerY" id="gZR-xf-JxA"/>
+                                    <constraint firstItem="Syl-0p-cAx" firstAttribute="centerX" secondItem="PFF-fu-Tot" secondAttribute="centerX" id="pMo-GK-vNN"/>
+                                    <constraint firstItem="bwD-z7-iPK" firstAttribute="leading" secondItem="PFF-fu-Tot" secondAttribute="leading" id="uww-rn-eKE"/>
+                                    <constraint firstItem="bwD-z7-iPK" firstAttribute="centerY" secondItem="PFF-fu-Tot" secondAttribute="centerY" id="zvg-iQ-yYO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaj-Iv-S7J">
+                                <rect key="frame" x="13" y="77" width="349" height="577"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-GK-P6J">
+                                        <rect key="frame" x="15" y="0.0" width="319" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVn-OQ-nTO">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="BRUSH">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletActivity.Strings.Storyboards.Segments.brush"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="switchSegmentAction:" destination="owM-6Q-eRr" eventType="touchUpInside" id="dvY-gb-YCa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUg-b6-dCm">
+                                                <rect key="frame" x="80" y="0.0" width="79.5" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="PIB">
+                                                    <color key="titleColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletActivity.Strings.Storyboards.Segments.pib"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="switchSegmentAction:" destination="owM-6Q-eRr" eventType="touchUpInside" id="RhO-JT-Koj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAd-Ch-HFk">
+                                                <rect key="frame" x="159.5" y="0.0" width="80" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="ETH">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletActivity.Strings.Storyboards.Segments.eth"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="switchSegmentAction:" destination="owM-6Q-eRr" eventType="touchUpInside" id="u6s-K1-GpU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVW-sa-evI">
+                                                <rect key="frame" x="239.5" y="0.0" width="79.5" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="BTC">
+                                                    <color key="titleColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WalletActivity.Strings.Storyboards.Segments.btc"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="switchSegmentAction:" destination="owM-6Q-eRr" eventType="touchUpInside" id="DFi-Ai-Wbq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="Jru-QM-4gj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klk-ag-WPz">
+                                        <rect key="frame" x="15" y="47" width="319" height="3"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46H-lA-4Vw">
+                                                <rect key="frame" x="0.0" y="1" width="319" height="1"/>
+                                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="bqO-95-dw0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wn5-Cz-oaS">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="3"/>
+                                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3" id="gXX-y3-BL0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="46H-lA-4Vw" secondAttribute="trailing" id="9KM-uf-EFn"/>
+                                            <constraint firstItem="wn5-Cz-oaS" firstAttribute="centerY" secondItem="klk-ag-WPz" secondAttribute="centerY" id="IIV-qU-58F"/>
+                                            <constraint firstAttribute="height" constant="3" id="NVe-5K-8Lr"/>
+                                            <constraint firstItem="46H-lA-4Vw" firstAttribute="leading" secondItem="klk-ag-WPz" secondAttribute="leading" id="VnG-mZ-6mU"/>
+                                            <constraint firstItem="46H-lA-4Vw" firstAttribute="width" secondItem="wn5-Cz-oaS" secondAttribute="width" multiplier="4" id="km7-BQ-iMB"/>
+                                            <constraint firstItem="46H-lA-4Vw" firstAttribute="centerY" secondItem="klk-ag-WPz" secondAttribute="centerY" id="srQ-1A-Z4J"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-SO-A3h">
+                                        <rect key="frame" x="0.0" y="50" width="349" height="527"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wn5-Cz-oaS" firstAttribute="centerX" secondItem="ZVn-OQ-nTO" secondAttribute="centerX" priority="750" id="0gy-OK-aHz"/>
+                                    <constraint firstItem="9V6-GK-P6J" firstAttribute="top" secondItem="jaj-Iv-S7J" secondAttribute="top" id="D3J-qq-mCD"/>
+                                    <constraint firstAttribute="trailing" secondItem="gKf-SO-A3h" secondAttribute="trailing" id="ItQ-Bi-KZs"/>
+                                    <constraint firstItem="gKf-SO-A3h" firstAttribute="top" secondItem="klk-ag-WPz" secondAttribute="bottom" id="QWK-jv-xXu"/>
+                                    <constraint firstItem="wn5-Cz-oaS" firstAttribute="centerX" secondItem="CVW-sa-evI" secondAttribute="centerX" priority="250" id="TYd-gE-Oue"/>
+                                    <constraint firstAttribute="bottom" secondItem="gKf-SO-A3h" secondAttribute="bottom" id="VFS-Ze-QHT"/>
+                                    <constraint firstItem="klk-ag-WPz" firstAttribute="trailing" secondItem="9V6-GK-P6J" secondAttribute="trailing" id="WBN-Nx-oge"/>
+                                    <constraint firstItem="wn5-Cz-oaS" firstAttribute="centerX" secondItem="BAd-Ch-HFk" secondAttribute="centerX" priority="250" id="Yxx-a8-4GH"/>
+                                    <constraint firstAttribute="trailing" secondItem="9V6-GK-P6J" secondAttribute="trailing" constant="15" id="cfB-v1-0v3"/>
+                                    <constraint firstItem="klk-ag-WPz" firstAttribute="top" secondItem="jaj-Iv-S7J" secondAttribute="top" constant="47" id="dqA-B2-gD7"/>
+                                    <constraint firstItem="gKf-SO-A3h" firstAttribute="leading" secondItem="jaj-Iv-S7J" secondAttribute="leading" id="evR-cT-4FF"/>
+                                    <constraint firstItem="9V6-GK-P6J" firstAttribute="leading" secondItem="jaj-Iv-S7J" secondAttribute="leading" constant="15" id="lDF-cz-vVs"/>
+                                    <constraint firstItem="klk-ag-WPz" firstAttribute="leading" secondItem="9V6-GK-P6J" secondAttribute="leading" id="lXk-Ak-2H0"/>
+                                    <constraint firstItem="wn5-Cz-oaS" firstAttribute="centerX" secondItem="KUg-b6-dCm" secondAttribute="centerX" priority="250" id="raA-PY-M2A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jaj-Iv-S7J" firstAttribute="top" secondItem="PFF-fu-Tot" secondAttribute="bottom" constant="13" id="1ys-uf-WxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="OAD-C4-Uyv" secondAttribute="trailing" id="Bac-Uj-FS3"/>
+                            <constraint firstItem="PFF-fu-Tot" firstAttribute="top" secondItem="OAD-C4-Uyv" secondAttribute="bottom" id="Dbm-dq-NHl"/>
+                            <constraint firstItem="2mh-cg-dg3" firstAttribute="trailing" secondItem="PFF-fu-Tot" secondAttribute="trailing" id="HuJ-DI-1Fq"/>
+                            <constraint firstItem="OAD-C4-Uyv" firstAttribute="top" secondItem="MMZ-0S-897" secondAttribute="top" id="HyH-Oi-TLL"/>
+                            <constraint firstItem="jaj-Iv-S7J" firstAttribute="leading" secondItem="MMZ-0S-897" secondAttribute="leading" constant="13" id="Hym-bg-uRz"/>
+                            <constraint firstAttribute="trailing" secondItem="jaj-Iv-S7J" secondAttribute="trailing" constant="13" id="IyP-BT-XmZ"/>
+                            <constraint firstItem="OAD-C4-Uyv" firstAttribute="leading" secondItem="MMZ-0S-897" secondAttribute="leading" id="NBC-ko-2HK"/>
+                            <constraint firstItem="2mh-cg-dg3" firstAttribute="trailing" secondItem="OAD-C4-Uyv" secondAttribute="trailing" id="WeK-9c-UBL"/>
+                            <constraint firstItem="OAD-C4-Uyv" firstAttribute="top" secondItem="MMZ-0S-897" secondAttribute="top" id="jkC-eu-6oa"/>
+                            <constraint firstItem="PFF-fu-Tot" firstAttribute="leading" secondItem="MMZ-0S-897" secondAttribute="leading" id="lho-lS-1uL"/>
+                            <constraint firstItem="2mh-cg-dg3" firstAttribute="top" secondItem="PFF-fu-Tot" secondAttribute="top" id="u75-lz-jSX"/>
+                            <constraint firstAttribute="bottom" secondItem="jaj-Iv-S7J" secondAttribute="bottom" constant="13" id="uJg-d6-42o"/>
+                            <constraint firstItem="OAD-C4-Uyv" firstAttribute="leading" secondItem="2mh-cg-dg3" secondAttribute="leading" id="vgg-rE-fJ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2mh-cg-dg3"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="jaj-Iv-S7J" id="qaR-WW-kvB"/>
+                        <outlet property="contentContainerView" destination="gKf-SO-A3h" id="BWA-Hn-KXR"/>
+                        <outlet property="segmentSelectionView" destination="wn5-Cz-oaS" id="yDR-BM-FwV"/>
+                        <outlet property="sergmentControlContainerView" destination="klk-ag-WPz" id="Kiz-lC-hBO"/>
+                        <outletCollection property="segmentButtons" destination="ZVn-OQ-nTO" collectionClass="NSMutableArray" id="bea-Yh-YqR"/>
+                        <outletCollection property="segmentButtons" destination="KUg-b6-dCm" collectionClass="NSMutableArray" id="JMV-hQ-Yyb"/>
+                        <outletCollection property="segmentButtons" destination="BAd-Ch-HFk" collectionClass="NSMutableArray" id="3F3-is-lGk"/>
+                        <outletCollection property="segmentButtons" destination="CVW-sa-evI" collectionClass="NSMutableArray" id="AJ1-RH-SwO"/>
+                        <outletCollection property="selectedSegmentLayoutConstraints" destination="0gy-OK-aHz" collectionClass="NSMutableArray" id="TnM-p6-xgN"/>
+                        <outletCollection property="selectedSegmentLayoutConstraints" destination="raA-PY-M2A" collectionClass="NSMutableArray" id="USv-6x-Jnd"/>
+                        <outletCollection property="selectedSegmentLayoutConstraints" destination="Yxx-a8-4GH" collectionClass="NSMutableArray" id="46s-S3-3IH"/>
+                        <outletCollection property="selectedSegmentLayoutConstraints" destination="TYd-gE-Oue" collectionClass="NSMutableArray" id="MHE-lt-jx7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="As7-i6-xFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton-grey" width="10.5" height="19.5"/>
+    </resources>
+</document>

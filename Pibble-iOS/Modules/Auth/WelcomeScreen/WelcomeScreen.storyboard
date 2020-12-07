@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="Kd2-mM-1ay">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreenViewController" id="6gT-eC-Jdf" customClass="WelcomeScreenViewController" customModule="Pibble" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iff-se-OOu"/>
+                        <viewControllerLayoutGuide type="bottom" id="enc-7a-OT1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="paT-vh-yvW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-welcome-iPhone4" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Pw-dDa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlO-l0-umw">
+                                <rect key="frame" x="0.0" y="412.66666666666674" width="375" height="365.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xii-fT-mwo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="182.66666666666666"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osc-7l-kuh">
+                                                <rect key="frame" x="0.0" y="57.000000000000007" width="375" height="68.666666666666686"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRJ-oC-HJT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="35"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WelcomeScreen.Strings.Storyboards.welcomeTitle"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've got content for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X46-Wz-hcf">
+                                                        <rect key="frame" x="0.0" y="47.999999999999943" width="375" height="20.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WelcomeScreen.Strings.Storyboards.welcomeSubtitle"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="X46-Wz-hcf" secondAttribute="bottom" id="5kb-N7-Ekd"/>
+                                                    <constraint firstItem="X46-Wz-hcf" firstAttribute="top" secondItem="ZRJ-oC-HJT" secondAttribute="bottom" id="C1f-LA-LC7"/>
+                                                    <constraint firstItem="ZRJ-oC-HJT" firstAttribute="top" secondItem="Osc-7l-kuh" secondAttribute="top" id="PwW-ob-L2n"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZRJ-oC-HJT" secondAttribute="trailing" id="T5k-4R-cd7"/>
+                                                    <constraint firstItem="ZRJ-oC-HJT" firstAttribute="leading" secondItem="Osc-7l-kuh" secondAttribute="leading" id="Zf3-fc-W3k"/>
+                                                    <constraint firstAttribute="trailing" secondItem="X46-Wz-hcf" secondAttribute="trailing" id="qiA-og-Da6"/>
+                                                    <constraint firstItem="X46-Wz-hcf" firstAttribute="leading" secondItem="Osc-7l-kuh" secondAttribute="leading" id="vD6-fH-sUg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Osc-7l-kuh" secondAttribute="trailing" id="Y87-dQ-tgC"/>
+                                            <constraint firstItem="Osc-7l-kuh" firstAttribute="centerY" secondItem="xii-fT-mwo" secondAttribute="centerY" id="a5h-lc-jKQ"/>
+                                            <constraint firstItem="Osc-7l-kuh" firstAttribute="leading" secondItem="xii-fT-mwo" secondAttribute="leading" id="nEe-Oz-PdY"/>
+                                            <constraint firstItem="Osc-7l-kuh" firstAttribute="centerX" secondItem="xii-fT-mwo" secondAttribute="centerX" id="nqo-dB-bDG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l25-b1-tMl">
+                                        <rect key="frame" x="0.0" y="182.66666666666669" width="375" height="182.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brv-wJ-V2L">
+                                                <rect key="frame" x="50" y="49" width="275" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="275" id="7md-4l-xTT"/>
+                                                    <constraint firstAttribute="height" constant="44" id="E2S-Ln-Sud"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <state key="normal" title="Switch account">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WelcomeScreen.Strings.Storyboards.switchAccountButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="switchAccountAction:" destination="6gT-eC-Jdf" eventType="touchUpInside" id="4fq-bd-pdo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkP-6u-WXG">
+                                                <rect key="frame" x="50" y="0.0" width="275" height="49"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="49" id="Rcm-zA-OZO"/>
+                                                    <constraint firstAttribute="width" constant="275" id="rRN-Kc-iAy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Pibble.WelcomeScreen.Strings.Storyboards.continueButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueAction:" destination="6gT-eC-Jdf" eventType="touchUpInside" id="NWS-Wu-dVh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Brv-wJ-V2L" firstAttribute="centerX" secondItem="l25-b1-tMl" secondAttribute="centerX" id="2xb-WK-l6W"/>
+                                            <constraint firstItem="Brv-wJ-V2L" firstAttribute="top" secondItem="zkP-6u-WXG" secondAttribute="bottom" id="Bm2-25-07e"/>
+                                            <constraint firstItem="zkP-6u-WXG" firstAttribute="top" secondItem="l25-b1-tMl" secondAttribute="top" id="LQF-4x-YNE"/>
+                                            <constraint firstItem="zkP-6u-WXG" firstAttribute="centerX" secondItem="l25-b1-tMl" secondAttribute="centerX" id="QKj-BJ-mAC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="l25-b1-tMl" firstAttribute="height" secondItem="xii-fT-mwo" secondAttribute="height" id="1XJ-9L-Nqb"/>
+                                    <constraint firstAttribute="trailing" secondItem="xii-fT-mwo" secondAttribute="trailing" id="Dcs-Gp-4Wl"/>
+                                    <constraint firstAttribute="bottom" secondItem="l25-b1-tMl" secondAttribute="bottom" id="KyT-5F-aE3"/>
+                                    <constraint firstItem="l25-b1-tMl" firstAttribute="leading" secondItem="WlO-l0-umw" secondAttribute="leading" id="RHs-qH-MOE"/>
+                                    <constraint firstItem="xii-fT-mwo" firstAttribute="top" secondItem="WlO-l0-umw" secondAttribute="top" id="hKS-p7-q21"/>
+                                    <constraint firstItem="l25-b1-tMl" firstAttribute="top" secondItem="xii-fT-mwo" secondAttribute="bottom" id="nMk-Q9-iKO"/>
+                                    <constraint firstItem="xii-fT-mwo" firstAttribute="leading" secondItem="WlO-l0-umw" secondAttribute="leading" id="pBA-7X-kXt"/>
+                                    <constraint firstAttribute="trailing" secondItem="l25-b1-tMl" secondAttribute="trailing" id="y42-p1-VW5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="enc-7a-OT1" firstAttribute="top" secondItem="WlO-l0-umw" secondAttribute="bottom" id="0qc-wL-uUg"/>
+                            <constraint firstItem="WlO-l0-umw" firstAttribute="leading" secondItem="paT-vh-yvW" secondAttribute="leading" id="11y-mh-Qt5"/>
+                            <constraint firstAttribute="trailing" secondItem="4AZ-Pw-dDa" secondAttribute="trailing" id="EMS-H0-2xF"/>
+                            <constraint firstItem="4AZ-Pw-dDa" firstAttribute="top" secondItem="paT-vh-yvW" secondAttribute="top" id="FjQ-BB-Lz6"/>
+                            <constraint firstAttribute="trailing" secondItem="WlO-l0-umw" secondAttribute="trailing" id="Hkw-hQ-fAp"/>
+                            <constraint firstAttribute="bottom" secondItem="4AZ-Pw-dDa" secondAttribute="bottom" id="Y0x-G4-9VY"/>
+                            <constraint firstItem="WlO-l0-umw" firstAttribute="height" secondItem="paT-vh-yvW" secondAttribute="height" multiplier="0.45" id="hwr-yE-YxX"/>
+                            <constraint firstItem="4AZ-Pw-dDa" firstAttribute="leading" secondItem="paT-vh-yvW" secondAttribute="leading" id="kvn-eh-n8b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="4AZ-Pw-dDa" id="4tU-vN-Lic"/>
+                        <outlet property="continueButton" destination="zkP-6u-WXG" id="2uG-ak-XUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHh-Zs-Wgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="355.7721139430285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background-welcome-iPhone4" width="320" height="480"/>
+    </resources>
+</document>

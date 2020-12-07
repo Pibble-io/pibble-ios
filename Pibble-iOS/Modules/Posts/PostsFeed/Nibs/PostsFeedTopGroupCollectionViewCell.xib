@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="6ek-0V-e06" customClass="PostsFeedTopGroupCollectionViewCell" customModule="Pibble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-9i-kiL">
+                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="BuT-Be-iPk"/>
+                            <constraint firstAttribute="height" constant="64" id="RF3-7y-KSE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gS-Eq-Cog">
+                        <rect key="frame" x="4" y="77" width="72" height="15.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvP-OE-UPG">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="99"/>
+                        <connections>
+                            <action selector="selectionAction:" destination="6ek-0V-e06" eventType="touchUpInside" id="z2g-8G-nwZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8gS-Eq-Cog" firstAttribute="top" secondItem="Vag-9i-kiL" secondAttribute="bottom" constant="5" id="2Z8-Dv-Od5"/>
+                <constraint firstAttribute="bottom" secondItem="cvP-OE-UPG" secondAttribute="bottom" id="GBa-bT-dXm"/>
+                <constraint firstItem="Vag-9i-kiL" firstAttribute="leading" secondItem="6ek-0V-e06" secondAttribute="leading" constant="8" id="Ksy-p0-HU5"/>
+                <constraint firstItem="Vag-9i-kiL" firstAttribute="top" secondItem="6ek-0V-e06" secondAttribute="top" constant="8" id="LXK-LP-gLE"/>
+                <constraint firstAttribute="trailing" secondItem="cvP-OE-UPG" secondAttribute="trailing" id="Qfg-7q-cFT"/>
+                <constraint firstItem="8gS-Eq-Cog" firstAttribute="leading" secondItem="6ek-0V-e06" secondAttribute="leading" constant="4" id="fRH-tF-q4c"/>
+                <constraint firstItem="cvP-OE-UPG" firstAttribute="top" secondItem="6ek-0V-e06" secondAttribute="top" id="l4T-O3-1V6"/>
+                <constraint firstItem="Vag-9i-kiL" firstAttribute="centerX" secondItem="6ek-0V-e06" secondAttribute="centerX" id="qO3-eS-RMS"/>
+                <constraint firstItem="cvP-OE-UPG" firstAttribute="leading" secondItem="6ek-0V-e06" secondAttribute="leading" id="r6o-tb-0fJ"/>
+                <constraint firstAttribute="trailing" secondItem="8gS-Eq-Cog" secondAttribute="trailing" constant="4" id="uio-kb-ohG"/>
+                <constraint firstAttribute="trailing" secondItem="Vag-9i-kiL" secondAttribute="trailing" constant="8" id="ydI-Pp-NRj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kiW-cH-1ET"/>
+            <size key="customSize" width="90" height="99"/>
+            <connections>
+                <outlet property="groupImageView" destination="Vag-9i-kiL" id="ysU-TB-NAF"/>
+                <outlet property="groupTitle" destination="8gS-Eq-Cog" id="2Zj-ur-RK4"/>
+            </connections>
+            <point key="canvasLocation" x="158.40000000000001" y="305.39730134932535"/>
+        </collectionViewCell>
+    </objects>
+</document>
